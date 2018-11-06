@@ -63,13 +63,13 @@ public class main {
                     Scanner sc2 = new Scanner(System.in);
                     int str2 = Integer.parseInt(sc2.nextLine());
                     if (str2 == 1) {
-                        Personnage personnage = new sourisDecorator(new Informaticien(80, 24, 100));
+                        Personnage personnage = new sourisDecorator(new Informaticien(80,24,100));
                         personnage.draw();
                         listPersonnages.add(personnage);
                         System.out.println(listPersonnages);
                     }
                     if (str2 == 2) {
-                        Personnage personnage = new cleMoletteDecorator(new Informaticien(80, 24, 100));
+                        Personnage personnage = new cleMoletteDecorator(new Informaticien(80,24,100));
                         personnage.draw();
                         listPersonnages.add(personnage);
                         System.out.println(listPersonnages);
@@ -83,13 +83,13 @@ public class main {
                     Scanner sc2 = new Scanner(System.in);
                     int str2 = Integer.parseInt(sc2.nextLine());
                     if (str2 == 1) {
-                        Personnage personnage = new sourisDecorator(new Electronicien(80, 24, 100));
+                        Personnage personnage = new sourisDecorator(new Electronicien(80,24,100));
                         personnage.draw();
                         listPersonnages.add(personnage);
                         System.out.println(listPersonnages);
                     }
                     if (str2 == 2) {
-                        Personnage personnage = new cleMoletteDecorator(new Electronicien(80, 24, 100));
+                        Personnage personnage = new cleMoletteDecorator(new Electronicien(80,24,100));
                         personnage.draw();
                         listPersonnages.add(personnage);
                         System.out.println(listPersonnages);
@@ -108,13 +108,16 @@ public class main {
         // start the fight and return the winner
         public static Personnage startFight(Personnage personnage1, Personnage personnage2){
 
-            while (personnage1.getPV() > 0 && personnage2.getPV() >0 ){
+            while (personnage1.getMort() != true && personnage2.getMort() != true ){
 
                 int degats = personnage1.attaquer();
                 personnage2.subir(degats);
 
+
                 degats = personnage2.attaquer();
                 personnage1.subir(degats);
+
+                System.out.print(personnage1.getPV());
             }
 
             if(personnage1.getMort()== true){
@@ -136,37 +139,38 @@ public class main {
         protected int pv;
         protected int force;
         protected int energie;
-        protected int minDamage;
-        protected int maxDamage;
+        protected int minDamage = 5;
+        protected int maxDamage = 10;
         protected boolean mort;
 
-        public int getPV(){
-            return pv;
-        }
-
         public boolean getMort(){
-            return this.mort;
+            return mort;
         }
         public void setMort(){
-            this.mort = true;
+            mort = true;
         }
+
         public int attaquer()
         {
             Random rand = new Random();
             int degats = rand.nextInt(maxDamage - minDamage + 1) + minDamage;
-
             return degats;
 
         }
 
         public void subir(int degats)
         {
-            this.pv = this.pv - degats;
-
-            if (this.pv < 0)
+            this.pv = pv - degats;
+            System.out.print(pv);
+            if (pv < 0)
             {
                 this.setMort();
+                System.out.print("DIEDED");
             }
+        }
+
+        public int getPV(){
+            return pv;
         }
 
         public abstract void parer();
@@ -176,20 +180,14 @@ public class main {
     }
 
     static class Informaticien extends Personnage {
-        private int minDamage;
-        private int maxDamage;
 
         public Informaticien(int pv, int force, int energie) {
             this.pv = pv;
             this.force = force;
             this.energie = energie;
-            this.minDamage = minDamage;
-            this.maxDamage = maxDamage;
+            this.minDamage =+ 4;
         }
 
-        public int getPV(){
-            return pv;
-        }
         public void draw() {
             System.out.println("Informaticien: " +"Point de vie :" + pv + " Force : " + force + " Energie :" + energie );
         }
@@ -200,19 +198,14 @@ public class main {
 
     }
     static class Electronicien extends Personnage {
-        private int minDamage;
-        private int maxDamage;
 
         public Electronicien(int pv, int force,int energie) {
             this.pv = pv;
             this.force = force;
             this.energie = energie;
-            this.minDamage = minDamage;
-            this.maxDamage = maxDamage;
+            this.maxDamage =+ 4;
         }
-        public int getPV(){
-            return pv;
-        }
+
         public void draw() {
             System.out.println("Electronicien: " + pv + ", " + force + "," + energie );
         }
@@ -223,20 +216,14 @@ public class main {
 
     }
     static class Mecanicien extends Personnage {
-        private int minDamage;
-        private int maxDamage;
 
         public Mecanicien(int pv, int force, int energie) {
             this.pv = pv;
             this.force = force;
             this.energie = energie;
-            this.minDamage = minDamage;
-            this.maxDamage = maxDamage;
+            this.minDamage =+ 2;
+            this.maxDamage =+ 2;
         }
-        public int getPV(){
-            return pv;
-        }
-
         public void draw() {
             System.out.println("Mecancien: " + pv + ", " + force + "," + energie );
         }
@@ -247,20 +234,13 @@ public class main {
     }
     static class Geometre extends Personnage {
 
-        private int minDamage;
-        private int maxDamage;
-
         public Geometre(int pv, int force,int energie) {
             this.pv = pv;
             this.force = force;
             this.energie = energie;
-            this.minDamage = minDamage;
-            this.maxDamage = maxDamage;
+            this.minDamage =- 1;
+            this.maxDamage =+ 2;
         }
-        public int getPV(){
-            return pv;
-        }
-
         public void draw() {
             System.out.println("Geometre: " + pv + ", " + force + "," + energie );
         }
@@ -271,20 +251,14 @@ public class main {
 
     }
     static class Constructeur extends Personnage {
-        private int minDamage;
-        private int maxDamage;
 
         public Constructeur(int pv, int force, int energie) {
             this.pv = pv;
             this.force = force;
             this.energie = energie;
-            this.minDamage = minDamage;
-            this.maxDamage = maxDamage;
+            this.minDamage =- 3;
+            this.maxDamage =+ 4;
         }
-        public int getPV(){
-            return pv;
-        }
-
         public void draw() {
             System.out.println("Constructeur: " + pv + ", " + force + "," + energie );
         }
@@ -295,20 +269,14 @@ public class main {
 
     }
     static class Automaticien extends Personnage {
-        private int minDamage;
-        private int maxDamage;
 
         public Automaticien(int pv, int force, int energie) {
             this.pv = pv;
             this.force = force;
             this.energie = energie;
-            this.minDamage = minDamage;
-            this.maxDamage = maxDamage;
+            this.minDamage =+ 3;
+            this.maxDamage =+ 1;
         }
-        public int getPV(){
-            return pv;
-        }
-
         public void draw() {
             System.out.println("Automaticien: " + pv + ", " + force + "," + energie );
         }
@@ -345,17 +313,16 @@ public class main {
             super.draw();
             System.out.println(" Equipé d'une Souris");
         }
+
         public void mourir(){
             System.out.println("Vous êtes mort");
         }
         public void parer(){
             System.out.println("Vous avez paré");
         }
-        public int attaquer(){
-            System.out.println("Vous avez attaqué");
-            return super.attaquer();
-        }
+
     }
+
     static class cleMoletteDecorator extends Decorator {
         public cleMoletteDecorator(Personnage personnage) {
             super(personnage);
@@ -370,6 +337,7 @@ public class main {
         public void parer(){
             System.out.println("Vous avez paré");
         }
+
         public int attaquer(){
             System.out.println("Vous avez attaqué");
             return super.attaquer();
