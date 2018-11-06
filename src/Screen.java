@@ -24,14 +24,14 @@ public class Screen extends JPanel {
           
     
                 window.setLocation(5, 50);
-                back.setIcon(new ImageIcon ("C:\\Users\\Fatine\\Desktop\\Ecam_Arena\\Ecam_Arena\\Image\\Ecamus.png"));/* Bien entrer le bon chemin d'acces de l'image */
+                back.setIcon(new ImageIcon ("C:\\Users\\Fatine\\Desktop\\Ecam_Arena\\Ecam_Arena\\EcamusGame\\Image\\Ecamus.png"));/* Bien entrer le bon chemin d'acces de l'image */
                 window.getContentPane().add(back);
                 window.setUndecorated(true);
                 window.setSize(970, 850);
                 window.setVisible(true);
                 
                 try {
-                        File sound = new File("C:\\Users\\Fatine\\Desktop\\Ecam_Arena\\Ecam_Arena\\musique\\Title Screen.wav");/* Bien entrer le bon chemin d'acces du son */
+                        File sound = new File("C:\\Users\\Fatine\\Desktop\\Ecam_Arena\\Ecam_Arena\\EcamusGame\\Musique\\Title Screen.wav");/* Bien entrer le bon chemin d'acces du son */
                         AudioInputStream ais = AudioSystem.getAudioInputStream(sound);
                         Clip clip1 = AudioSystem.getClip();
                         clip1.open(ais);

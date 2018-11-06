@@ -41,9 +41,9 @@ public class main {
         }
 
         // chose warriors and their weapons.
-        public static List<Personnage> buildFight(){
+        public static List<Decorator> buildFight(){
 
-            List<Personnage> listPersonnages = new ArrayList<Personnage>() ;
+            List<Decorator> listPersonnages = new ArrayList<Decorator>() ;
 
             System.out.println("Bienvenue sur Ecamus");
             int x=0;
@@ -63,13 +63,13 @@ public class main {
                     Scanner sc2 = new Scanner(System.in);
                     int str2 = Integer.parseInt(sc2.nextLine());
                     if (str2 == 1) {
-                        Personnage personnage = new sourisDecorator(new Informaticien(80,24,100));
+                        Decorator personnage = new sourisDecorator(new Informaticien(80,24,100));
                         personnage.draw();
                         listPersonnages.add(personnage);
                         System.out.println(listPersonnages);
                     }
                     if (str2 == 2) {
-                        Personnage personnage = new cleMoletteDecorator(new Informaticien(80,24,100));
+                        Decorator personnage = new cleMoletteDecorator(new Informaticien(80,24,100));
                         personnage.draw();
                         listPersonnages.add(personnage);
                         System.out.println(listPersonnages);
@@ -83,13 +83,13 @@ public class main {
                     Scanner sc2 = new Scanner(System.in);
                     int str2 = Integer.parseInt(sc2.nextLine());
                     if (str2 == 1) {
-                        Personnage personnage = new sourisDecorator(new Electronicien(80,24,100));
+                        Decorator personnage = new sourisDecorator(new Electronicien(80,24,100));
                         personnage.draw();
                         listPersonnages.add(personnage);
                         System.out.println(listPersonnages);
                     }
                     if (str2 == 2) {
-                        Personnage personnage = new cleMoletteDecorator(new Electronicien(80,24,100));
+                        Decorator personnage = new cleMoletteDecorator(new Electronicien(80,24,100));
                         personnage.draw();
                         listPersonnages.add(personnage);
                         System.out.println(listPersonnages);
@@ -106,18 +106,18 @@ public class main {
         }
 
         // start the fight and return the winner
-        public static Personnage startFight(Personnage personnage1, Personnage personnage2){
+        public static Personnage startFight(Decorator personnage1, Decorator personnage2){
 
             while (personnage1.getMort() != true && personnage2.getMort() != true ){
 
                 int degats = personnage1.attaquer();
-                personnage2.subir(degats);
+                Decorator.getPersonnage().subir(degats);
 
+                personnage2.getPV();
 
-                degats = personnage2.attaquer();
-                personnage1.subir(degats);
-
-                System.out.print(personnage1.getPV());
+                int degats2 =personnage2.attaquer();
+                personnage1.subir(degats2);
+                personnage1.getPV();
             }
 
             if(personnage1.getMort()== true){
@@ -160,23 +160,33 @@ public class main {
 
         public void subir(int degats)
         {
-            this.pv = pv - degats;
-            System.out.print(pv);
-            if (pv < 0)
+            int newPV = (this.getPV()- degats);
+
+            this.setPV(newPV);
+            System.out.println("resultat de subir");
+            System.out.println(this.pv);
+            System.out.println(newPV);
+
+            if (newPV < 0)
             {
                 this.setMort();
+
                 System.out.print("DIEDED");
             }
         }
 
         public int getPV(){
-            return pv;
+            return this.pv;
         }
+
+
 
         public abstract void parer();
 
         public abstract void draw();
 
+        protected void setPV(int pv) {
+        }
     }
 
     static class Informaticien extends Personnage {
@@ -188,6 +198,9 @@ public class main {
             this.minDamage =+ 4;
         }
 
+        public void setPV(int pv){
+            this.pv = pv;
+        }
         public void draw() {
             System.out.println("Informaticien: " +"Point de vie :" + pv + " Force : " + force + " Energie :" + energie );
         }
@@ -197,7 +210,7 @@ public class main {
         }
 
     }
-    static class Electronicien extends Personnage {
+    public static class Electronicien extends Personnage {
 
         public Electronicien(int pv, int force,int energie) {
             this.pv = pv;
@@ -205,7 +218,9 @@ public class main {
             this.energie = energie;
             this.maxDamage =+ 4;
         }
-
+        public void setPV(int pv){
+            this.pv = pv;
+        }
         public void draw() {
             System.out.println("Electronicien: " + pv + ", " + force + "," + energie );
         }
@@ -215,7 +230,7 @@ public class main {
         }
 
     }
-    static class Mecanicien extends Personnage {
+    public static class Mecanicien extends Personnage {
 
         public Mecanicien(int pv, int force, int energie) {
             this.pv = pv;
@@ -223,6 +238,9 @@ public class main {
             this.energie = energie;
             this.minDamage =+ 2;
             this.maxDamage =+ 2;
+        }
+        public void setPV(int pv){
+            this.pv = pv;
         }
         public void draw() {
             System.out.println("Mecancien: " + pv + ", " + force + "," + energie );
@@ -232,7 +250,7 @@ public class main {
             force=-1;
         }
     }
-    static class Geometre extends Personnage {
+    public static class Geometre extends Personnage {
 
         public Geometre(int pv, int force,int energie) {
             this.pv = pv;
@@ -240,6 +258,9 @@ public class main {
             this.energie = energie;
             this.minDamage =- 1;
             this.maxDamage =+ 2;
+        }
+        public void setPV(int pv){
+            this.pv = pv;
         }
         public void draw() {
             System.out.println("Geometre: " + pv + ", " + force + "," + energie );
@@ -250,7 +271,7 @@ public class main {
         }
 
     }
-    static class Constructeur extends Personnage {
+    public static class Constructeur extends Personnage {
 
         public Constructeur(int pv, int force, int energie) {
             this.pv = pv;
@@ -258,6 +279,9 @@ public class main {
             this.energie = energie;
             this.minDamage =- 3;
             this.maxDamage =+ 4;
+        }
+        public void setPV(int pv){
+            this.pv = pv;
         }
         public void draw() {
             System.out.println("Constructeur: " + pv + ", " + force + "," + energie );
@@ -268,7 +292,7 @@ public class main {
         }
 
     }
-    static class Automaticien extends Personnage {
+    public static class Automaticien extends Personnage {
 
         public Automaticien(int pv, int force, int energie) {
             this.pv = pv;
@@ -276,6 +300,9 @@ public class main {
             this.energie = energie;
             this.minDamage =+ 3;
             this.maxDamage =+ 1;
+        }
+        public void setPV(int pv){
+            this.pv = pv;
         }
         public void draw() {
             System.out.println("Automaticien: " + pv + ", " + force + "," + energie );
@@ -289,7 +316,7 @@ public class main {
 
     abstract static class Decorator extends Personnage {
 
-        private Personnage personnage;
+        private static Personnage personnage;
 
         public Decorator(Personnage personnage) {
             this.personnage = personnage;
@@ -299,10 +326,21 @@ public class main {
             personnage.draw();
         }
 
+        public void setPV(int pv ){
+             this.personnage.setPV(pv);
+        }
+
+        public static Personnage getPersonnage(){
+            return personnage;
+        }
+
         public int getPV(){
             return personnage.getPV();
         }
     }
+
+
+
 
     static class sourisDecorator extends Decorator {
         public sourisDecorator(Personnage personnage) {
@@ -323,7 +361,7 @@ public class main {
 
     }
 
-    static class cleMoletteDecorator extends Decorator {
+    public static class cleMoletteDecorator extends Decorator {
         public cleMoletteDecorator(Personnage personnage) {
             super(personnage);
         }
@@ -343,7 +381,7 @@ public class main {
             return super.attaquer();
         }
     }
-    static class equerreDecorator extends Decorator {
+    public static class equerreDecorator extends Decorator {
         public equerreDecorator(Personnage personnage) {
             super(personnage);
         }
@@ -362,7 +400,7 @@ public class main {
             return super.attaquer();
         }
     }
-    static class arduinoDecorator extends Decorator {
+    public static class arduinoDecorator extends Decorator {
         public arduinoDecorator(Personnage personnage) {
             super(personnage);
         }
@@ -381,7 +419,7 @@ public class main {
             return super.attaquer();
         }
     }
-    static class marteauDecorator extends Decorator {
+    public static class marteauDecorator extends Decorator {
         public marteauDecorator(Personnage personnage) {
             super(personnage);
         }
@@ -407,9 +445,9 @@ public class main {
         Screen s = new Screen();
         JFrame window = s.window;
 
-        List<Personnage> listOfPersonnages = Arena.buildFight(); // on récupère les deux personnages construits
-        Personnage personnage1 = listOfPersonnages.get(0); // on les place dans des variables
-        Personnage personnage2 = listOfPersonnages.get(1);
+        List<Decorator> listOfPersonnages = Arena.buildFight(); // on récupère les deux personnages construits
+        Decorator personnage1 = listOfPersonnages.get(0); // on les place dans des variables
+        Decorator personnage2 = listOfPersonnages.get(1);
         Arena.startFight(personnage1 , personnage2); // on lance le combat
 
 

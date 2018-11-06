@@ -31,7 +31,7 @@ public class Arena extends JPanel implements ActionListener,KeyListener {
     Font customFont = new Font("Bold",Font.BOLD,30);
     Font comboFont = new Font("Italic",Font.ITALIC,25);
     
-    File sound = new File("C:\\Users\\Fatine\\Desktop\\Ecam_Arena\\Ecam_Arena\\musique\\Arena Select.wav"); /* Bien entrer le bon chemin d'acces du son */
+    File sound = new File("C:\\Users\\Fatine\\Desktop\\Ecam_Arena\\Ecam_Arena\\EcamusGame\\Musique\\Arena Select.wav"); /* Bien entrer le bon chemin d'acces du son */
     AudioInputStream ais;
     Clip clip;
     
@@ -55,7 +55,7 @@ public class Arena extends JPanel implements ActionListener,KeyListener {
             backButton.addKeyListener(this);
             backButton.addActionListener(this);
             window.add(backButton,BorderLayout.PAGE_END);
-            enterButton.setIcon(new ImageIcon("C:\\Users\\Fatine\\Desktop\\Ecam_Arena\\Ecam_Arena\\Image\\arena.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
+            enterButton.setIcon(new ImageIcon("C:\\Users\\Fatine\\Desktop\\Ecam_Arena\\Ecam_Arena\\EcamusGame\\Image\\arena.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
             enterButton.addKeyListener(this);
             enterButton.addActionListener(this);
             window.add(enterButton,BorderLayout.CENTER);

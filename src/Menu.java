@@ -31,7 +31,7 @@ public class Menu extends JPanel implements ActionListener,KeyListener {
     JButton playButton = new JButton();
     JButton exitButton = new JButton();
     JLabel background = new JLabel();
-    File sound = new File("C:\\Users\\Fatine\\Desktop\\Ecam_Arena\\Ecam_Arena\\musique\\Title Screen.wav"); /* Bien entrer le bon chemin d'acces du son */
+    File sound = new File("C:\\Users\\Fatine\\Desktop\\Ecam_Arena\\Ecam_Arena\\EcamusGame\\Musique\\Title Screen.wav"); /* Bien entrer le bon chemin d'acces du son */
     AudioInputStream ais;
     Clip clip1;
     Menu() throws UnsupportedAudioFileException, IOException
@@ -44,16 +44,16 @@ public class Menu extends JPanel implements ActionListener,KeyListener {
                     this.setForeground(Color.DARK_GRAY);
                     window.add(this);
                     playButton.setBackground(Color.DARK_GRAY);
-                    playButton.setIcon(new ImageIcon("C:\\Users\\Fatine\\Desktop\\Ecam_Arena\\Ecam_Arena\\Image\\Vulcania.jpg"));/* Bien entrer le bon chemin d'acces de l'image */
+                    playButton.setIcon(new ImageIcon("C:\\Users\\Fatine\\Desktop\\Ecam_Arena\\Ecam_Arena\\EcamusGame\\Image\\Vulcania.jpg"));/* Bien entrer le bon chemin d'acces de l'image */
                     playButton.addActionListener(this);
                     playButton.addKeyListener(this);
                     window.add(playButton,BorderLayout.PAGE_START);
                     exitButton.setBackground(Color.DARK_GRAY);
-                    exitButton.setIcon(new ImageIcon("C:\\Users\\Fatine\\Desktop\\Ecam_Arena\\Ecam_Arena\\Image\\Exit_Button.png"));/* Bien entrer le bon chemin d'acces de l'image */
+                    exitButton.setIcon(new ImageIcon("C:\\Users\\Fatine\\Desktop\\Ecam_Arena\\Ecam_Arena\\EcamusGame\\Image\\Exit_Button.png"));/* Bien entrer le bon chemin d'acces de l'image */
                     exitButton.addActionListener(this);
                     exitButton.addKeyListener(this);
                     window.add(exitButton,BorderLayout.PAGE_END);
-                    background.setIcon(new ImageIcon("C:\\Users\\Fatine\\Desktop\\Ecam_Arena\\Ecam_Arena\\Image\\Gladiador.jpg"));/* Bien entrer le bon chemin d'acces de l'image */
+                    background.setIcon(new ImageIcon("C:\\Users\\Fatine\\Desktop\\Ecam_Arena\\Ecam_Arena\\EcamusGame\\Image\\Gladiador.jpg"));/* Bien entrer le bon chemin d'acces de l'image */
                     window.getContentPane().add(background);
                     window.setUndecorated(true);
                     window.setSize(800, 950);
