@@ -31,7 +31,7 @@ public class Arena extends JPanel implements ActionListener,KeyListener {
     Font customFont = new Font("Bold",Font.BOLD,30);
     Font comboFont = new Font("Italic",Font.ITALIC,25);
     
-    File sound = new File("D:\\4MA\\TDD Projet\\ECAMUS\\Ecam_Arena\\Musique\\Arena Select.wav"); /* Bien entrer le bon chemin d'acces du son */
+    File sound = new File("/Users/vyniad/Desktop/EcamusGame-master/musique/Arena Select.wav"); /* Bien entrer le bon chemin d'acces du son */
     AudioInputStream ais;
     Clip clip;
     
@@ -55,13 +55,13 @@ public class Arena extends JPanel implements ActionListener,KeyListener {
             backButton.addKeyListener(this);
             backButton.addActionListener(this);
             window.add(backButton,BorderLayout.PAGE_END);
-            enterButton.setIcon(new ImageIcon("D:\\4MA\\TDD Projet\\ECAMUS\\Ecam_Arena\\Image\\arena.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
+            enterButton.setIcon(new ImageIcon("/Users/vyniad/Desktop/EcamusGame-master/Image/arena.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
             enterButton.addKeyListener(this);
             enterButton.addActionListener(this);
             window.add(enterButton,BorderLayout.CENTER);
             window.setUndecorated(true);
             window.getContentPane();
-            window.setSize(750, 900);
+            window.setSize(750, 700);
             window.setVisible(true);
             
                 
@@ -87,6 +87,7 @@ public class Arena extends JPanel implements ActionListener,KeyListener {
         {
             
             window.dispose();
+
             this.clip.close();
            
             try {
@@ -100,7 +101,8 @@ public class Arena extends JPanel implements ActionListener,KeyListener {
         }
         else if(ae.getSource()==enterButton)
         {
-            JOptionPane.showMessageDialog(null,"En construction");
+            //JOptionPane.showMessageDialog(null,"En construction");
+            Arene.BuildFight();
         }
     }
 
