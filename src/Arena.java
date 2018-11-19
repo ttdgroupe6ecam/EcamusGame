@@ -1,7 +1,7 @@
 
-import javax.sound.sampled.*;
-import javax.swing.*;
-import java.awt.*;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -10,6 +10,16 @@ import java.io.File;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JComboBox;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -31,7 +41,7 @@ public class Arena extends JPanel implements ActionListener,KeyListener {
     Font customFont = new Font("Bold",Font.BOLD,30);
     Font comboFont = new Font("Italic",Font.ITALIC,25);
     
-    File sound = new File("/Users/vyniad/Desktop/EcamusGame-master/musique/Arena Select.wav"); /* Bien entrer le bon chemin d'acces du son */
+    File sound = new File("C:\\Users\\UserAdmin\\Documents\\NetBeansProjects\\Ecam_Arena\\musique\\Arena Select.wav"); /* Bien entrer le bon chemin d'acces du son */
     AudioInputStream ais;
     Clip clip;
     
@@ -55,13 +65,13 @@ public class Arena extends JPanel implements ActionListener,KeyListener {
             backButton.addKeyListener(this);
             backButton.addActionListener(this);
             window.add(backButton,BorderLayout.PAGE_END);
-            enterButton.setIcon(new ImageIcon("/Users/vyniad/Desktop/EcamusGame-master/Image/arena.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
+            enterButton.setIcon(new ImageIcon("C:\\Users\\UserAdmin\\Documents\\NetBeansProjects\\Ecam_Arena\\Image\\arena.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
             enterButton.addKeyListener(this);
             enterButton.addActionListener(this);
             window.add(enterButton,BorderLayout.CENTER);
             window.setUndecorated(true);
             window.getContentPane();
-            window.setSize(750, 700);
+            window.setSize(750, 900);
             window.setVisible(true);
             
                 
@@ -87,7 +97,6 @@ public class Arena extends JPanel implements ActionListener,KeyListener {
         {
             
             window.dispose();
-
             this.clip.close();
            
             try {
@@ -101,8 +110,19 @@ public class Arena extends JPanel implements ActionListener,KeyListener {
         }
         else if(ae.getSource()==enterButton)
         {
-            //JOptionPane.showMessageDialog(null,"En construction");
-            Arene.BuildFight();
+            
+            
+            window.dispose();
+            this.clip.close();
+            try {
+                Player p = new Player ();
+            } catch (UnsupportedAudioFileException ex) {
+                Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (IOException ex) {
+                Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (LineUnavailableException ex) {
+                Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
     }
 
