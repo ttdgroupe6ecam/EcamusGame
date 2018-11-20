@@ -1,12 +1,8 @@
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import javax.sound.sampled.UnsupportedAudioFileException;
 
 public class Arene {
-    static int x;
-    static int y;
 
 
     public static List<Decorator> listPersonnages = new ArrayList<Decorator>() ;
@@ -15,51 +11,35 @@ public class Arene {
     public  void buildArena(){
 
     }
-    public static void ChooseWarior(int x){
-        Arene.x=x;
-    }
-     public static void ChooseWeapon(int y){
-        Arene.y =y;
-        
-    }
 
     // chose warriors and their weapons.
-    public static void BuildFight() throws UnsupportedAudioFileException, IOException{
+    public static void BuildFight(){
 
             System.out.println("Bienvenue sur Ecamus");
-            
-           
+            int x=0;
             int flag=0;
-            
-            
             while (x<2){
-                if (x==1) {
-                    
-                    
+                if (x ==1) {
 
                     System.out.println("Choisissez un adversaire :");
                 }
                 System.out.println("Tapez : 1 -> informaticien" +" "+
                         " 2 -> Electronicien, 9->quitter ");
 
-                //Scanner sc = new Scanner(System.in);
-                //int str = Integer.parseInt(sc.nextLine());
-                
-                if (x== 1) {
+                Scanner sc = new Scanner(System.in);
+                int str = Integer.parseInt(sc.nextLine());
+                if (str == 1) {
                     System.out.println("Tapez: 1 -> souris" + " " +
                             " 2 -> clé à molette");
-                      
-                   // Scanner sc2 = new Scanner(System.in);
-                   // int str2 = Integer.parseInt(sc2.nextLine());
-                  
-                    if (y== 1) {
+                    Scanner sc2 = new Scanner(System.in);
+                    int str2 = Integer.parseInt(sc2.nextLine());
+                    if (str2 == 1) {
                         Decorator personnage = new sourisDecorator(new Informaticien(100,24,100));
                         personnage.draw();
                         listPersonnages.add(personnage);
-                      
                         System.out.println(listPersonnages);
                     }
-                    if (y == 2) {
+                    if (str2 == 2) {
                         Decorator personnage = new cleMoletteDecorator(new Informaticien(100,24,100));
                         System.out.println(">>>>>> " + personnage.showEnergy());
                         personnage.draw();
@@ -71,18 +51,18 @@ public class Arene {
                     }
                 }
 
-                if (x== 2) {
+                if (str == 2) {
                     System.out.println("Tapez: 1 -> souris" + " " +
                             " 2 -> clé à molette");
-                  //  Scanner sc2 = new Scanner(System.in);
-                  //  int str2 = Integer.parseInt(sc2.nextLine());
-                    if (y== 1) {
+                    Scanner sc2 = new Scanner(System.in);
+                    int str2 = Integer.parseInt(sc2.nextLine());
+                    if (str2 == 1) {
                         Decorator personnage = new sourisDecorator(new Electronicien(100, 24, 100));
                         personnage.draw();
                         listPersonnages.add(personnage);
                         System.out.println(listPersonnages);
                     }
-                    if (y == 2) {
+                    if (str2 == 2) {
                         Decorator personnage = new cleMoletteDecorator(new Electronicien(100, 24, 100));
                         personnage.draw();
                         listPersonnages.add(personnage);
@@ -90,14 +70,14 @@ public class Arene {
 
                     }
                 }
-                if (x== 9) {
+                if (str == 9) {
                     System.exit(1);
                 }
 
 
                 x=x+1;
             }
-           Arene.startFight(Arene.listPersonnages.get(0) , Arene.listPersonnages.get(1)); // on lance le combat
+            Arene.startFight(Arene.listPersonnages.get(0) , Arene.listPersonnages.get(1)); // on lance le combat
 
 
 
@@ -105,7 +85,7 @@ public class Arene {
     }
 
     // start the fight and return the winner
-    public static void startFight(Decorator personnage1, Decorator personnage2) throws UnsupportedAudioFileException, IOException{
+    public static void startFight(Decorator personnage1, Decorator personnage2){
 
         while (true){
 
@@ -208,6 +188,5 @@ public class Arene {
         }
 
         BuildFight();
-        //Menu m = new Menu();
     }
 }
