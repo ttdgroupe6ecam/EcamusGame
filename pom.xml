@@ -41,13 +41,6 @@ xsi:schemaLocation="http://ma... http://maven.apache.org/xsd/maven-4.0.0.xsd">
 			<configuration>
 				<configLocation>google_checks.xml</configLocation>
 			</configuration>
-            <reportSets>
-               <reportSet>
-                  <reports>
-                     <report>checkstyle</report>
-                  </reports>
-               </reportSet>
-            </reportSets>
          </plugin>
 		 <plugin>
 			<groupId>org.apache.maven.plugins</groupId>
