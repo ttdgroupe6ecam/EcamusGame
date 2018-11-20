@@ -1,3 +1,6 @@
+package main.java;
+
+
 public class Constructeur extends Personnage {
 
     public Constructeur(int pv, int force, int energie) {

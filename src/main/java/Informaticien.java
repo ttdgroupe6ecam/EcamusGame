@@ -1,3 +1,5 @@
+package main.java;
+
 public class Informaticien extends Personnage {
 
     public Informaticien(int pv, int force, int energie) {

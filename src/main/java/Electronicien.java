@@ -1,3 +1,6 @@
+package main.java;
+
+
 public class Electronicien extends Personnage {
 
     public Electronicien(int pv, int force,int energie) {

@@ -1,3 +1,5 @@
+package main.java;
+
 public class Geometre extends Personnage {
 
     public Geometre(int pv, int force,int energie) {

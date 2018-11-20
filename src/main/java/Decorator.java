@@ -1,3 +1,6 @@
+package main.java;
+
+
 public abstract class Decorator extends Personnage {
 
     protected Personnage personnage;

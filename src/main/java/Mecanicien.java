@@ -1,3 +1,5 @@
+package main.java;
+
 public class Mecanicien extends Personnage {
 
     public Mecanicien(int pv, int force, int energie) {

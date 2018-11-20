@@ -1,3 +1,6 @@
+package main.java;
+
+
 import java.util.Random;
 
 public abstract class Personnage {
