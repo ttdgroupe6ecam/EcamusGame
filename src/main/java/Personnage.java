@@ -116,6 +116,4 @@ public abstract class Personnage {
   public void resetDefense() {
     this.defense = 0;
   };
-
-  public abstract void draw();
 }
