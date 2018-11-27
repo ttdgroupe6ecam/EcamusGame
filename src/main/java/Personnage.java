@@ -9,10 +9,30 @@ public abstract class Personnage {
      * Force.
      */
     protected int force;
+
+    /**
+     * Energie.
+     */
     protected int energie = 100;
+
+    /**
+     * Defense.
+     */
     protected int defense = 0;
+
+    /**
+     * minDamage.
+     */
     protected int minDamage = 5;
+
+    /**
+     * maxDamage.
+     */
     protected int maxDamage = 10;
+
+    /**
+     * mort.
+     */
     protected boolean mort;
 
     /**
