@@ -18,15 +18,35 @@ import java.util.logging.Logger;
 
 /** @author UserAdmin */
 public class Arena extends JPanel implements ActionListener, KeyListener {
+  /**
+   * Fenetre.
+   */
   JFrame window = new JFrame();
   String[] s = {"ElectroniCa", "GéomètrA", "InfOrNium", "ConstructA", "AutomaDium"};
+  /**
+   * Choix multiple.
+   */
   JComboBox nomArena = new JComboBox(s);
+  /**
+   * Bouton.
+   */
   JButton enterButton = new JButton();
+  /**
+   * Bouton.
+   */
   JButton backButton = new JButton();
 
+  /**
+   * Police.
+   */
   Font customFont = new Font("Bold", Font.BOLD, 30);
+  /**
+   * Police.
+   */
   Font comboFont = new Font("Italic", Font.ITALIC, 25);
-
+  /**
+   * Musique.
+   */
   File sound =
       new File(
           "C:\\Users\\ILAS\\Documents\\GitHub\\EcamusGame\\src\\main\\resources\\Arena Select.wav"); /* Bien entrer le bon chemin d'acces du son */
