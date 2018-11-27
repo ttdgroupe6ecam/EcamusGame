@@ -23,6 +23,7 @@ public abstract class Decorator extends Personnage {
 
   /**
    * Permet de recuperer le personnage choisi
+   * @return personnage
    */
   public Personnage getPersonnage() {
     return personnage;
@@ -42,6 +43,9 @@ public abstract class Decorator extends Personnage {
  */
 class sourisDecorator extends Decorator {
   // Constuct
+  /**
+   * creation de l'objet
+   */
   public sourisDecorator(Personnage personnage) {
     super(personnage);
   }
@@ -57,6 +61,9 @@ class sourisDecorator extends Decorator {
  * Permet de créer une arme concrete issu du décorateur
  */
 class cleMoletteDecorator extends Decorator {
+  /**
+   * creation de l'objet
+   */
   public cleMoletteDecorator(Personnage personnage) {
     super(personnage);
   }
