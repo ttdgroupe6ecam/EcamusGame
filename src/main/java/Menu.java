@@ -22,6 +22,9 @@ Button to start or exit the interface game , for that I've created a new frame c
 window and set is size and make it visible on the screen , I alsoe created
 2 button , one exit/one play
 */
+/**
+ * creation d'objet pour l'interface
+ */
 public class Menu extends JPanel implements ActionListener, KeyListener {
   JFrame window = new JFrame();
   JButton playButton = new JButton();
@@ -33,6 +36,9 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
   AudioInputStream ais;
   Clip clip1;
 
+  /**
+   * Création de la page d'accueil
+   */
   Menu() throws UnsupportedAudioFileException, IOException {
     try {
 
