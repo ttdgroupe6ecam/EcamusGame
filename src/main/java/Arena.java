@@ -1,4 +1,3 @@
-
 import javax.sound.sampled.*;
 import javax.swing.*;
 import java.awt.*;
@@ -17,123 +16,113 @@ import java.util.logging.Logger;
  * and open the template in the editor.
  */
 
-/**
- *
- * @author UserAdmin
- */
-public class Arena extends JPanel implements ActionListener,KeyListener {
-    JFrame window = new JFrame();
-    String[] s = {"ElectroniCa","GéomètrA","InfOrNium","ConstructA","AutomaDium"};
-    JComboBox nomArena = new JComboBox(s);
-    JButton enterButton = new JButton();
-    JButton backButton = new JButton();
-    
-    Font customFont = new Font("Bold",Font.BOLD,30);
-    Font comboFont = new Font("Italic",Font.ITALIC,25);
-    
-    File sound = new File("C:\\Users\\13093\\Desktop\\EcamusGame\\src\\main\\resources\\Arena Select.wav"); /* Bien entrer le bon chemin d'acces du son */
-    AudioInputStream ais;
-    Clip clip;
-    
-    Arena() throws LineUnavailableException
-    {
-        try{
-                
-            this.clip = AudioSystem.getClip();
-            this.ais = AudioSystem.getAudioInputStream(sound);
-            
-          
-            this.setBackground(Color.BLACK);
-            window.add(this);
-            nomArena.setFont(comboFont);
-            nomArena.setForeground(Color.DARK_GRAY);
-            window.add(nomArena,BorderLayout.PAGE_START);
-            backButton.setFont(customFont);
-            backButton.setText("Retour");
-            backButton.setForeground(Color.WHITE);
-            backButton.setBackground(Color.BLACK);
-            backButton.addKeyListener(this);
-            backButton.addActionListener(this);
-            window.add(backButton,BorderLayout.PAGE_END);
-            enterButton.setIcon(new ImageIcon("C:\\Users\\13093\\Desktop\\EcamusGame\\src\\main\\resources\\arena.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
-            enterButton.addKeyListener(this);
-            enterButton.addActionListener(this);
-            window.add(enterButton,BorderLayout.CENTER);
-            window.setUndecorated(true);
-            window.getContentPane();
-            window.setSize(750, 700);
-            window.setVisible(true);
-            
-                
-            }catch(UnsupportedAudioFileException ex){Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null,ex);} catch (IOException ex) {
-            Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null, ex);
-        }
-         try {
-                        
-                        clip.open(ais);
-                        clip.start();
-                        
-                        
-                        
-                        
-                    }catch(Exception e){System.out.println(e);}
-        
+/** @author UserAdmin */
+public class Arena extends JPanel implements ActionListener, KeyListener {
+  JFrame window = new JFrame();
+  String[] s = {"ElectroniCa", "GéomètrA", "InfOrNium", "ConstructA", "AutomaDium"};
+  JComboBox nomArena = new JComboBox(s);
+  JButton enterButton = new JButton();
+  JButton backButton = new JButton();
+
+  Font customFont = new Font("Bold", Font.BOLD, 30);
+  Font comboFont = new Font("Italic", Font.ITALIC, 25);
+
+  File sound =
+      new File(
+          "C:\\Users\\13093\\Desktop\\EcamusGame\\src\\main\\resources\\Arena Select.wav"); /* Bien entrer le bon chemin d'acces du son */
+  AudioInputStream ais;
+  Clip clip;
+
+  Arena() throws LineUnavailableException {
+    try {
+
+      this.clip = AudioSystem.getClip();
+      this.ais = AudioSystem.getAudioInputStream(sound);
+
+      this.setBackground(Color.BLACK);
+      window.add(this);
+      nomArena.setFont(comboFont);
+      nomArena.setForeground(Color.DARK_GRAY);
+      window.add(nomArena, BorderLayout.PAGE_START);
+      backButton.setFont(customFont);
+      backButton.setText("Retour");
+      backButton.setForeground(Color.WHITE);
+      backButton.setBackground(Color.BLACK);
+      backButton.addKeyListener(this);
+      backButton.addActionListener(this);
+      window.add(backButton, BorderLayout.PAGE_END);
+      enterButton.setIcon(
+          new ImageIcon(
+              "C:\\Users\\13093\\Desktop\\EcamusGame\\src\\main\\resources\\arena.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
+      enterButton.addKeyListener(this);
+      enterButton.addActionListener(this);
+      window.add(enterButton, BorderLayout.CENTER);
+      window.setUndecorated(true);
+      window.getContentPane();
+      window.setSize(750, 700);
+      window.setVisible(true);
+
+    } catch (UnsupportedAudioFileException ex) {
+      Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null, ex);
+    } catch (IOException ex) {
+      Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null, ex);
     }
-    
+    try {
 
-    @Override
-    public void actionPerformed(ActionEvent ae) {
-        if (ae.getSource()==backButton)
-        {
-            
-            window.dispose();
+      clip.open(ais);
+      clip.start();
 
-            this.clip.close();
-
-
-            try {
-                Menu m = new Menu();
-            } catch (UnsupportedAudioFileException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-        }
-        else if(ae.getSource()==enterButton)
-        {
-            //JOptionPane.showMessageDialog(null,"En construction");
-            Arene.BuildFight();
-        }
+    } catch (Exception e) {
+      System.out.println(e);
     }
+  }
 
-    @Override
-    public void keyTyped(KeyEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+  @Override
+  public void actionPerformed(ActionEvent ae) {
+    if (ae.getSource() == backButton) {
+
+      window.dispose();
+
+      this.clip.close();
+
+      try {
+        Menu m = new Menu();
+      } catch (UnsupportedAudioFileException e) {
+        e.printStackTrace();
+      } catch (IOException e) {
+        e.printStackTrace();
+      }
+
+    } else if (ae.getSource() == enterButton) {
+      // JOptionPane.showMessageDialog(null,"En construction");
+      Arene.BuildFight();
     }
+  }
 
-    @Override
-    public void keyPressed(KeyEvent kp) {
-        if (kp.getKeyCode() == KeyEvent.VK_ESCAPE)
-        {
-            window.dispose();
+  @Override
+  public void keyTyped(KeyEvent e) {
+    throw new UnsupportedOperationException(
+        "Not supported yet."); // To change body of generated methods, choose Tools | Templates.
+  }
 
+  @Override
+  public void keyPressed(KeyEvent kp) {
+    if (kp.getKeyCode() == KeyEvent.VK_ESCAPE) {
+      window.dispose();
 
-            try {
-                Menu m = new Menu();
-            } catch (UnsupportedAudioFileException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-
-        }
+      try {
+        Menu m = new Menu();
+      } catch (UnsupportedAudioFileException e) {
+        e.printStackTrace();
+      } catch (IOException e) {
+        e.printStackTrace();
+      }
     }
+  }
 
-    @Override
-    public void keyReleased(KeyEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
+  @Override
+  public void keyReleased(KeyEvent e) {
+    throw new UnsupportedOperationException(
+        "Not supported yet."); // To change body of generated methods, choose Tools | Templates.
+  }
 }
