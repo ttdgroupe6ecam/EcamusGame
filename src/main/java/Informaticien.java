@@ -7,15 +7,25 @@ public class Informaticien extends Personnage {
     this.maxDamage = 50;
   }
 
+  /**
+   * Valide un mouvement de jeu d'Echecs.
+   * @param pv  PV
+   */
   public void setPV(int pv) {
     this.pv = pv;
   }
 
+  /**
+   * Affiche Les infos de l'informaticien
+   */
   public void draw() {
     System.out.println(
         "Informaticien: " + "Point de vie :" + pv + " Force : " + force + " Energie :" + energie);
   }
 
+  /**
+   * Permet de réduire les dégats subis
+   */
   public void parer() {
     force = -1;
   }
