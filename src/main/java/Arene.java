@@ -118,7 +118,8 @@ public class Arene {
       }
 
       System.out.println("Joueur 2 : 1 -> attaquer , 2-> parer ");
-      System.out.println("Joueur 2 : Energie = " + personnage2.showEnergy() + " / PV = "
+      System.out.println("Joueur 2 : Energie =" + personnage2.showEnergy()
+              + "/ PV ="
               + personnage2.getPV());
       Scanner sc4 = new Scanner(System.in);
       int str4 = Integer.parseInt(sc4.nextLine());
