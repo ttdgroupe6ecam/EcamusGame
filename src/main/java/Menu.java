@@ -23,12 +23,24 @@ window and set is size and make it visible on the screen , I alsoe created
 2 button , one exit/one play
 */
 /**
- * creation d'objet pour l'interface
+ * creation d'objet pour l'interface.
  */
 public class Menu extends JPanel implements ActionListener, KeyListener {
+    /**
+     * Fenetre.
+     */
   JFrame window = new JFrame();
+    /**
+     * Bouton.
+     */
   JButton playButton = new JButton();
+    /**
+     * Bouton.
+     */
   JButton exitButton = new JButton();
+    /**
+     * Arriere plan.
+     */
   JLabel background = new JLabel();
   File sound =
       new File(
@@ -37,7 +49,7 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
   Clip clip1;
 
   /**
-   * Création de la page d'accueil
+   * Création de la page d'accueil.
    */
   Menu() throws UnsupportedAudioFileException, IOException {
     try {
