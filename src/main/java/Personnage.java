@@ -2,16 +2,6 @@ import java.util.Random;
 
 public abstract class Personnage {
 
-  /**
-   * Permet de récupérer le statut Mort du personnage
-   * @param pv Les points de vie du personnage
-   * @param force La force du personnage (Influe sur les dégats)
-   * @param energie Les points d'énergie du personnage
-   * @param defense Les points de defense du personnage (Réduit les dégats subis)
-   * @param maxDamage Les points de dégats minimals du personnage
-   * @param maxDamage Les points de dégats maximals de personnage
-   * @param mort Le statut du personnage
-   */
   protected int pv;
   protected int force;
   protected int energie = 100;
