@@ -2,6 +2,11 @@ public abstract class Decorator extends Personnage {
 
   protected Personnage personnage;
 
+  /**
+   * Creer le decorateur
+   * @param personnage personnage
+   */
+
   public Decorator(Personnage personnage) {
     this.personnage = personnage;
   }
@@ -16,6 +21,9 @@ public abstract class Decorator extends Personnage {
     this.personnage.setPV(pv);
   }
 
+  /**
+   * Permet de recuperer le personnage choisi
+   */
   public Personnage getPersonnage() {
     return personnage;
   }
@@ -29,6 +37,9 @@ public abstract class Decorator extends Personnage {
   }
 }
 
+/**
+ * Permet de créer une arme concrete issu du décorateur
+ */
 class sourisDecorator extends Decorator {
   // Constuct
   public sourisDecorator(Personnage personnage) {
@@ -42,7 +53,9 @@ class sourisDecorator extends Decorator {
   }
 
 }
-
+/**
+ * Permet de créer une arme concrete issu du décorateur
+ */
 class cleMoletteDecorator extends Decorator {
   public cleMoletteDecorator(Personnage personnage) {
     super(personnage);
