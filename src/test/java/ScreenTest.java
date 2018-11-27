@@ -27,9 +27,8 @@ public class ScreenTest {
     }
     @After
     public void tearDown() {
-        window.cleanUp();
     }
 
 
 }
-*/
+/*
