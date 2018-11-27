@@ -98,7 +98,7 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
   }
 
   @Override
-  public void keyTyped(KeyEvent e) {}
+  public void keyTyped(KeyEvent e) { }
 
   @Override
   public void keyPressed(KeyEvent kp) {
