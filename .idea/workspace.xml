@@ -258,9 +258,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="943" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="942" />
+    <option name="width" value="975" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -341,7 +341,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.main">
-    <configuration name="TestPerso.attaquerTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPerso.attaquerTest" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
       <module name="Ecamus" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestPerso" />
@@ -369,8 +369,8 @@
     </configuration>
     <list>
       <item itemvalue="Android JUnit.TestPerso.attaquerTest" />
-      <item itemvalue="JUnit.TestPerso" />
       <item itemvalue="Application.main" />
+      <item itemvalue="JUnit.TestPerso" />
     </list>
     <recent_temporary>
       <list>

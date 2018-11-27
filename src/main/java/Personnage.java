@@ -84,7 +84,7 @@ public abstract class Personnage {
    * Permet de setter les points de vie du personnage
    */
 
-  protected void setPV(int pv) {}
+  protected void setPV(int pv) { }
 
   public void parer() {
     this.energie = -15;

@@ -6,7 +6,7 @@ public abstract class Decorator extends Personnage {
     this.personnage = personnage;
   }
 
-  public void draw() {}
+  public void draw() { }
 
   public void setPV(int pv) {
     this.personnage.setPV(pv);

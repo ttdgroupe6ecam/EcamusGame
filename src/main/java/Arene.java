@@ -7,7 +7,7 @@ public class Arene {
   public static List<Decorator> listPersonnages = new ArrayList<Decorator>();
 
   // build the arena
-  public void buildArena() {}
+  public void buildArena() { }
 
 
   /**
