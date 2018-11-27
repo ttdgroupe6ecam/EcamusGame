@@ -2,46 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7451dbe3-c6c5-4274-baea-54c6557c93bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PersonnageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Arena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Arena.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Arene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Arene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Automaticien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Automaticien.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Constructeur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Constructeur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Decorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Decorator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Electronicien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Electronicien.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Geometre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Geometre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Informaticien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informaticien.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Mecanicien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mecanicien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Personnage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Personnage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Screen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ArenaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ArenaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ElectronicienTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/InformaticienTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ScreenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ScreenTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Arena.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Arena.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Arene.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Arene.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Automaticien.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Automaticien.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Constructeur.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Constructeur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Decorator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Decorator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Electronicien.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Electronicien.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Geometre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Geometre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Informaticien.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Informaticien.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Mecanicien.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Mecanicien.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Personnage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Personnage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Screen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Screen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/arduinoDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cleMoletteDecorator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cleMoletteDecorator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/equerreDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/marteauDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sourisDecorator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sourisDecorator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ArenaTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ScreenTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestPerso.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -117,12 +82,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="28" />
+          <entry key="java" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="28" />
+          <entry key="JAVA" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -141,7 +106,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Informaticien.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
@@ -153,8 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Electronicien.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+            <state relative-caret-position="102">
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -162,8 +127,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Geometre.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="192">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -171,8 +136,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Constructeur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="136">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -180,8 +145,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Automaticien.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="136">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -189,8 +154,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Mecanicien.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="136">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -228,15 +193,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Decorator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="238">
+              <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
               <folding>
                 <element signature="e#132#133#0" expanded="true" />
                 <element signature="e#170#171#0" expanded="true" />
-                <element signature="e#226#227#0" expanded="true" />
                 <element signature="e#261#262#0" expanded="true" />
                 <element signature="e#300#301#0" expanded="true" />
                 <element signature="e#327#328#0" expanded="true" />
@@ -244,6 +208,17 @@
                 <element signature="e#386#387#0" expanded="true" />
                 <element signature="e#495#496#0" expanded="true" />
                 <element signature="e#522#523#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Screen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1">
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -264,18 +239,18 @@
         <option value="$PROJECT_DIR$/src/main/java/Screen.java" />
         <option value="$PROJECT_DIR$/src/main/java/Menu.java" />
         <option value="$PROJECT_DIR$/src/main/java/Arena.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Electronicien.java" />
         <option value="$PROJECT_DIR$/src/main/java/Arene.java" />
         <option value="$PROJECT_DIR$/src/test/java/ElectronicienTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/InformaticienTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Geometre.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Constructeur.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Automaticien.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Mecanicien.java" />
         <option value="$PROJECT_DIR$/src/main/java/Informaticien.java" />
         <option value="$PROJECT_DIR$/src/main/java/Personnage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PersonnageTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Decorator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Mecanicien.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Geometre.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Electronicien.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Constructeur.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Automaticien.java" />
       </list>
     </option>
   </component>
@@ -293,9 +268,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="942" />
-    <option name="width" value="975" />
-    <option name="height" value="1048" />
+    <option name="x" value="943" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -376,7 +351,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.main">
-    <configuration name="TestPerso.attaquerTest" type="AndroidJUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPerso.attaquerTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="Ecamus" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestPerso" />
@@ -427,7 +402,7 @@
       <updated>1543308204903</updated>
       <workItem from="1543308219323" duration="3876000" />
       <workItem from="1543323106112" duration="2132000" />
-      <workItem from="1543341785804" duration="6752000" />
+      <workItem from="1543341785804" duration="7425000" />
     </task>
     <servers />
   </component>
@@ -464,7 +439,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12760000" />
+    <option name="totallyTimeSpent" value="13433000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -529,16 +504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Screen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="33" column="63" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1100">
@@ -560,48 +525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="509">
           <caret line="114" column="73" selection-start-line="114" selection-start-column="6" selection-end-line="114" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Electronicien.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Geometre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Constructeur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Automaticien.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Mecanicien.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informaticien.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -639,12 +562,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Decorator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="238">
+          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding>
             <element signature="e#132#133#0" expanded="true" />
             <element signature="e#170#171#0" expanded="true" />
-            <element signature="e#226#227#0" expanded="true" />
             <element signature="e#261#262#0" expanded="true" />
             <element signature="e#300#301#0" expanded="true" />
             <element signature="e#327#328#0" expanded="true" />
@@ -653,6 +575,57 @@
             <element signature="e#495#496#0" expanded="true" />
             <element signature="e#522#523#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Screen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Mecanicien.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Geometre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Electronicien.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Constructeur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Automaticien.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informaticien.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>

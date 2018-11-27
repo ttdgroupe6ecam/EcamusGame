@@ -7,16 +7,6 @@ public class Automaticien extends Personnage {
     this.minDamage = +3;
     this.maxDamage = +1;
   }
-
-  /**
-   * Permet de setter la vie.
-   * @param pv  PV
-   */
-
-  public void setPV(int pv) {
-    this.pv = pv;
-  }
-
   /**
    * Affiche Les infos de l'automaticien
    */

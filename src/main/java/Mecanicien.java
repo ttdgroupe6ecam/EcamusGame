@@ -9,14 +9,6 @@ public class Mecanicien extends Personnage {
   }
 
   /**
-   * Permet de setter la vie.
-   * @param pv  PV
-   */
-  public void setPV(int pv) {
-    this.pv = pv;
-  }
-
-  /**
    * Affiche Les infos du mécanicien
    */
   public void draw() {

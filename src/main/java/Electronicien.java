@@ -7,14 +7,6 @@ class Electronicien extends Personnage {
   }
 
   /**
-   * Permet de setter la vie.
-   * @param pv  PV
-   */
-  public void setPV(int pv) {
-    this.pv = pv;
-  }
-
-  /**
    * Affiche Les infos de l'électronicien
    */
   public void draw() {
