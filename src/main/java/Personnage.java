@@ -44,7 +44,7 @@ public abstract class Personnage {
         }
 
         Random rand = new Random();
-        int degats = 10;//(rand.nextInt(maxDamage - minDamage + 1) + minDamage); // * force/10;
+        int degats = (rand.nextInt(maxDamage - minDamage + 1) + minDamage); // * force/10;
         return degats;
     }
 
