@@ -6,8 +6,5 @@ public class main {
 
     Screen s = new Screen();
     JFrame window = s.window;
-
-    
-
   }
 }
