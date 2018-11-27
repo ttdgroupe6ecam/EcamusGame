@@ -15,7 +15,7 @@ public abstract class Personnage {
    * @return mort Booléen du statut
    */
 
-  public boolean getMort() {
+  final boolean getMort() {
     return mort;
   }
 
@@ -23,7 +23,7 @@ public abstract class Personnage {
    * Permet de setter le statut Mort du personnage
    */
 
-  public void setMort() {
+  final void setMort() {
     this.mort = true;
   }
 
@@ -33,7 +33,7 @@ public abstract class Personnage {
    * @return degats
    */
 
-  public int attaquer() {
+  final int attaquer() {
     this.energie -= 40;
 
     if (this.energie < 0) {
@@ -52,7 +52,7 @@ public abstract class Personnage {
    * Methode permettant de subir les degats (Baisse les PV)
    * @param degats Nombre de degats subis par le personnage
    */
-  public void subir(int degats) {
+  final void subir(int degats) {
     int newPV = (this.getPV() - (degats * (100 - defense) / 100));
 
     this.setPV(newPV);
@@ -68,7 +68,7 @@ public abstract class Personnage {
   /**
    * Methode permettant de recuperer de l'energie
    */
-  public void gainEnergy() {
+  final void gainEnergy() {
     this.energie += 25;
   }
 
@@ -76,7 +76,7 @@ public abstract class Personnage {
    * Methode permettant de recuperer la valeur de energie du personnage
    * @return energie valeur d'energie du personnage
    */
-  public int showEnergy() {
+  final int showEnergy() {
     return this.energie;
   }
 
@@ -84,7 +84,7 @@ public abstract class Personnage {
    * Permet de récuperer les points de vie du personnage
    * @return pv int des points de vie
    */
-  public int getPV() {
+  final int getPV() {
     return this.pv;
   }
 
@@ -93,14 +93,14 @@ public abstract class Personnage {
    * Permet de setter les points de vie du personnage
    * @param pv Nouveau PV du personnage
    */
-  public void setPV(int pv) {
+  final void setPV(int pv) {
     this.pv = pv;
   }
 
   /**
    * Permet de reduire les degats subis
    */
-  public void parer() {
+  final void parer() {
     this.energie -= 15;
 
     if (this.energie < 0){
@@ -113,7 +113,9 @@ public abstract class Personnage {
     }
   }
 
-  public void resetDefense() {
+  final void resetDefense() {
     this.defense = 0;
   };
+
+  public abstract void draw();
 }
