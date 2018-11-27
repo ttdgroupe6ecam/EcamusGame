@@ -2,22 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7451dbe3-c6c5-4274-baea-54c6557c93bc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Arena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Arena.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Arena.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Arene.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Automaticien.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Constructeur.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Decorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Electronicien.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Geometre.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Informaticien.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Mecanicien.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Personnage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Screen.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cleMoletteDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sourisDecorator.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,20 +30,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Arena.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+            <state relative-caret-position="136">
+              <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Arene.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Arena.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="219">
+              <caret line="24" column="70" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -144,7 +137,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/java/TestPerso.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main.java" />
         <option value="$PROJECT_DIR$/src/test/java/ArenaTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ScreenTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Screen.java" />
@@ -161,6 +153,7 @@
         <option value="$PROJECT_DIR$/src/main/java/Automaticien.java" />
         <option value="$PROJECT_DIR$/src/main/java/Constructeur.java" />
         <option value="$PROJECT_DIR$/src/main/java/Personnage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main.java" />
         <option value="$PROJECT_DIR$/src/main/java/Arena.java" />
       </list>
     </option>
@@ -309,7 +302,7 @@
       <workItem from="1543323106112" duration="2132000" />
       <workItem from="1543341785804" duration="8672000" />
       <workItem from="1543358147290" duration="61000" />
-      <workItem from="1543358973226" duration="245000" />
+      <workItem from="1543358973226" duration="709000" />
     </task>
     <servers />
   </component>
@@ -346,13 +339,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16250000" />
+    <option name="totallyTimeSpent" value="16714000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13557047" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13557047" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -389,13 +382,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/TestPerso.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ArenaTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -437,13 +423,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Informaticien.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -515,10 +494,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informaticien.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Arena.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
-          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <caret line="24" column="70" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
         </state>
       </provider>
     </entry>

@@ -22,7 +22,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
    * Fenetre.
    */
   JFrame window = new JFrame();
-  String[] s = {"ElectroniCa","GéomètrA","InfOrNium","ConstructA","AutomaDium"};
+  String[] s = {"ElectroniCa", "GéomètrA", "InfOrNium"};
   /**
    * Choix multiple.
    */
