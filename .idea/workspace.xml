@@ -29,7 +29,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -56,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Personnage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="386">
+              <caret line="135" column="13" selection-start-line="135" selection-start-column="13" selection-end-line="135" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -151,9 +151,9 @@
         <option value="$PROJECT_DIR$/src/main/java/Mecanicien.java" />
         <option value="$PROJECT_DIR$/src/main/java/Automaticien.java" />
         <option value="$PROJECT_DIR$/src/main/java/Constructeur.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Personnage.java" />
         <option value="$PROJECT_DIR$/src/main/java/Arena.java" />
         <option value="$PROJECT_DIR$/src/main/java/main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Personnage.java" />
       </list>
     </option>
   </component>
@@ -301,7 +301,7 @@
       <workItem from="1543323106112" duration="2132000" />
       <workItem from="1543341785804" duration="8672000" />
       <workItem from="1543358147290" duration="61000" />
-      <workItem from="1543358973226" duration="1077000" />
+      <workItem from="1543358973226" duration="1416000" />
     </task>
     <servers />
   </component>
@@ -338,7 +338,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17082000" />
+    <option name="totallyTimeSpent" value="17421000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -486,13 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Personnage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Arena.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -511,6 +504,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Personnage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="135" column="13" selection-start-line="135" selection-start-column="13" selection-end-line="135" selection-end-column="13" />
         </state>
       </provider>
     </entry>

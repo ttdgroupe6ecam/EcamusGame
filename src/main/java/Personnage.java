@@ -132,8 +132,7 @@ public abstract class Personnage {
             System.out.println("Pas assez d'energie -> Parade affaiblie");
             this.energie = 0;
             this.defense = 30;
-        }
-        else {
+        } else {
             this.defense = 70;
         }
     }
