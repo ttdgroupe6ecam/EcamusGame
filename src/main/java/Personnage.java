@@ -1,8 +1,13 @@
 import java.util.Random;
 
 public abstract class Personnage {
-
+    /**
+     * Pv.
+     */
     protected int pv;
+    /**
+     * Force.
+     */
     protected int force;
     protected int energie = 100;
     protected int defense = 0;
@@ -11,7 +16,7 @@ public abstract class Personnage {
     protected boolean mort;
 
     /**
-     * Permet de recuperer le statut Mort du personnage
+     * Permet de recuperer le statut Mort du personnage.
      * @return mort Booléen du statut
      */
 
@@ -20,7 +25,7 @@ public abstract class Personnage {
     }
 
     /**
-     * Permet de setter le statut Mort du personnage
+     * Permet de setter le statut Mort du personnage.
      */
 
     final void setMort() {
@@ -28,7 +33,7 @@ public abstract class Personnage {
     }
 
     /**
-     * Methode d'attaque afin d'infliger des degats à l'adversaire
+     * Methode d'attaque afin d'infliger des degats à l'adversaire.
      * degats aleatoire en fonction de maxDamage et minDamage
      * @return degats
      */
@@ -44,12 +49,12 @@ public abstract class Personnage {
         }
 
         Random rand = new Random();
-        int degats = (rand.nextInt(maxDamage - minDamage + 1) + minDamage); // * force/10;
+        int degats = 10;//(rand.nextInt(maxDamage - minDamage + 1) + minDamage); // * force/10;
         return degats;
     }
 
     /**
-     * Methode permettant de subir les degats (Baisse les PV)
+     * Methode permettant de subir les degats (Baisse les PV).
      * @param degats Nombre de degats subis par le personnage
      */
     public void subir(int degats) {
@@ -66,14 +71,14 @@ public abstract class Personnage {
     }
 
     /**
-     * Methode permettant de recuperer de l'energie
+     * Methode permettant de recuperer de l'energie.
      */
     public void gainEnergy() {
         this.energie += 25;
     }
 
     /**
-     * Methode permettant de recuperer la valeur de energie du personnage
+     * Methode permettant de recuperer la valeur de energie du personnage.
      * @return energie valeur d'energie du personnage
      */
     public int showEnergy() {
@@ -81,7 +86,7 @@ public abstract class Personnage {
     }
 
     /**
-     * Permet de récuperer les points de vie du personnage
+     * Permet de récuperer les points de vie du personnage.
      * @return pv int des points de vie
      */
     public int getPV() {
@@ -90,7 +95,7 @@ public abstract class Personnage {
 
 
     /**
-     * Permet de setter les points de vie du personnage
+     * Permet de setter les points de vie du personnage.
      * @param pv Nouveau PV du personnage
      */
     public void setPV(int pv) {
@@ -98,7 +103,7 @@ public abstract class Personnage {
     }
 
     /**
-     * Permet de reduire les degats subis
+     * Permet de reduire les degats subis.
      */
     public void parer() {
         this.energie -= 15;
@@ -113,6 +118,9 @@ public abstract class Personnage {
         }
     }
 
+    /**
+     * reset la défense.
+     */
     public void resetDefense() {
         this.defense = 0;
     };
