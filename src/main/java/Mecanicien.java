@@ -7,12 +7,4 @@ public class Mecanicien extends Personnage {
     this.minDamage = +2;
     this.maxDamage = +2;
   }
-
-  /**
-   * Affiche Les infos du mécanicien
-   */
-  public void draw() {
-    System.out.println("Mecancien: " + pv + ", " + force + "," + energie);
-  }
-
 }

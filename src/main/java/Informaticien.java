@@ -6,12 +6,4 @@ public class Informaticien extends Personnage {
     this.maxDamage = 50;
   }
 
-  /**
-   * Affiche Les infos de l'informaticien
-   */
-  public void draw() {
-    System.out.println(
-        "Informaticien: " + "Point de vie :" + pv + " Force : " + force + " Energie :" + energie);
-  }
-
 }

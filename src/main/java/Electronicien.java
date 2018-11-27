@@ -5,12 +5,4 @@ class Electronicien extends Personnage {
     this.force = force;
     // this.minDamage = 0;
   }
-
-  /**
-   * Affiche Les infos de l'électronicien
-   */
-  public void draw() {
-    System.out.println("Electronicien: " + pv + ", " + force + "," + energie);
-  }
-
 }

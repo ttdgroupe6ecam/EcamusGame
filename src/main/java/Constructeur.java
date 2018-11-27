@@ -8,11 +8,4 @@ class Constructeur extends Personnage {
     this.maxDamage = +4;
   }
 
-  /**
-   * Affiche Les infos du constructeurs
-   */
-  public void draw() {
-    System.out.println("Constructeur: " + pv + ", " + force + "," + energie);
-  }
-
 }

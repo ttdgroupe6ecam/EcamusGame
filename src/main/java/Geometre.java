@@ -7,12 +7,4 @@ public class Geometre extends Personnage {
     this.minDamage = -1;
     this.maxDamage = +2;
   }
-
-  /**
-   * Affiche Les infos du géomètre
-   */
-  public void draw() {
-    System.out.println("Geometre: " + pv + ", " + force + "," + energie);
-  }
-
 }

@@ -7,11 +7,4 @@ public class Automaticien extends Personnage {
     this.minDamage = +3;
     this.maxDamage = +1;
   }
-  /**
-   * Affiche Les infos de l'automaticien
-   */
-  public void draw() {
-    System.out.println("Automaticien: " + pv + ", " + force + "," + energie);
-  }
-
 }
