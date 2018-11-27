@@ -1,4 +1,4 @@
-package main.java;
+
 
 import javax.sound.sampled.*;
 import javax.swing.*;
@@ -28,12 +28,12 @@ Button to start or exit the interface game , for that I've created a new frame c
 window and set is size and make it visible on the screen , I alsoe created 
 2 button , one exit/one play
 */
-public class Menu extends JPanel implements ActionListener,KeyListener {
+public class Menu extends JPanel  implements ActionListener,KeyListener {
     JFrame window = new JFrame();
     JButton playButton = new JButton();
     JButton exitButton = new JButton();
     JLabel background = new JLabel();
-    File sound = new File("C:\\Users\\15236\\Desktop\\EcamusGame-master\\musique\\Title Screen.wav"); /* Bien entrer le bon chemin d'acces du son */
+    File sound = new File("C:\\Users\\13093\\Desktop\\EcamusGame\\src\\main\\resources\\Title Screen.wav"); /* Bien entrer le bon chemin d'acces du son */
     AudioInputStream ais;
     Clip clip1;
     Menu() throws UnsupportedAudioFileException, IOException
@@ -46,16 +46,16 @@ public class Menu extends JPanel implements ActionListener,KeyListener {
                     this.setForeground(Color.DARK_GRAY);
                     window.add(this);
                     playButton.setBackground(Color.DARK_GRAY);
-                    playButton.setIcon(new ImageIcon("C:\\Users\\15236\\Desktop\\EcamusGame-master\\Image\\Vulcania.jpg"));/* Bien entrer le bon chemin d'acces de l'image */
+                    playButton.setIcon(new ImageIcon("C:\\Users\\13093\\Desktop\\EcamusGame\\src\\main\\resources\\Vulcania.jpg"));/* Bien entrer le bon chemin d'acces de l'image */
                     playButton.addActionListener(this);
                     playButton.addKeyListener(this);
                     window.add(playButton,BorderLayout.PAGE_START);
                     exitButton.setBackground(Color.DARK_GRAY);
-                    exitButton.setIcon(new ImageIcon("C:\\Users\\15236\\Desktop\\EcamusGame-master\\Image\\Exit_Button.png"));/* Bien entrer le bon chemin d'acces de l'image */
+                    exitButton.setIcon(new ImageIcon("C:\\Users\\13093\\Desktop\\EcamusGame\\src\\main\\resources\\Exit_Button.png"));/* Bien entrer le bon chemin d'acces de l'image */
                     exitButton.addActionListener(this);
                     exitButton.addKeyListener(this);
                     window.add(exitButton,BorderLayout.PAGE_END);
-                    background.setIcon(new ImageIcon("C:\\Users\\15236\\Desktop\\EcamusGame-master\\Image\\Gladiador.jpg"));/* Bien entrer le bon chemin d'acces de l'image */
+                    background.setIcon(new ImageIcon("C:\\Users\\13093\\Desktop\\EcamusGame\\src\\main\\resources\\Gladiador.jpg"));/* Bien entrer le bon chemin d'acces de l'image */
                     window.getContentPane().add(background);
                     window.setUndecorated(true);
                     window.setSize(800, 700);

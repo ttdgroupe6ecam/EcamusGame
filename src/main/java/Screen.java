@@ -8,7 +8,8 @@
  *
  * @author UserAdmin
  */
-package main.java;
+
+
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
@@ -25,20 +26,20 @@ public class Screen extends JPanel {
           
     
                 window.setLocation(5, 50);
-                back.setIcon(new ImageIcon ("C:\\Users\\15236\\Desktop\\EcamusGame-master\\Image\\Ecamus.png"));/* Bien entrer le bon chemin d'acces de l'image */
+                back.setIcon(new ImageIcon ("C:\\Users\\13093\\Desktop\\EcamusGame\\src\\main\\resources\\Ecamus.png"));/* Bien entrer le bon chemin d'acces de l'image */
                 window.getContentPane().add(back);
                 window.setUndecorated(true);
                 window.setSize(970, 850);
                 window.setVisible(true);
                 
                 try {
-                        File sound = new File("C:\\Users\\15236\\Desktop\\EcamusGame-master\\musique\\Title Screen.wav");/* Bien entrer le bon chemin d'acces du son */
+                        File sound = new File("C:\\Users\\13093\\Desktop\\EcamusGame\\src\\main\\resources\\Title Screen.wav");/* Bien entrer le bon chemin d'acces du son */
                         AudioInputStream ais = AudioSystem.getAudioInputStream(sound);
                         Clip clip1 = AudioSystem.getClip();
                         clip1.open(ais);
                         clip1.start();
                         
-                        Thread.sleep(200);
+                        Thread.sleep(2000);
                         clip1.stop();
                         window.dispose();
                         Menu m = new Menu();

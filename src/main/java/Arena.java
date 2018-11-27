@@ -1,4 +1,3 @@
-package main.java;
 
 import javax.sound.sampled.*;
 import javax.swing.*;
@@ -32,7 +31,7 @@ public class Arena extends JPanel implements ActionListener,KeyListener {
     Font customFont = new Font("Bold",Font.BOLD,30);
     Font comboFont = new Font("Italic",Font.ITALIC,25);
     
-    File sound = new File("C:\\Users\\15236\\Desktop\\EcamusGame-master\\musique\\Arena Select.wav"); /* Bien entrer le bon chemin d'acces du son */
+    File sound = new File("C:\\Users\\13093\\Desktop\\EcamusGame\\src\\main\\resources\\Arena Select.wav"); /* Bien entrer le bon chemin d'acces du son */
     AudioInputStream ais;
     Clip clip;
     
@@ -56,7 +55,7 @@ public class Arena extends JPanel implements ActionListener,KeyListener {
             backButton.addKeyListener(this);
             backButton.addActionListener(this);
             window.add(backButton,BorderLayout.PAGE_END);
-            enterButton.setIcon(new ImageIcon("C:\\Users\\15236\\Desktop\\EcamusGame-master\\Image\\arena.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
+            enterButton.setIcon(new ImageIcon("C:\\Users\\13093\\Desktop\\EcamusGame\\src\\main\\resources\\arena.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
             enterButton.addKeyListener(this);
             enterButton.addActionListener(this);
             window.add(enterButton,BorderLayout.CENTER);
@@ -90,15 +89,16 @@ public class Arena extends JPanel implements ActionListener,KeyListener {
             window.dispose();
 
             this.clip.close();
-           
+
+
             try {
                 Menu m = new Menu();
-            } catch (UnsupportedAudioFileException ex) {
-                Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (IOException ex) {
-                Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (UnsupportedAudioFileException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-            
+
         }
         else if(ae.getSource()==enterButton)
         {
@@ -117,17 +117,17 @@ public class Arena extends JPanel implements ActionListener,KeyListener {
         if (kp.getKeyCode() == KeyEvent.VK_ESCAPE)
         {
             window.dispose();
-            
+
+
             try {
-            
                 Menu m = new Menu();
-            
-            
-            } catch (UnsupportedAudioFileException ex) {
-                Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (IOException ex) {
-                Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (UnsupportedAudioFileException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
+
+
         }
     }
 

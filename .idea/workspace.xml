@@ -1,8 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ecd1275-074e-4671-abe6-e6b323ffc96e" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
+    <list default="true" id="7451dbe3-c6c5-4274-baea-54c6557c93bc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/EcamusGame.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ecam_Arena.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Ecam_Arena.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/(2).netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/(2).netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/Arena.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/Screen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ecam_Arena/Arena.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ecam_Arena/Arene.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ecam_Arena/Automaticien.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ecam_Arena/Constructeur.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ecam_Arena/Decorator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ecam_Arena/Electronicien.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ecam_Arena/Geometre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ecam_Arena/Informaticien.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ecam_Arena/Mecanicien.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ecam_Arena/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ecam_Arena/Personnage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ecam_Arena/Screen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ecam_Arena/arduinoDecorator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ecam_Arena/cleMoletteDecorator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ecam_Arena/equerreDecorator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ecam_Arena/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ecam_Arena/marteauDecorator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ecam_Arena/sourisDecorator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EcamusGame-master/Arena.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EcamusGame-master/Arene.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EcamusGame-master/Automaticien.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EcamusGame-master/Constructeur.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EcamusGame-master/Decorator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EcamusGame-master/Electronicien.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EcamusGame-master/GameFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EcamusGame-master/Geometre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EcamusGame-master/Informaticien.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EcamusGame-master/Mecanicien.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EcamusGame-master/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EcamusGame-master/Personnage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EcamusGame-master/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EcamusGame-master/Screen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EcamusGame-master/Weapon_choice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EcamusGame-master/arduinoDecorator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EcamusGame-master/cleMoletteDecorator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EcamusGame-master/equerreDecorator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EcamusGame-master/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EcamusGame-master/marteauDecorator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EcamusGame-master/sourisDecorator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Arena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Arena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Arene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Arene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Automaticien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Automaticien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Constructeur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Constructeur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Decorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Decorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Electronicien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Electronicien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Geometre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Geometre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Informaticien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Informaticien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mecanicien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mecanicien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Personnage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Personnage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Screen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Exit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestPerso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestPerso.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,139 +86,43 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="-1197986442">
+    <session id="-132223914">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="1" />
-          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.20" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
           <entry key="java" value="11" />
-          <entry key="png" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="Image" value="1" />
           <entry key="JAVA" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="913" />
+          <entry key="java" value="174" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="913" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="1039516246">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="9" />
-          <entry key="project.open.time.10" value="2" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.open.time.9" value="5" />
-          <entry key="project.opened" value="9" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="3" />
-          <entry key="java" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="class" value="16" />
-          <entry key="java" value="18" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="CLASS" value="16" />
-          <entry key="JAVA" value="18" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="-1186450039">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="425998766">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.42" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="20" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="20" />
+          <entry key="JAVA" value="174" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/out/production/Ecam_Arena/main.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Arena.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestPerso.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="221">
+              <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -151,22 +131,51 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Constructeur.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            <state relative-caret-position="255">
+              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Personnage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Arena.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="37" column="43" lean-forward="true" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Screen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="387">
+              <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Arene.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-238">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -174,17 +183,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Personnage.java" />
-        <option value="$PROJECT_DIR$/src/Informaticien.java" />
-        <option value="$PROJECT_DIR$/src/Arene.java" />
-        <option value="$PROJECT_DIR$/src/Decorator.java" />
-        <option value="$PROJECT_DIR$/src/Menu.java" />
-        <option value="$PROJECT_DIR$/src/Screen.java" />
-        <option value="$PROJECT_DIR$/src/Weapon_choice.java" />
-        <option value="$PROJECT_DIR$/src/Arena.java" />
-        <option value="$PROJECT_DIR$/src/main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Personnage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestPerso.java" />
         <option value="$PROJECT_DIR$/src/main/java/Arena.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Constructeur.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Menu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Screen.java" />
       </list>
     </option>
   </component>
@@ -194,52 +197,50 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="460" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="EcamusGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ecamus" type="b2602c69:ProjectViewProjectNode" />
               <item name="EcamusGame" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="EcamusGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ecamus" type="b2602c69:ProjectViewProjectNode" />
               <item name="EcamusGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="EcamusGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ecamus" type="b2602c69:ProjectViewProjectNode" />
               <item name="EcamusGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="EcamusGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ecamus" type="b2602c69:ProjectViewProjectNode" />
               <item name="EcamusGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="EcamusGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ecamus" type="b2602c69:ProjectViewProjectNode" />
               <item name="EcamusGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="EcamusGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ecamus" type="b2602c69:ProjectViewProjectNode" />
               <item name="EcamusGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
@@ -249,21 +250,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542712030977" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543312129398" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\15236\Documents\GitHub\EcamusGame\src\test\java" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -277,117 +272,128 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Unnamed">
-    <configuration name="Unnamed" type="AndroidJUnit" factoryName="Android JUnit">
-      <module name="EcamusGame-master" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="PARAMETERS" value="" />
+  <component name="RunManager" selected="Application.main">
+    <configuration name="TestPerso.attaquerTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Ecamus" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestPerso" />
+      <option name="METHOD_NAME" value="attaquerTest" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Unnamed" type="Application" factoryName="Application">
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main" />
-      <module name="EcamusGame-master" />
+      <module name="Ecamus" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPerso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Ecamus" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestPerso" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Android JUnit.Unnamed" />
-      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Android JUnit.TestPerso.attaquerTest" />
+      <item itemvalue="JUnit.TestPerso" />
+      <item itemvalue="Application.main" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.main" />
+        <item itemvalue="JUnit.TestPerso" />
+        <item itemvalue="Android JUnit.TestPerso.attaquerTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0ecd1275-074e-4671-abe6-e6b323ffc96e" name="Default Changelist" comment="" />
-      <created>1541577411271</created>
+      <changelist id="7451dbe3-c6c5-4274-baea-54c6557c93bc" name="Default Changelist" comment="" />
+      <created>1543308204903</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1541577411271</updated>
-      <workItem from="1542640830581" duration="5000" />
-      <workItem from="1542640874749" duration="337000" />
-      <workItem from="1542641512638" duration="133000" />
-      <workItem from="1542641694301" duration="202000" />
-      <workItem from="1542642033158" duration="39000" />
-      <workItem from="1542642135239" duration="25000" />
-      <workItem from="1542642228848" duration="721000" />
-      <workItem from="1542642982184" duration="538000" />
-      <workItem from="1542648068757" duration="40000" />
-      <workItem from="1542648519646" duration="91000" />
-      <workItem from="1542711347869" duration="120000" />
-      <workItem from="1542711634671" duration="582000" />
+      <updated>1543308204903</updated>
+      <workItem from="1543308219323" duration="3876000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TestPerso - 2018.11.27 at 10h 09m 16s.xml">
+      <configuration name="TestPerso" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPerso - 2018.11.27 at 10h 09m 27s.xml">
+      <configuration name="TestPerso" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPerso - 2018.11.27 at 10h 09m 59s.xml">
+      <configuration name="TestPerso" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPerso - 2018.11.27 at 10h 10m 38s.xml">
+      <configuration name="TestPerso" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPerso - 2018.11.27 at 10h 10m 43s.xml">
+      <configuration name="TestPerso" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPerso - 2018.11.27 at 10h 10m 47s.xml">
+      <configuration name="TestPerso" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPerso - 2018.11.27 at 10h 10m 54s.xml">
+      <configuration name="TestPerso" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPerso - 2018.11.27 at 10h 13m 44s.xml">
+      <configuration name="TestPerso" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPerso - 2018.11.27 at 10h 14m 06s.xml">
+      <configuration name="TestPerso" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPerso - 2018.11.27 at 10h 14m 43s.xml">
+      <configuration name="TestPerso" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2833000" />
+    <option name="totallyTimeSpent" value="3876000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="460" y="0" width="1400" height="1000" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27985075" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30911064" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23990773" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.329718" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286334" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Designer" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24609375" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="3" visible="true" weight="0.32868218" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.31007752" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -396,51 +402,94 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Image/Ecamus.png" />
-    <entry file="file://$PROJECT_DIR$/src/Arene.java" />
-    <entry file="file://$PROJECT_DIR$/src/Decorator.java" />
-    <entry file="file://$PROJECT_DIR$/src/Personnage.java" />
-    <entry file="file://$PROJECT_DIR$/out/production/EcamusGame-master/GameFrame.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Informaticien.java" />
-    <entry file="file://$PROJECT_DIR$/src/Electronicien.java" />
-    <entry file="file://$PROJECT_DIR$/src/main.java" />
-    <entry file="file://$PROJECT_DIR$/src/Mecanicien.java" />
-    <entry file="file://$PROJECT_DIR$/src/Menu.java" />
-    <entry file="file://$PROJECT_DIR$/src/Arena.java" />
-    <entry file="file://$PROJECT_DIR$/src/Screen.java" />
-    <entry file="file://$PROJECT_DIR$/src/Weapon_choice.java" />
-    <entry file="file://$PROJECT_DIR$/out/production/Ecam_Arena/main.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Geometre.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Constructeur.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ScreenTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        <state relative-caret-position="34">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Arena.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret selection-end-column="18" />
+          <caret line="37" column="43" lean-forward="true" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="44" column="56" lean-forward="true" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Screen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Informaticien.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Arene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Personnage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestPerso.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="221">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

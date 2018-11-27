@@ -1,14 +1,11 @@
-package main.java;
-
-
 import java.util.Random;
 
 public abstract class Personnage {
 
     protected int pv;
     protected int force;
-    protected int energie;
-    protected int defense;
+    protected int energie = 100;
+    protected int defense = 0;
     protected int minDamage = 5;
     protected int maxDamage = 10;
     protected boolean mort;
@@ -17,14 +14,14 @@ public abstract class Personnage {
         return mort;
     }
     public void setMort(){
-        mort = true;
+        this.mort = true;
     }
 
     public int attaquer()
     {
         this.energie =- 40;
         Random rand = new Random();
-        int degats = (rand.nextInt(maxDamage - minDamage + 1) + minDamage);// * (10/100) * force;
+        int degats = (rand.nextInt(maxDamage - minDamage + 1) + minDamage);// * force/10;
         return degats;
     }
 

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/EcamusGame-master.iml" filepath="$PROJECT_DIR$/EcamusGame-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ecamus.iml" filepath="$PROJECT_DIR$/Ecamus.iml" />
     </modules>
   </component>
 </project>

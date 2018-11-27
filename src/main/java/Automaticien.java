@@ -1,3 +1,4 @@
+
 public class Automaticien extends Personnage {
 
     public Automaticien(int pv, int force, int energie) {
