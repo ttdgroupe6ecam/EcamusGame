@@ -8,7 +8,7 @@ public class Informaticien extends Personnage {
   }
 
   /**
-   * Valide un mouvement de jeu d'Echecs.
+   * Permet de setter la vie.
    * @param pv  PV
    */
   public void setPV(int pv) {

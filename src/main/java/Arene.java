@@ -9,12 +9,18 @@ public class Arene {
   // build the arena
   public void buildArena() {}
 
-  // chose warriors and their weapons.
+
+  /**
+   * Declaration de l'interface en invite de commande
+   * Permet de choisir son personnage et son arme
+   */
   public static void BuildFight() {
 
     System.out.println("Bienvenue sur Ecamus");
     int x = 0;
     int flag = 0;
+
+    //x indique le nombre de joueurs, maximum 2
     while (x < 2) {
       if (x == 1) {
 
@@ -23,10 +29,14 @@ public class Arene {
       System.out.println("Tapez : 1 -> informaticien" + " " + " 2 -> Electronicien, 9->quitter ");
 
       Scanner sc = new Scanner(System.in);
+
+      //str représente le choix du personnage
       int str = Integer.parseInt(sc.nextLine());
       if (str == 1) {
         System.out.println("Tapez: 1 -> souris" + " " + " 2 -> clé à molette");
         Scanner sc2 = new Scanner(System.in);
+
+        //str2 représente le choix de l'arme
         int str2 = Integer.parseInt(sc2.nextLine());
         if (str2 == 1) {
           Decorator personnage = new sourisDecorator(new Informaticien(100, 24, 100));
@@ -60,6 +70,8 @@ public class Arene {
           System.out.println(listPersonnages);
         }
       }
+
+      // 9 Pour quitter l'application
       if (str == 9) {
         System.exit(1);
       }
@@ -70,7 +82,10 @@ public class Arene {
         Arene.listPersonnages.get(0), Arene.listPersonnages.get(1)); // on lance le combat
   }
 
-  // start the fight and return the winner
+    /**
+     * Commence le combat entre les 2 personnages
+     * Interface en invite de commande, permet de choisir les actions
+     */
   public static void startFight(Decorator personnage1, Decorator personnage2) {
 
     while (true) {
@@ -109,6 +124,8 @@ public class Arene {
         }
       }
       System.out.println("PV restant Joueur 2 : " + personnage2.getPV());
+
+      //On vérifie si le personnage est mort suite aux dégats qu'il a subis
       if (personnage2.getMort() == true) {
         System.out.println("Le Vainqueur est : Joueur 1");
         listPersonnages.clear();
@@ -151,6 +168,7 @@ public class Arene {
 
       System.out.println("PV restant Joueur 1 : " + personnage1.getPV());
 
+      //On vérifie si le personnage est mort suite aux dégats qu'il a subis
       if (personnage1.getMort() == true) {
         System.out.println("Le Vainqueur est : Joueur 2");
         listPersonnages.clear();

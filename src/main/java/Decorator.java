@@ -33,10 +33,6 @@ class sourisDecorator extends Decorator {
     System.out.println(" Equipé d'une Souris");
   }
 
-  public void mourir() {
-    System.out.println("Vous êtes mort");
-  }
-
   public void parer() {
     System.out.println("Vous avez paré");
   }
@@ -52,14 +48,14 @@ class cleMoletteDecorator extends Decorator {
     System.out.println(" Equipé d'une Clé à molette");
   }
 
-  public void mourir() {
-    System.out.println("Vous êtes mort");
-  }
-
   public void parer() {
     System.out.println("Vous avez paré");
   }
 }
+
+/*
+
+Arme Supplémentaire qui seront implémentées plus tard
 
 class equerreDecorator extends Decorator {
   public equerreDecorator(Personnage personnage) {
@@ -117,3 +113,4 @@ class marteauDecorator extends Decorator {
     System.out.println("Vous avez paré");
   }
 }
+*/

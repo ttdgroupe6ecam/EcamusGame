@@ -7,14 +7,24 @@ class Electronicien extends Personnage {
     // this.minDamage = 0;
   }
 
+  /**
+   * Permet de setter la vie.
+   * @param pv  PV
+   */
   public void setPV(int pv) {
     this.pv = pv;
   }
 
+  /**
+   * Affiche Les infos de l'électronicien
+   */
   public void draw() {
     System.out.println("Electronicien: " + pv + ", " + force + "," + energie);
   }
 
+  /**
+   * Permet de réduire les dégats subis
+   */
   public void parer() {
     force = -1;
   }

@@ -8,14 +8,24 @@ public class Geometre extends Personnage {
     this.maxDamage = +2;
   }
 
+  /**
+   * Permet de setter la vie.
+   * @param pv  PV
+   */
   public void setPV(int pv) {
     this.pv = pv;
   }
 
+  /**
+   * Affiche Les infos du géomètre
+   */
   public void draw() {
     System.out.println("Geometre: " + pv + ", " + force + "," + energie);
   }
 
+  /**
+   * Permet de réduire les dégats subis
+   */
   public void parer() {
     force = -1;
   }
