@@ -14,6 +14,7 @@ class Electronicien extends Personnage {
         this.pv = pv;
     }
 
+
     public void draw() {
         System.out.println("Electronicien: " + pv + ", " + force + "," + energie );
     }
@@ -21,5 +22,6 @@ class Electronicien extends Personnage {
     public void parer(){
         force=-1;
     }
+
 
 }

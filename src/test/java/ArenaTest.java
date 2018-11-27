@@ -4,9 +4,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-/*
 import static org.assertj.core.api.Java6Assertions.assertThat;
-
+/*
 public class ArenaTest {
 
 
@@ -21,9 +20,9 @@ public class ArenaTest {
     }
     @Test
     public void shouldCopyTextInLabelWhenClickingButton() {
-       /* window.textBox("textToCopy").enterText("Some random text");
+        comm : window.textBox("textToCopy").enterText("Some random text");
         window.button("copyButton").click();
-        //window.label("copiedText").requireText("Some random text");
+        window.label("copiedText").requireText("Some random text"); comm
         assertThat(window).hasNoNullFieldsOrProperties();
         window.comboBox().requireSelection("");
     }
@@ -33,6 +32,6 @@ public class ArenaTest {
     }
 
 
-}
-*/
+}*/
+
 

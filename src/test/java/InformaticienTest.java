@@ -3,7 +3,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotSame;
 
-public class TestPerso {
+public class InformaticienTest {
 
     //public static Informaticien perso1 = new Informaticien(100, 50, 100);
 
@@ -12,6 +12,7 @@ public class TestPerso {
         Informaticien perso1 = new Informaticien(100, 50, 100);
         int oldpv = perso1.getPV();
         perso1.subir(15);
+
         assertEquals(perso1.getPV(),85);
     }
 
