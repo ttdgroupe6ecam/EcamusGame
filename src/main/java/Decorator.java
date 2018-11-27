@@ -8,6 +8,10 @@ public abstract class Decorator extends Personnage {
 
   public void draw() {}
 
+  /**
+   * Permet de setter les points de vie du personnage
+   * @param pv Nouveau PV du personnage
+   */
   public void setPV(int pv) {
     this.personnage.setPV(pv);
   }
@@ -16,6 +20,10 @@ public abstract class Decorator extends Personnage {
     return personnage;
   }
 
+  /**
+   * Permet de récupérer les points de vie du personnage
+   * @return pv int des points de vie
+   */
   public int getPV() {
     return personnage.getPV();
   }
@@ -33,9 +41,6 @@ class sourisDecorator extends Decorator {
     System.out.println(" Equipé d'une Souris");
   }
 
-  public void parer() {
-    System.out.println("Vous avez paré");
-  }
 }
 
 class cleMoletteDecorator extends Decorator {
@@ -46,10 +51,6 @@ class cleMoletteDecorator extends Decorator {
   public void draw() {
     super.draw();
     System.out.println(" Equipé d'une Clé à molette");
-  }
-
-  public void parer() {
-    System.out.println("Vous avez paré");
   }
 }
 

@@ -1,9 +1,8 @@
 class Electronicien extends Personnage {
 
-  public Electronicien(int pv, int force, int energie) {
+  public Electronicien(int pv, int force) {
     this.pv = pv;
     this.force = force;
-    this.energie = energie;
     // this.minDamage = 0;
   }
 
@@ -22,10 +21,4 @@ class Electronicien extends Personnage {
     System.out.println("Electronicien: " + pv + ", " + force + "," + energie);
   }
 
-  /**
-   * Permet de réduire les dégats subis
-   */
-  public void parer() {
-    force = -1;
-  }
 }

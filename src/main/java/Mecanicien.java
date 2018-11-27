@@ -23,10 +23,4 @@ public class Mecanicien extends Personnage {
     System.out.println("Mecancien: " + pv + ", " + force + "," + energie);
   }
 
-  /**
-   * Permet de réduire les dégats subis
-   */
-  public void parer() {
-    force = -1;
-  }
 }

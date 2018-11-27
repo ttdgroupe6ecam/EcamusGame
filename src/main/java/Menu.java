@@ -29,7 +29,7 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
   JLabel background = new JLabel();
   File sound =
       new File(
-          "C:\\Users\\13093\\Desktop\\EcamusGame\\src\\main\\resources\\Title Screen.wav"); /* Bien entrer le bon chemin d'acces du son */
+          "C:\\Users\\ILAS\\Documents\\GitHub\\EcamusGame\\src\\main\\resources\\Title Screen.wav"); /* Bien entrer le bon chemin d'acces du son */
   AudioInputStream ais;
   Clip clip1;
 
@@ -44,20 +44,20 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
       playButton.setBackground(Color.DARK_GRAY);
       playButton.setIcon(
           new ImageIcon(
-              "C:\\Users\\13093\\Desktop\\EcamusGame\\src\\main\\resources\\Vulcania.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
+              "C:\\Users\\ILAS\\Documents\\GitHub\\EcamusGame\\src\\main\\resources\\Vulcania.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
       playButton.addActionListener(this);
       playButton.addKeyListener(this);
       window.add(playButton, BorderLayout.PAGE_START);
       exitButton.setBackground(Color.DARK_GRAY);
       exitButton.setIcon(
           new ImageIcon(
-              "C:\\Users\\13093\\Desktop\\EcamusGame\\src\\main\\resources\\Exit_Button.png")); /* Bien entrer le bon chemin d'acces de l'image */
+              "C:\\Users\\ILAS\\Documents\\GitHub\\EcamusGame\\src\\main\\resources\\Exit_Button.png")); /* Bien entrer le bon chemin d'acces de l'image */
       exitButton.addActionListener(this);
       exitButton.addKeyListener(this);
       window.add(exitButton, BorderLayout.PAGE_END);
       background.setIcon(
           new ImageIcon(
-              "C:\\Users\\13093\\Desktop\\EcamusGame\\src\\main\\resources\\Gladiador.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
+              "C:\\Users\\ILAS\\Documents\\GitHub\\EcamusGame\\src\\main\\resources\\Gladiador.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
       window.getContentPane().add(background);
       window.setUndecorated(true);
       window.setSize(800, 700);

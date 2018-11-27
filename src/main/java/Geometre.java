@@ -23,10 +23,4 @@ public class Geometre extends Personnage {
     System.out.println("Geometre: " + pv + ", " + force + "," + energie);
   }
 
-  /**
-   * Permet de réduire les dégats subis
-   */
-  public void parer() {
-    force = -1;
-  }
 }

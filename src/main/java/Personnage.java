@@ -33,9 +33,17 @@ public abstract class Personnage {
    */
 
   public int attaquer() {
-    this.energie = -40;
+    this.energie -= 40;
+
+    if (this.energie < 0) {
+      System.out.println("Pas assez d'energie -> Attaque affaiblie");
+      this.energie = 0;
+      int degats = 5;
+      return degats;
+    }
+
     Random rand = new Random();
-    int degats = (rand.nextInt(maxDamage - minDamage + 1) + minDamage); // * force/10;
+    int degats = 10;//(rand.nextInt(maxDamage - minDamage + 1) + minDamage); // * force/10;
     return degats;
   }
 
@@ -53,14 +61,14 @@ public abstract class Personnage {
       this.setPV(0);
       this.setMort();
     }
-    this.defense = 0;
+    resetDefense();
   }
 
   /**
    * Methode permettant de recuperer de l'energie
    */
   public void gainEnergy() {
-    this.energie = +15;
+    this.energie += 25;
   }
 
   /**
@@ -82,13 +90,30 @@ public abstract class Personnage {
 
   /**
    * Permet de setter les points de vie du personnage
+   * @param pv Nouveau PV du personnage
    */
+  public void setPV(int pv) {
+    this.pv = pv;
+  }
 
-  protected void setPV(int pv) {}
-
+  /**
+   * Permet de réduire les dégats subis
+   */
   public void parer() {
-    this.energie = -15;
-    this.defense = 70;
+    this.energie -= 15;
+
+    if (this.energie < 0){
+      System.out.println("Pas assez d'energie -> Parade affaiblie");
+      this.energie = 0;
+      this.defense = 30;
+    }
+    else{
+      this.defense = 70;
+    }
+  }
+
+  public void resetDefense() {
+    this.defense = 0;
   };
 
   public abstract void draw();

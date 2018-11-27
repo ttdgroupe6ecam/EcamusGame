@@ -23,10 +23,4 @@ class Constructeur extends Personnage {
     System.out.println("Constructeur: " + pv + ", " + force + "," + energie);
   }
 
-  /**
-   * Permet de réduire les dégats subis
-   */
-  public void parer() {
-    force = -1;
-  }
 }

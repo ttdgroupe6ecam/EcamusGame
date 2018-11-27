@@ -22,7 +22,7 @@ public class Screen extends JPanel {
     window.setLocation(5, 50);
     back.setIcon(
         new ImageIcon(
-            "C:\\Users\\13093\\Desktop\\EcamusGame\\src\\main\\resources\\Ecamus.png")); /* Bien entrer le bon chemin d'acces de l'image */
+            "C:\\Users\\ILAS\\Documents\\GitHub\\EcamusGame\\src\\main\\resources\\Ecamus.png")); /* Bien entrer le bon chemin d'acces de l'image */
     window.getContentPane().add(back);
     window.setUndecorated(true);
     window.setSize(970, 850);
@@ -31,7 +31,7 @@ public class Screen extends JPanel {
     try {
       File sound =
           new File(
-              "C:\\Users\\13093\\Desktop\\EcamusGame\\src\\main\\resources\\Title Screen.wav"); /* Bien entrer le bon chemin d'acces du son */
+              "C:\\Users\\ILAS\\Documents\\GitHub\\EcamusGame\\src\\main\\resources\\Title Screen.wav"); /* Bien entrer le bon chemin d'acces du son */
       AudioInputStream ais = AudioSystem.getAudioInputStream(sound);
       Clip clip1 = AudioSystem.getClip();
       clip1.open(ais);

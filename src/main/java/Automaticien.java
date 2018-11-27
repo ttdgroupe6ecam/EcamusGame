@@ -24,10 +24,4 @@ public class Automaticien extends Personnage {
     System.out.println("Automaticien: " + pv + ", " + force + "," + energie);
   }
 
-  /**
-   * Permet de réduire les dégats subis
-   */
-  public void parer() {
-    force = -1;
-  }
 }

@@ -29,7 +29,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
 
   File sound =
       new File(
-          "C:\\Users\\13093\\Desktop\\EcamusGame\\src\\main\\resources\\Arena Select.wav"); /* Bien entrer le bon chemin d'acces du son */
+          "C:\\Users\\ILAS\\Documents\\GitHub\\EcamusGame\\src\\main\\resources\\Arena Select.wav"); /* Bien entrer le bon chemin d'acces du son */
   AudioInputStream ais;
   Clip clip;
 
@@ -53,7 +53,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
       window.add(backButton, BorderLayout.PAGE_END);
       enterButton.setIcon(
           new ImageIcon(
-              "C:\\Users\\13093\\Desktop\\EcamusGame\\src\\main\\resources\\arena.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
+              "C:\\Users\\ILAS\\Documents\\GitHub\\EcamusGame\\src\\main\\resources\\arena.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
       enterButton.addKeyListener(this);
       enterButton.addActionListener(this);
       window.add(enterButton, BorderLayout.CENTER);

@@ -6,9 +6,6 @@ public class Arene {
 
   public static List<Decorator> listPersonnages = new ArrayList<Decorator>();
 
-  // build the arena
-  public void buildArena() {}
-
 
   /**
    * Declaration de l'interface en invite de commande
@@ -39,14 +36,13 @@ public class Arene {
         //str2 représente le choix de l'arme
         int str2 = Integer.parseInt(sc2.nextLine());
         if (str2 == 1) {
-          Decorator personnage = new sourisDecorator(new Informaticien(100, 24, 100));
+          Decorator personnage = new sourisDecorator(new Informaticien(100, 24));
           personnage.draw();
           listPersonnages.add(personnage);
           System.out.println(listPersonnages);
         }
         if (str2 == 2) {
-          Decorator personnage = new cleMoletteDecorator(new Informaticien(100, 24, 100));
-          System.out.println(">>>>>> " + personnage.showEnergy());
+          Decorator personnage = new cleMoletteDecorator(new Informaticien(100, 24));
           personnage.draw();
           listPersonnages.add(personnage);
           System.out.println(listPersonnages);
@@ -58,13 +54,13 @@ public class Arene {
         Scanner sc2 = new Scanner(System.in);
         int str2 = Integer.parseInt(sc2.nextLine());
         if (str2 == 1) {
-          Decorator personnage = new sourisDecorator(new Electronicien(100, 24, 100));
+          Decorator personnage = new sourisDecorator(new Electronicien(100, 24));
           personnage.draw();
           listPersonnages.add(personnage);
           System.out.println(listPersonnages);
         }
         if (str2 == 2) {
-          Decorator personnage = new cleMoletteDecorator(new Electronicien(100, 24, 100));
+          Decorator personnage = new cleMoletteDecorator(new Electronicien(100, 24));
           personnage.draw();
           listPersonnages.add(personnage);
           System.out.println(listPersonnages);
@@ -90,13 +86,15 @@ public class Arene {
 
     while (true) {
 
-      System.out.println("Joueur 1 : 1 -> attaquer , 2-> parer , 3-> prendre la fuite");
+      System.out.println("Joueur 1 : 1 -> attaquer , 2-> parer ");
       System.out.println(
           "Joueur 1 : Energie = " + personnage1.showEnergy() + " / PV = " + personnage1.getPV());
+      personnage1.resetDefense();
+
       Scanner sc3 = new Scanner(System.in);
       int str3 = Integer.parseInt(sc3.nextLine());
       if (str3 == 1) {
-        int degats = personnage1.getPersonnage().attaquer();
+        int degats = personnage1.attaquer();
         personnage2.subir(degats);
 
         try {
@@ -105,17 +103,8 @@ public class Arene {
           Thread.currentThread().interrupt();
         }
       } else if (str3 == 2) {
-        // int esquive = personnage1.getPersonnage().parer();
-        // personnage2.subir(esquive);
-
-        try {
-          Thread.sleep(500);
-        } catch (InterruptedException ex) {
-          Thread.currentThread().interrupt();
-        }
-      } else if (str3 == 3) {
-        // int esquive = personnage1.getPersonnage().parer();
-        // personnage2.subir(esquive);
+        personnage1.parer();
+        System.out.println("Parade : Dégats subis réduits ce tour");
 
         try {
           Thread.sleep(500);
@@ -132,13 +121,15 @@ public class Arene {
         break;
       }
 
-      System.out.println("Joueur 2 : 1 -> attaquer , 2-> parer , 3-> prendre la fuite");
-      // System.out.println("Joueur 2 : Energie = " + personnage2.showEnergy() + " / PV = " +
-      // personnage2.getPV());
+      System.out.println("Joueur 2 : 1 -> attaquer , 2-> parer ");
+      System.out.println("Joueur 2 : Energie = " + personnage2.showEnergy() + " / PV = " +
+      personnage2.getPV());
       Scanner sc4 = new Scanner(System.in);
       int str4 = Integer.parseInt(sc4.nextLine());
+      personnage2.resetDefense();
+
       if (str4 == 1) {
-        int degats2 = personnage2.getPersonnage().attaquer();
+        int degats2 = personnage2.attaquer();
         personnage1.subir(degats2);
 
         try {
@@ -147,17 +138,8 @@ public class Arene {
           Thread.currentThread().interrupt();
         }
       } else if (str4 == 2) {
-        // int esquive = personnage1.getPersonnage().parer();
-        // personnage2.subir(esquive);
-
-        try {
-          Thread.sleep(500);
-        } catch (InterruptedException ex) {
-          Thread.currentThread().interrupt();
-        }
-      } else if (str4 == 3) {
-        // int esquive = personnage1.getPersonnage().parer();
-        // personnage2.subir(esquive);
+        personnage2.parer();
+        System.out.println("Parade : Dégats subis réduits ce tour");
 
         try {
           Thread.sleep(500);
@@ -174,8 +156,9 @@ public class Arene {
         listPersonnages.clear();
         break;
       }
+      personnage1.gainEnergy();
+      personnage2.gainEnergy();
     }
-
     BuildFight();
   }
 }
