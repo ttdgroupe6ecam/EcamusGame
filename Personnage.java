@@ -15,7 +15,7 @@ public abstract class Personnage {
      * @return mort Booléen du statut
      */
 
-    final boolean getMort() {
+    public boolean getMort() {
         return mort;
     }
 
@@ -33,7 +33,7 @@ public abstract class Personnage {
      * @return degats
      */
 
-    final int attaquer() {
+    public int attaquer() {
         this.energie -= 40;
 
         if (this.energie < 0) {
@@ -52,7 +52,7 @@ public abstract class Personnage {
      * Methode permettant de subir les degats (Baisse les PV)
      * @param degats Nombre de degats subis par le personnage
      */
-    final void subir(int degats) {
+    public void subir(int degats) {
         int newPV = (this.getPV() - (degats * (100 - defense) / 100));
 
         this.setPV(newPV);
@@ -68,7 +68,7 @@ public abstract class Personnage {
     /**
      * Methode permettant de recuperer de l'energie
      */
-    final void gainEnergy() {
+    public void gainEnergy() {
         this.energie += 25;
     }
 
@@ -76,7 +76,7 @@ public abstract class Personnage {
      * Methode permettant de recuperer la valeur de energie du personnage
      * @return energie valeur d'energie du personnage
      */
-    final int showEnergy() {
+    public int showEnergy() {
         return this.energie;
     }
 
@@ -100,7 +100,7 @@ public abstract class Personnage {
     /**
      * Permet de reduire les degats subis
      */
-    final void parer() {
+    public void parer() {
         this.energie -= 15;
 
         if (this.energie < 0){
@@ -113,7 +113,7 @@ public abstract class Personnage {
         }
     }
 
-    final void resetDefense() {
+    public void resetDefense() {
         this.defense = 0;
     };
 
