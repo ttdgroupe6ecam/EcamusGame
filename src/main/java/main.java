@@ -7,8 +7,7 @@ public class main {
     Screen s = new Screen();
     JFrame window = s.window;
 
-    // Arene.startFight(Arene.listPersonnages.get(0) , Arene.listPersonnages.get(1)); // on lance le
-    // combat
+    
 
   }
 }
