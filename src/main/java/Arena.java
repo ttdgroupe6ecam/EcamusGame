@@ -22,6 +22,9 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
    * Fenetre.
    */
   JFrame window = new JFrame();
+  /**
+   * Tableau.
+   */
   String[] s = {"ElectroniCa", "GéomètrA", "InfOrNium"};
   /**
    * Choix multiple.
