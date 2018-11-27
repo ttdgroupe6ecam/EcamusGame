@@ -128,12 +128,12 @@ public abstract class Personnage {
     public void parer() {
         this.energie -= 15;
 
-        if (this.energie < 0){
+        if (this.energie < 0) {
             System.out.println("Pas assez d'energie -> Parade affaiblie");
             this.energie = 0;
             this.defense = 30;
         }
-        else{
+        else {
             this.defense = 70;
         }
     }
