@@ -4,7 +4,7 @@ class Constructeur extends Personnage {
    * Constructeur.
    * @param pv
    * @param force
-   * @param energie 
+   * @param energie
    */
   public Constructeur(int pv, int force, int energie) {
     this.pv = pv;
