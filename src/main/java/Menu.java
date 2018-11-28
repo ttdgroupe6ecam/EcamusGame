@@ -9,6 +9,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.nio.file.Paths;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -26,6 +27,9 @@ window and set is size and make it visible on the screen , I alsoe created
  * creation d'objet pour l'interface.
  */
 public class Menu extends JPanel implements ActionListener, KeyListener {
+
+  String path = Paths.get(".").toAbsolutePath().normalize().toString();
+
     /**
      * Fenetre.
      */
@@ -44,7 +48,7 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
   JLabel background = new JLabel();
   File sound =
       new File(
-          "C:\\Users\\ILAS\\Documents\\GitHub\\EcamusGame\\src\\main\\resources\\Title Screen.wav"); /* Bien entrer le bon chemin d'acces du son */
+          path+"/resources/Title_Screen.wav"); /* Bien entrer le bon chemin d'acces du son */
   AudioInputStream ais;
   Clip clip1;
 
@@ -62,20 +66,20 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
       playButton.setBackground(Color.DARK_GRAY);
       playButton.setIcon(
           new ImageIcon(
-              "C:\\Users\\ILAS\\Documents\\GitHub\\EcamusGame\\src\\main\\resources\\Vulcania.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
+              path+"/resources/Vulcania.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
       playButton.addActionListener(this);
       playButton.addKeyListener(this);
       window.add(playButton, BorderLayout.PAGE_START);
       exitButton.setBackground(Color.DARK_GRAY);
       exitButton.setIcon(
           new ImageIcon(
-              "C:\\Users\\ILAS\\Documents\\GitHub\\EcamusGame\\src\\main\\resources\\Exit_Button.png")); /* Bien entrer le bon chemin d'acces de l'image */
+              path+"/resources/Exit_Button.png")); /* Bien entrer le bon chemin d'acces de l'image */
       exitButton.addActionListener(this);
       exitButton.addKeyListener(this);
       window.add(exitButton, BorderLayout.PAGE_END);
       background.setIcon(
           new ImageIcon(
-              "C:\\Users\\ILAS\\Documents\\GitHub\\EcamusGame\\src\\main\\resources\\Gladiador.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
+              path+"/resources/Gladiador.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
       window.getContentPane().add(background);
       window.setUndecorated(true);
       window.setSize(800, 700);
