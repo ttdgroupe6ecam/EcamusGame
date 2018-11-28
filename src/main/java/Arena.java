@@ -9,6 +9,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.nio.file.Paths;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -18,6 +19,8 @@ import java.util.logging.Logger;
 
 /** @author UserAdmin */
 public class Arena extends JPanel implements ActionListener, KeyListener {
+
+  String path = Paths.get(".").toAbsolutePath().normalize().toString();
   /**
    * Fenetre.
    */
@@ -52,7 +55,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
    */
   File sound =
       new File(
-          "C:\\Users\\ILAS\\Documents\\GitHub\\EcamusGame\\src\\main\\resources\\Arena Select.wav"); /* Bien entrer le bon chemin d'acces du son */
+          path + "/resources/Arena_Select.wav"); /* Bien entrer le bon chemin d'acces du son */
   AudioInputStream ais;
   Clip clip;
 
@@ -76,7 +79,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
       window.add(backButton, BorderLayout.PAGE_END);
       enterButton.setIcon(
           new ImageIcon(
-              "C:\\Users\\ILAS\\Documents\\GitHub\\EcamusGame\\src\\main\\resources\\arena.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
+              path + "/resources/arena.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
       enterButton.addKeyListener(this);
       enterButton.addActionListener(this);
       window.add(enterButton, BorderLayout.CENTER);
