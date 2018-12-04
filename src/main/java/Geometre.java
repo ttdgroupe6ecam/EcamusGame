@@ -9,7 +9,7 @@ public class Geometre extends Personnage {
    * @param force
    * @param energie
    */
-  public Geometre(int pv, int force, int energie) {
+  public Geometre(final int pv,final int force,final int energie) {
     this.pv = pv;
     this.force = force;
     this.energie = energie;
@@ -20,7 +20,7 @@ public class Geometre extends Personnage {
   /**
    * Affiche Les infos du géomètre
    */
-  public void draw() {
+  public final void draw() {
     System.out.println("Geometre: " + pv + ", " + force + "," + energie);
   }
 
