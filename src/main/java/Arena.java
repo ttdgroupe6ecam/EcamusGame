@@ -20,44 +20,45 @@ import java.nio.file.Paths;
 /** @author UserAdmin */
 public class Arena extends JPanel implements ActionListener, KeyListener {
 
-  String path = Paths.get(".").toAbsolutePath().normalize().toString();
+  private String path = Paths.get(".").toAbsolutePath().normalize().toString();
   /**
    * Fenetre.
    */
-  JFrame window = new JFrame();
+  private JFrame window = new JFrame();
   /**
    * Tableau.
    */
-  String[] s = {"ElectroniCa", "GéomètrA", "InfOrNium"};
+  private String[] s = {"ElectroniCa", "GéomètrA", "InfOrNium"};
   /**
    * Choix multiple.
    */
-  JComboBox nomArena = new JComboBox(s);
+  private JComboBox nomArena = new JComboBox(s);
   /**
    * Bouton.
    */
-  JButton enterButton = new JButton();
+  private JButton enterButton = new JButton();
   /**
    * Bouton.
    */
-  JButton backButton = new JButton();
+  private JButton backButton = new JButton();
 
   /**
    * Police.
    */
-  Font customFont = new Font("Bold", Font.BOLD, 30);
+  private Font customFont = new Font("Bold", Font.BOLD, 30);
   /**
    * Police.
    */
-  Font comboFont = new Font("Italic", Font.ITALIC, 25);
+  private Font comboFont = new Font("Italic", Font.ITALIC, 25);
   /**
    * Musique.
    */
-  File sound =
+  private File sound =
       new File(
-          path + "/resources/Arena_Select.wav"); /* Bien entrer le bon chemin d'acces du son */
-  AudioInputStream ais;
-  Clip clip;
+          path + "/resources/Arena_Select.wav");
+  /* Bien entrer le bon chemin d'acces du son */
+  private AudioInputStream ais;
+  private Clip clip;
 
   Arena() throws LineUnavailableException {
     try {
@@ -77,9 +78,9 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
       backButton.addKeyListener(this);
       backButton.addActionListener(this);
       window.add(backButton, BorderLayout.PAGE_END);
-      enterButton.setIcon(
-          new ImageIcon(
-              path + "/resources/arena.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
+      enterButton.setIcon(new ImageIcon(
+              getPath() + "/resources/arena.jpg")); 
+      /* Bien entrer le bon chemin d'acces de l'image */
       enterButton.addKeyListener(this);
       enterButton.addActionListener(this);
       window.add(enterButton, BorderLayout.CENTER);
@@ -104,12 +105,12 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
   }
 
   @Override
-  public void actionPerformed(ActionEvent ae) {
-    if (ae.getSource() == backButton) {
+  public final void actionPerformed(final ActionEvent  ae) {
+    if (ae.getSource() == getBackButton()) {
 
-      window.dispose();
+            getWindow().dispose();
 
-      this.clip.close();
+            this.getClip().close();
 
       try {
         Menu m = new Menu();
@@ -119,22 +120,23 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
         e.printStackTrace();
       }
 
-    } else if (ae.getSource() == enterButton) {
+    } else if (ae.getSource() == getEnterButton()) {
       // JOptionPane.showMessageDialog(null,"En construction");
       Arene.BuildFight();
     }
   }
 
   @Override
-  public void keyTyped(KeyEvent e) {
+  public final void keyTyped(final KeyEvent e) {
     throw new UnsupportedOperationException(
-        "Not supported yet."); // To change body of generated methods, choose Tools | Templates.
+        "Not supported yet."); // To change body of 
+    //generated methods, choose Tools | Templates.
   }
 
   @Override
-  public void keyPressed(KeyEvent kp) {
+  public final void keyPressed(final KeyEvent kp) {
     if (kp.getKeyCode() == KeyEvent.VK_ESCAPE) {
-      window.dispose();
+            getWindow().dispose();
 
       try {
         Menu m = new Menu();
@@ -147,8 +149,157 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
   }
 
   @Override
-  public void keyReleased(KeyEvent e) {
+  public final void keyReleased(final KeyEvent e) {
     throw new UnsupportedOperationException(
-        "Not supported yet."); // To change body of generated methods, choose Tools | Templates.
+        "Not supported yet."); 
+// To change body of generated methods, choose Tools | Templates.
   }
+  
+  public String getPath() {
+      return this.path;
+  }
+  
+  public void setPath(String path) {
+      this.path=path;
+  }
+
+    /**
+     * @return the window
+     */
+    public JFrame getWindow() {
+        return window;
+    }
+
+    /**
+     * @param window the window to set
+     */
+    public void setWindow(JFrame window) {
+        this.window = window;
+    }
+
+    /**
+     * @return the s
+     */
+    public String[] getS() {
+        return s;
+    }
+
+    /**
+     * @param s the s to set
+     */
+    public void setS(String[] s) {
+        this.s = s;
+    }
+
+    /**
+     * @return the nomArena
+     */
+    public JComboBox getNomArena() {
+        return nomArena;
+    }
+
+    /**
+     * @param nomArena the nomArena to set
+     */
+    public void setNomArena(JComboBox nomArena) {
+        this.nomArena = nomArena;
+    }
+
+    /**
+     * @return the enterButton
+     */
+    public JButton getEnterButton() {
+        return enterButton;
+    }
+
+    /**
+     * @param enterButton the enterButton to set
+     */
+    public void setEnterButton(JButton enterButton) {
+        this.enterButton = enterButton;
+    }
+
+    /**
+     * @return the backButton
+     */
+    public JButton getBackButton() {
+        return backButton;
+    }
+
+    /**
+     * @param backButton the backButton to set
+     */
+    public void setBackButton(JButton backButton) {
+        this.backButton = backButton;
+    }
+
+    /**
+     * @return the customFont
+     */
+    public Font getCustomFont() {
+        return customFont;
+    }
+
+    /**
+     * @param customFont the customFont to set
+     */
+    public void setCustomFont(Font customFont) {
+        this.customFont = customFont;
+    }
+
+    /**
+     * @return the comboFont
+     */
+    public Font getComboFont() {
+        return comboFont;
+    }
+
+    /**
+     * @param comboFont the comboFont to set
+     */
+    public void setComboFont(Font comboFont) {
+        this.comboFont = comboFont;
+    }
+
+    /**
+     * @return the sound
+     */
+    public File getSound() {
+        return sound;
+    }
+
+    /**
+     * @param sound the sound to set
+     */
+    public void setSound(File sound) {
+        this.sound = sound;
+    }
+
+    /**
+     * @return the ais
+     */
+    public AudioInputStream getAis() {
+        return ais;
+    }
+
+    /**
+     * @param ais the ais to set
+     */
+    public void setAis(AudioInputStream ais) {
+        this.ais = ais;
+    }
+
+    /**
+     * @return the clip
+     */
+    public Clip getClip() {
+        return clip;
+    }
+
+    /**
+     * @param clip the clip to set
+     */
+    public void setClip(Clip clip) {
+        this.clip = clip;
+    }
 }
