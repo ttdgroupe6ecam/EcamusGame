@@ -10,7 +10,7 @@ public class Informaticien extends Personnage {
    * @param pv
    * @param force
    */
-  public Informaticien(int pv, int force) {
+  public Informaticien(final int pv,final int force) {
     this.pv = pv;
     this.force = force;
     this.maxDamage = 50;
@@ -19,9 +19,10 @@ public class Informaticien extends Personnage {
   /**
    * Affiche Les infos de l'informaticien
    */
-  public void draw() {
+  public final void draw() {
     System.out.println(
-        "Informaticien: " + "Point de vie :" + pv + " Force : " + force + " Energie :" + energie);
+        "Informaticien: " + "Point de vie :" 
+                + pv + " Force : " + force + " Energie :" + energie);
   }
 
 }
