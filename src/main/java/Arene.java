@@ -7,6 +7,8 @@ public class Arene {
   public static List<Decorator> listPersonnages = new ArrayList<Decorator>();
 
 
+  
+ 
   /**
    * Declaration de l'interface en invite de commande
    * Permet de choisir son personnage et son arme
@@ -23,41 +25,48 @@ public class Arene {
 
         System.out.println("Choisissez un adversaire :");
       }
-      System.out.println("Tapez : 1 -> informaticien" + " " + " 2 -> Electronicien, 9->quitter ");
+      System.out.println("Tapez : 1 -> informaticien" + " " +
+              " 2 -> Electronicien, 9->quitter ");
 
       Scanner sc = new Scanner(System.in);
 
       //str représente le choix du personnage
       int str = Integer.parseInt(sc.nextLine());
       if (str == 1) {
-        System.out.println("Tapez: 1 -> souris" + " " + " 2 -> clé à molette");
+        System.out.println("Tapez: 1 -> souris" + " " + 
+                " 2 -> clé à molette");
         Scanner sc2 = new Scanner(System.in);
 
         //str2 représente le choix de l'arme
         int str2 = Integer.parseInt(sc2.nextLine());
         if (str2 == 1) {
-          Decorator personnage = new sourisDecorator(new Informaticien(100, 24));
+          Decorator personnage = 
+                  new sourisDecorator(new Informaticien(100, 24));
           listPersonnages.add(personnage);
           System.out.println(listPersonnages);
         }
         if (str2 == 2) {
-          Decorator personnage = new cleMoletteDecorator(new Informaticien(100, 24));
+          Decorator personnage = 
+                  new cleMoletteDecorator(new Informaticien(100, 24));
           listPersonnages.add(personnage);
           System.out.println(listPersonnages);
         }
       }
 
       if (str == 2) {
-        System.out.println("Tapez: 1 -> souris" + " " + " 2 -> clé à molette");
+        System.out.println("Tapez: 1 -> souris" + " " 
+                + " 2 -> clé à molette");
         Scanner sc2 = new Scanner(System.in);
         int str2 = Integer.parseInt(sc2.nextLine());
         if (str2 == 1) {
-          Decorator personnage = new sourisDecorator(new Electronicien(100, 24));
+          Decorator personnage = 
+                  new sourisDecorator(new Electronicien(100, 24));
           listPersonnages.add(personnage);
           System.out.println(listPersonnages);
         }
         if (str2 == 2) {
-          Decorator personnage = new cleMoletteDecorator(new Electronicien(100, 24));
+          Decorator personnage = 
+                  new cleMoletteDecorator(new Electronicien(100, 24));
           listPersonnages.add(personnage);
           System.out.println(listPersonnages);
         }
@@ -71,20 +80,23 @@ public class Arene {
       x = x + 1;
     }
     Arene.startFight(
-        Arene.listPersonnages.get(0), Arene.listPersonnages.get(1)); // on lance le combat
+        Arene.listPersonnages.get(0), Arene.listPersonnages.get(1)); 
+// on lance le combat
   }
 
     /**
      * Commence le combat entre les 2 personnages
      * Interface en invite de commande, permet de choisir les actions
      */
-  public static void startFight(Decorator personnage1, Decorator personnage2) {
+  public static void startFight(final Decorator personnage1,
+          final Decorator personnage2) {
 
     while (true) {
 
       System.out.println("Joueur 1 : 1 -> attaquer , 2-> parer ");
       System.out.println(
-          "Joueur 1 : Energie = " + personnage1.showEnergy() + " / PV = " + personnage1.getPV());
+          "Joueur 1 : Energie = " + personnage1.showEnergy() + " / PV = "
+                  + personnage1.getPV());
       personnage1.resetDefense();
 
       Scanner sc3 = new Scanner(System.in);
@@ -111,7 +123,7 @@ public class Arene {
       System.out.println("PV restant Joueur 2 : " + personnage2.getPV());
 
       //On vérifie si le personnage est mort suite aux dégats qu'il a subis
-      if (personnage2.getMort() == true) {
+      if (personnage2.getMort()) {
         System.out.println("Le Vainqueur est : Joueur 1");
         listPersonnages.clear();
         break;
@@ -148,7 +160,7 @@ public class Arene {
       System.out.println("PV restant Joueur 1 : " + personnage1.getPV());
 
       //On vérifie si le personnage est mort suite aux dégats qu'il a subis
-      if (personnage1.getMort() == true) {
+      if (personnage1.getMort()) {
         System.out.println("Le Vainqueur est : Joueur 2");
         listPersonnages.clear();
         break;
