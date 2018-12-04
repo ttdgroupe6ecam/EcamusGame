@@ -19,7 +19,8 @@ import java.nio.file.Paths;
 
 /** @author UserAdmin */
 /* I creat a Menu that will pop - up after the Opening screen , and will contain
-Button to start or exit the interface game , for that I've created a new frame call
+Button to start or exit the interface game , 
+for that I've created a new frame call
 window and set is size and make it visible on the screen , I alsoe created
 2 button , one exit/one play
 */
@@ -28,29 +29,30 @@ window and set is size and make it visible on the screen , I alsoe created
  */
 public class Menu extends JPanel implements ActionListener, KeyListener {
 
-  String path = Paths.get(".").toAbsolutePath().normalize().toString();
+  private String path = Paths.get(".").toAbsolutePath().normalize().toString();
 
     /**
      * Fenetre.
      */
-  JFrame window = new JFrame();
+  private JFrame window = new JFrame();
     /**
      * Bouton.
      */
-  JButton playButton = new JButton();
+  private JButton playButton = new JButton();
     /**
      * Bouton.
      */
-  JButton exitButton = new JButton();
+  private JButton exitButton = new JButton();
     /**
      * Arriere plan.
      */
-  JLabel background = new JLabel();
-  File sound =
+  private JLabel background = new JLabel();
+  private File sound =
       new File(
-          path+"/resources/Title_Screen.wav"); /* Bien entrer le bon chemin d'acces du son */
-  AudioInputStream ais;
-  Clip clip1;
+          path + "/resources/Title_Screen.wav");
+  /* Bien entrer le bon chemin d'acces du son */
+  private AudioInputStream ais;
+  private Clip clip1;
 
   /**
    * Création de la page d'accueil.
@@ -64,22 +66,22 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
       this.setForeground(Color.DARK_GRAY);
       window.add(this);
       playButton.setBackground(Color.DARK_GRAY);
-      playButton.setIcon(
-          new ImageIcon(
-              path+"/resources/Vulcania.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
+      playButton.setIcon(new ImageIcon(
+              getPath() + "/resources/Vulcania.jpg")); 
+      /* Bien entrer le bon chemin d'acces de l'image */
       playButton.addActionListener(this);
       playButton.addKeyListener(this);
       window.add(playButton, BorderLayout.PAGE_START);
       exitButton.setBackground(Color.DARK_GRAY);
-      exitButton.setIcon(
-          new ImageIcon(
-              path+"/resources/Exit_Button.png")); /* Bien entrer le bon chemin d'acces de l'image */
+      exitButton.setIcon(new ImageIcon(
+              getPath() + "/resources/Exit_Button.png")); 
+      /* Bien entrer le bon chemin d'acces de l'image */
       exitButton.addActionListener(this);
       exitButton.addKeyListener(this);
       window.add(exitButton, BorderLayout.PAGE_END);
-      background.setIcon(
-          new ImageIcon(
-              path+"/resources/Gladiador.jpg")); /* Bien entrer le bon chemin d'acces de l'image */
+      background.setIcon(new ImageIcon(
+              getPath() + "/resources/Gladiador.jpg"));
+      /* Bien entrer le bon chemin d'acces de l'image */
       window.getContentPane().add(background);
       window.setUndecorated(true);
       window.setSize(800, 700);
@@ -101,15 +103,15 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
   }
 
   @Override
-  public void actionPerformed(ActionEvent ae) {
-    if (ae.getSource() == exitButton) {
+  public final void actionPerformed(final ActionEvent ae) {
+    if (ae.getSource() == getExitButton()) {
       // clip1.close();
-      window.dispose();
+            getWindow().dispose();
       System.exit(1);
 
-    } else if (ae.getSource() == playButton) {
-      window.dispose();
-      this.clip1.close();
+    } else if (ae.getSource() == getPlayButton()) {
+            getWindow().dispose();
+            this.getClip1().close();
 
       try {
         Arena a = new Arena();
@@ -120,18 +122,126 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
   }
 
   @Override
-  public void keyTyped(KeyEvent e) { }
+  public final void keyTyped(final KeyEvent e) { }
 
   @Override
-  public void keyPressed(KeyEvent kp) {
+  public final void keyPressed(final KeyEvent kp) {
     if (kp.getKeyCode() == KeyEvent.VK_ESCAPE) {
-      window.dispose();
+            getWindow().dispose();
     }
   }
 
   @Override
-  public void keyReleased(KeyEvent e) {
+  public final void keyReleased(final KeyEvent e) {
     throw new UnsupportedOperationException(
-        "Not supported yet."); // To change body of generated methods, choose Tools | Templates.
+        "Not supported yet."); 
+// To change body of generated methods, choose Tools | Templates.
   }
+
+    /**
+     * @return the path
+     */
+    public String getPath() {
+        return path;
+    }
+
+    /**
+     * @param path the path to set
+     */
+    public void setPath(String path) {
+        this.path = path;
+    }
+
+    /**
+     * @return the window
+     */
+    public JFrame getWindow() {
+        return window;
+    }
+
+    /**
+     * @param window the window to set
+     */
+    public void setWindow(JFrame window) {
+        this.window = window;
+    }
+
+    /**
+     * @return the playButton
+     */
+    public JButton getPlayButton() {
+        return playButton;
+    }
+
+    /**
+     * @param playButton the playButton to set
+     */
+    public void setPlayButton(JButton playButton) {
+        this.playButton = playButton;
+    }
+
+    /**
+     * @return the exitButton
+     */
+    public JButton getExitButton() {
+        return exitButton;
+    }
+
+    /**
+     * @param exitButton the exitButton to set
+     */
+    public void setExitButton(JButton exitButton) {
+        this.exitButton = exitButton;
+    }
+
+    
+
+    /**
+     * @param background the background to set
+     */
+    public void setBackground(JLabel background) {
+        this.background = background;
+    }
+
+    /**
+     * @return the sound
+     */
+    public File getSound() {
+        return sound;
+    }
+
+    /**
+     * @param sound the sound to set
+     */
+    public void setSound(File sound) {
+        this.sound = sound;
+    }
+
+    /**
+     * @return the ais
+     */
+    public AudioInputStream getAis() {
+        return ais;
+    }
+
+    /**
+     * @param ais the ais to set
+     */
+    public void setAis(AudioInputStream ais) {
+        this.ais = ais;
+    }
+
+    /**
+     * @return the clip1
+     */
+    public Clip getClip1() {
+        return clip1;
+    }
+
+    /**
+     * @param clip1 the clip1 to set
+     */
+    public void setClip1(Clip clip1) {
+        this.clip1 = clip1;
+    }
 }
