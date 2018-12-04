@@ -7,7 +7,7 @@ public abstract class Decorator extends Personnage {
    * @param personnage personnage
    */
 
-  public Decorator(Personnage personnage) {
+  public Decorator(final Personnage personnage) {
     this.personnage = personnage;
   }
 
@@ -17,7 +17,7 @@ public abstract class Decorator extends Personnage {
    * Permet de setter les points de vie du personnage
    * @param pv Nouveau PV du personnage
    */
-  public void setPV(int pv) {
+  public void setPV(final int pv) {
     this.personnage.setPV(pv);
   }
 
@@ -25,7 +25,7 @@ public abstract class Decorator extends Personnage {
    * Permet de recuperer le personnage choisi
    * @return personnage
    */
-  public Personnage getPersonnage() {
+  public final Personnage getPersonnage() {
     return personnage;
   }
 
@@ -33,7 +33,7 @@ public abstract class Decorator extends Personnage {
    * Permet de récupérer les points de vie du personnage
    * @return pv int des points de vie
    */
-  public int getPV() {
+  public  int getPV() {
     return personnage.getPV();
   }
 }
@@ -46,7 +46,7 @@ class sourisDecorator extends Decorator {
   /**
    * creation de l'objet
    */
-  public sourisDecorator(Personnage personnage) {
+  public sourisDecorator(final Personnage personnage) {
     super(personnage);
   }
 
@@ -64,7 +64,7 @@ class cleMoletteDecorator extends Decorator {
   /**
    * creation de l'objet
    */
-  public cleMoletteDecorator(Personnage personnage) {
+  public cleMoletteDecorator(final Personnage personnage) {
     super(personnage);
   }
 
