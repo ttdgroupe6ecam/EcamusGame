@@ -1,6 +1,6 @@
 public class Automaticien extends Personnage {
 
-  public Automaticien(int pv, int force, int energie) {
+  public Automaticien(final int pv,final int force,final int energie) {
     this.pv = pv;
     this.force = force;
     this.energie = energie;
