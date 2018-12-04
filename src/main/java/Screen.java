@@ -13,18 +13,18 @@ import java.io.File;
 import java.nio.file.Paths;
 
 public class Screen extends JPanel {
-  String path = Paths.get(".").toAbsolutePath().normalize().toString();
+  private String path = Paths.get(".").toAbsolutePath().normalize().toString();
 
-  JFrame window = new JFrame();
-  JLabel back = new JLabel();
+  private JFrame window = new JFrame();
+  private JLabel back = new JLabel();
 
   Screen() {
     window.add(this);
 
     window.setLocation(5, 50);
-    back.setIcon(
-        new ImageIcon(
-            path + "/resources/Ecamus.png")); /* Bien entrer le bon chemin d'acces de l'image */
+    back.setIcon(new ImageIcon(
+            getPath() + "/resources/Ecamus.png"));
+    /* Bien entrer le bon chemin d'acces de l'image */
     window.getContentPane().add(back);
     window.setUndecorated(true);
     window.setSize(970, 850);
@@ -33,7 +33,8 @@ public class Screen extends JPanel {
     try {
       File sound =
           new File(
-             path + "/resources/Title_Screen.wav"); /* Bien entrer le bon chemin d'acces du son */
+             getPath() + "/resources/Title_Screen.wav"); 
+      /* Bien entrer le bon chemin d'acces du son */
       AudioInputStream ais = AudioSystem.getAudioInputStream(sound);
       Clip clip1 = AudioSystem.getClip();
       clip1.open(ais);
@@ -48,4 +49,46 @@ public class Screen extends JPanel {
       System.out.println(e);
     }
   }
+
+    /**
+     * @return the path
+     */
+    public String getPath() {
+        return path;
+    }
+
+    /**
+     * @param path the path to set
+     */
+    public void setPath(String path) {
+        this.path = path;
+    }
+
+    /**
+     * @return the window
+     */
+    public JFrame getWindow() {
+        return window;
+    }
+
+    /**
+     * @param window the window to set
+     */
+    public void setWindow(JFrame window) {
+        this.window = window;
+    }
+
+    /**
+     * @return the back
+     */
+    public JLabel getBack() {
+        return back;
+    }
+
+    /**
+     * @param back the back to set
+     */
+    public void setBack(JLabel back) {
+        this.back = back;
+    }
 }
