@@ -4,36 +4,89 @@ public abstract class Personnage {
     /**
      * Pv.
      */
-    protected int pv;
+    private int pv;
     /**
      * Force.
      */
-    protected int force;
+    private int force;
 
     /**
      * Energie.
      */
-    protected int energie = 100;
+    private int energie = 100;
 
     /**
      * Defense.
      */
-    protected int defense = 0;
+    private int defense = 0;
 
     /**
      * minDamage.
      */
-    protected int minDamage = 5;
+    private int minDamage = 5;
 
     /**
      * maxDamage.
      */
-    protected int maxDamage = 10;
+    private int maxDamage = 10;
 
     /**
      * mort.
      */
-    protected boolean mort;
+    private boolean mort;
+
+    //
+    
+    public Personnage() {
+    }
+
+    public Personnage(int pv, int force, boolean mort) {
+        this.pv = pv;
+        this.force = force;
+        this.mort = mort;
+    }
+
+ 
+
+    public int getForce() {
+        return force;
+    }
+
+    public void setForce(int force) {
+        this.force = force;
+    }
+
+    public int getEnergie() {
+        return energie;
+    }
+
+    public void setEnergie(int energie) {
+        this.energie = energie;
+    }
+
+    public int getDefense() {
+        return defense;
+    }
+
+    public void setDefense(int defense) {
+        this.defense = defense;
+    }
+
+    public int getMinDamage() {
+        return minDamage;
+    }
+
+    public void setMinDamage(int minDamage) {
+        this.minDamage = minDamage;
+    }
+
+    public int getMaxDamage() {
+        return maxDamage;
+    }
+
+    public void setMaxDamage(int maxDamage) {
+        this.maxDamage = maxDamage;
+    }
 
     /**
      * Permet de recuperer le statut Mort du personnage.
@@ -48,7 +101,7 @@ public abstract class Personnage {
      * Permet de setter le statut Mort du personnage.
      */
 
-    final void setMort() {
+    public void setMort() {
         this.mort = true;
     }
 
