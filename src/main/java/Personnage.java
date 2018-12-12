@@ -1,5 +1,8 @@
 import java.util.Random;
-
+/**
+ * 
+ * @author MediaMonster
+ */
 public abstract class Personnage {
     /**
      * Pv.
@@ -35,11 +38,19 @@ public abstract class Personnage {
      */
     protected  boolean mort;
 
-    //
     
+    /**
+     * constract
+     */
     public Personnage() {
     }
-
+    
+    /**
+     * 
+     * @param pv
+     * @param force
+     * @param mort 
+     */
     public Personnage(int pv, int force, boolean mort) {
         this.pv = pv;
         this.force = force;
@@ -110,7 +121,6 @@ public abstract class Personnage {
      * degats aleatoire en fonction de maxDamage et minDamage
      * @return degats
      */
-
     public int attaquer() {
         this.energie -= 40;
 
