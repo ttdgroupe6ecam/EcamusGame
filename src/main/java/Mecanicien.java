@@ -1,10 +1,17 @@
-/** 
- * Mecanicien class
-*/
+/**
+ * Mecanicien class.
+ * 
+ * @author MediaMonster
+ */
 public class Mecanicien extends Personnage {
-/** 
- * Mecanicien constracut
-*/
+
+    /**
+     * 
+     * @param pv
+     * @param force
+     * @param energie
+     * @param mort 
+     */
   public Mecanicien(final int pv, final int force, final int energie, final boolean mort) {
     super(pv,  force,mort);
     this.energie = energie;
