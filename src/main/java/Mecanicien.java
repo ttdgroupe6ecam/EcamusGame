@@ -19,5 +19,3 @@ public class Mecanicien extends Personnage {
     this.maxDamage = +2;
   }
 }
-
-
