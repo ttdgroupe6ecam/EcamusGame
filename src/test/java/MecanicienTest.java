@@ -18,7 +18,8 @@ import static org.junit.Assert.*;
 public class MecanicienTest {
     
     public MecanicienTest() {
-        Mecanicien mecanicien = new Mecanicien(100, 50,200);
+        Mecanicien mecanicien;
+        mecanicien = new Mecanicien(100, 50,200,true);
         assertNotNull(mecanicien);  
     }
    
