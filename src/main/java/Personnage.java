@@ -4,36 +4,36 @@ public abstract class Personnage {
     /**
      * Pv.
      */
-    private int pv;
+    protected  int pv;
     /**
      * Force.
      */
-    private int force;
+    protected  int force;
 
     /**
      * Energie.
      */
-    private int energie = 100;
+    protected  int energie = 100;
 
     /**
      * Defense.
      */
-    private int defense = 0;
+    protected  int defense = 0;
 
     /**
      * minDamage.
      */
-    private int minDamage = 5;
+    protected  int minDamage = 5;
 
     /**
      * maxDamage.
      */
-    private int maxDamage = 10;
+    protected  int maxDamage = 10;
 
     /**
      * mort.
      */
-    private boolean mort;
+    protected  boolean mort;
 
     //
     
