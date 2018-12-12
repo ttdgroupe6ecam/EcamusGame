@@ -5,7 +5,6 @@
 public class Mecanicien extends Personnage {
 
     /**
-     * 
      * @param pv
      * @param force
      * @param energie
