@@ -4,7 +4,7 @@ public abstract class Decorator extends Personnage {
 
   /**
    * Creer le decorateur
-   * @param personnage personnage
+   * @param personnage ** personnage **
    */
 
   public Decorator(final Personnage personnage) {
