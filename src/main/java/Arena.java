@@ -65,6 +65,9 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
   */
   private Clip clip;
 
+   /**
+   * Default constract.
+   */
   Arena() throws LineUnavailableException {
     try {
 
@@ -84,7 +87,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
       backButton.addActionListener(this);
       window.add(backButton, BorderLayout.PAGE_END);
       enterButton.setIcon(new ImageIcon(
-              getPath() + "/resources/arena.jpg")); 
+              getPath() + "/resources/arena.jpg"));
       /* Bien entrer le bon chemin d'acces de l'image */
       enterButton.addKeyListener(this);
       enterButton.addActionListener(this);
@@ -134,7 +137,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
   @Override
   public final void keyTyped(final KeyEvent e) {
     throw new UnsupportedOperationException(
-        "Not supported yet."); // To change body of 
+        "Not supported yet."); // To change body of
     //generated methods, choose Tools | Templates.
   }
 
