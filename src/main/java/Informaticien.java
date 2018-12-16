@@ -1,5 +1,5 @@
 /**
- * Represente un informaticien
+ * Represente un informaticien.
  * @author adrien
  */
 public class Informaticien extends Personnage {
