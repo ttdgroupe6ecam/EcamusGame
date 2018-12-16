@@ -1,4 +1,4 @@
-/** Represente un geometre
+/** Represente un geometre.
  * @author adrien
  */
 public class Geometre extends Personnage {
@@ -18,7 +18,7 @@ public class Geometre extends Personnage {
   }
 
   /**
-   * Affiche Les infos du géomètre
+   * Affiche Les infos du géomètre.
    */
   public final void draw() {
     System.out.println("Geometre: " + pv + ", " + force + "," + energie);
