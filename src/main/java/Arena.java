@@ -60,6 +60,9 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
           path + "/resources/Arena_Select.wav");
   /* Bien entrer le bon chemin d'acces du son */
   private AudioInputStream ais;
+  /**
+  * Clip.
+  */
   private Clip clip;
 
   Arena() throws LineUnavailableException {
