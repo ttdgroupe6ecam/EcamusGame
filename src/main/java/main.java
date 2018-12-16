@@ -1,5 +1,11 @@
+/**
+ * main class.
+ * @author MediaMonster
+ */
 import javax.swing.*;
-
+/**
+*@param args **main function**
+*/
 public class main {
 
   public static void main(String[] args) {
