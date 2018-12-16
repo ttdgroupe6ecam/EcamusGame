@@ -7,8 +7,8 @@ public class Informaticien extends Personnage {
 
   /**
    * Initialise l'informaticien
-   * @param pv
-   * @param force
+   * @param pv **pv**
+   * @param force **force**
    */
   public Informaticien(final int pv,final int force) {
     this.pv = pv;
