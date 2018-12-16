@@ -12,6 +12,10 @@ import javax.swing.*;
 import java.io.File;
 import java.nio.file.Paths;
 
+/**
+ * Screen class.
+ * @author MediaMonster
+ */
 public class Screen extends JPanel {
   private String path = Paths.get(".").toAbsolutePath().normalize().toString();
 
