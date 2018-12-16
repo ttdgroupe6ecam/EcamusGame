@@ -1,11 +1,15 @@
+/**
+ * Constructeur class.
+ * @author MediaMonster
+ */
 class Constructeur extends Personnage {
 
-  /**
-   * Constructeur.
-   * @param pv
-   * @param force
-   * @param energie
-   */
+    /**
+     * Constructeur.
+     * @param pv **point de vie **
+     * @param force ** la force  **
+     * @param energie **l'énergie **
+     */
    public Constructeur(final int pv,final int force,final int energie) {
     this.pv = pv;
     this.force = force;
