@@ -45,11 +45,10 @@ public abstract class Personnage {
     public Personnage() {
     }
     
-    /**
-     * 
-     * @param pv
-     * @param force
-     * @param mort 
+   /**
+     * @param pv **point de vie **
+     * @param force ** la force  **
+     * @param mort ** mort oui ou non **
      */
     public Personnage(int pv, int force, boolean mort) {
         this.pv = pv;
