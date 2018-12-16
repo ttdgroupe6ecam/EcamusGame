@@ -10,7 +10,7 @@ public class Informaticien extends Personnage {
    * @param pv **pv**
    * @param force **force**
    */
-  public Informaticien(final int pv,final int force) {
+  public Informaticien(final int pv, final int force) {
     this.pv = pv;
     this.force = force;
     this.maxDamage = 50;
