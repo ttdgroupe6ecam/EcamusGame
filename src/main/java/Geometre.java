@@ -4,10 +4,10 @@
 public class Geometre extends Personnage {
 
   /**
-   * Initialise geometre
-   * @param pv
-   * @param force
-   * @param energie
+   * Initialise geometre ** geometre **
+   * @param pv **point de vie **
+   * @param force ** la force  **
+   * @param energie **l'énergie **
    */
   public Geometre(final int pv,final int force,final int energie) {
     this.pv = pv;
