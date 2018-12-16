@@ -19,7 +19,9 @@ import java.nio.file.Paths;
 
 /** @author UserAdmin */
 public class Arena extends JPanel implements ActionListener, KeyListener {
-
+   /**
+   * path.
+   */
   private String path = Paths.get(".").toAbsolutePath().normalize().toString();
   /**
    * Fenetre.
