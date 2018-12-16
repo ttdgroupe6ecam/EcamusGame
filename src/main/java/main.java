@@ -4,7 +4,7 @@
  */
 import javax.swing.*;
 /**
-*@param args **main function**
+*main function
 */
 public class main {
 
