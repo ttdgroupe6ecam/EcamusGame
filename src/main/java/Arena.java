@@ -193,7 +193,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
   }
   /**
    * s setter.
-   * @param s the s to set
+   * @param sParam the s to set
    */
   public final void setS(String[] sParam) {
       this.s = sParam;
