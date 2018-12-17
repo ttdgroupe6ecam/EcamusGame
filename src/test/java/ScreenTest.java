@@ -7,6 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.assertj.core.api.Java6Assertions.assertThat;
+import org.junit.Assert;
 
 public class ScreenTest {
      FrameFixture window;
@@ -17,7 +18,7 @@ public class ScreenTest {
         window = new FrameFixture(String.valueOf(frame));
         window.show(); // shows the frame to t
 
-    }}
+    }
     /*
     @Test
     public void shouldCopyTextInLabelWhenClickingButton() {
@@ -30,7 +31,10 @@ public class ScreenTest {
     @After
     public void tearDown() {
         window.cleanUp();
+    }*/
+
+    @Test
+    public void TestScreen(){
+        Assert.assertNotNull(new Screen());
     }
-
-
-}*/
+}
