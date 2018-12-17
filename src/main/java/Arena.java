@@ -19,7 +19,9 @@ import java.nio.file.Paths;
 
 /** @author UserAdmin */
 public class Arena extends JPanel implements ActionListener, KeyListener {
-
+  /**
+   * the path of the current folder.
+   */
   private String path = Paths.get(".").toAbsolutePath().normalize().toString();
   /**
    * Fenetre.
@@ -57,7 +59,13 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
       new File(
           path + "/resources/Arena_Select.wav");
   /* Bien entrer le bon chemin d'acces du son */
+  /**
+   * the class to handle the audio input.
+   */
   private AudioInputStream ais;
+  /**
+   * the class to hadle a clip.
+   */
   private Clip clip;
   /**
    * This is the class that generates the window for the arena.
@@ -81,8 +89,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
       backButton.addKeyListener(this);
       backButton.addActionListener(this);
       window.add(backButton, BorderLayout.PAGE_END);
-      enterButton.setIcon(new ImageIcon(
-              getPath() + "/resources/arena.jpg")); 
+      enterButton.setIcon(new ImageIcon(getPath() + "/resources/arena.jpg")); 
       /* Bien entrer le bon chemin d'acces de l'image */
       enterButton.addKeyListener(this);
       enterButton.addActionListener(this);
@@ -131,8 +138,8 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
 
   @Override
   public final void keyTyped(final KeyEvent e) {
-    throw new UnsupportedOperationException(
-        "Not supported yet."); // To change body of 
+    throw new UnsupportedOperationException("Not supported yet."); 
+    // To change body of 
     //generated methods, choose Tools | Templates.
   }
 
@@ -167,7 +174,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
    * path setter.
    * @param pathParam path to be set
    */
-  public final void setPath(String pathParam) {
+  public final void setPath(final String pathParam) {
       this.path = pathParam;
   }
   /**
@@ -181,7 +188,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
    * window setter.
    * @param windowParam the window to be set
    */
-  public final void setWindow(JFrame windowParam) {
+  public final void setWindow(final JFrame windowParam) {
       this.window = windowParam;
   }
   /**
@@ -195,7 +202,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
    * s setter.
    * @param sParam the s to set
    */
-  public final void setS(String[] sParam) {
+  public final void setS(final String[] sParam) {
       this.s = sParam;
   }
   /**
@@ -209,7 +216,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
    * nomArena setter.
    * @param nomArenaParam the nomArena to set
    */
-  public final void setNomArena(JComboBox nomArenaParam) {
+  public final void setNomArena(final JComboBox nomArenaParam) {
       this.nomArena = nomArenaParam;
   }
   /**
@@ -223,7 +230,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
    * enterButon setter.
    * @param enterButtonParam the enterButton to set
    */
-  public final void setEnterButton(JButton enterButtonParam) {
+  public final void setEnterButton(final JButton enterButtonParam) {
       this.enterButton = enterButtonParam;
   }
   /**
@@ -237,7 +244,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
    * backButyon setter.
    * @param backButtonParam the backButton to set
    */
-  public final void setBackButton(JButton backButtonParam) {
+  public final void setBackButton(final JButton backButtonParam) {
       this.backButton = backButtonParam;
   }
   /**
@@ -251,7 +258,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
    * customFOnt setter.
    * @param customFontParam the customFont to set
    */
-  public final void setCustomFont(Font customFontParam) {
+  public final void setCustomFont(final Font customFontParam) {
       this.customFont = customFontParam;
   }
   /**
@@ -265,7 +272,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
    * comboFont setter.
    * @param comboFontParam the comboFont to set
    */
-  public final void setComboFont(Font comboFontParam) {
+  public final void setComboFont(final Font comboFontParam) {
       this.comboFont = comboFontParam;
   }
   /**
@@ -279,7 +286,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
    * sound setter.
    * @param soundParam the sound to set
    */
-  public final void setSound(File soundParam) {
+  public final void setSound(final File soundParam) {
       this.sound = soundParam;
   }
   /**
@@ -293,7 +300,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
    * ais setter.
    * @param aisParam the ais to set
    */
-  public final void setAis(AudioInputStream aisParam) {
+  public final void setAis(final AudioInputStream aisParam) {
       this.ais = aisParam;
   }
   /**
@@ -307,7 +314,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
    * clip setter.
    * @param clipParam the clip to set
    */
-  public final void setClip(Clip clipParam) {
+  public final void setClip(final Clip clipParam) {
       this.clip = clipParam;
   }
 }
