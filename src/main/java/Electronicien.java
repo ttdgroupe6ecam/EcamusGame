@@ -8,7 +8,7 @@ class Electronicien extends Personnage {
    * @param pvParam the pv of the perso
    * @param forceParam the force of the character
    */
-  Electronicien(final int pvParam,final int forceParam) {
+  Electronicien(final int pvParam, final int forceParam) {
     this.pv = pvParam;
     this.force = forceParam;
     // this.minDamage = 0;
