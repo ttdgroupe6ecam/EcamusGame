@@ -7,13 +7,13 @@ class Geometre extends Personnage {
   /**
    * Initialise geometre.
    * @param pvPar the pv of the character
-   * @param forceParam it's force
-   * @param energieParam it's energie
+   * @param forcePar it's force
+   * @param energiePar it's energie
    */
-  public Geometre(final int pvPar,final int forceParam,final int energieParam) {
+  Geometre(final int pvPar, final int forcePar, final int energiePar) {
     this.pv = pvPar;
-    this.force = forceParam;
-    this.energie = energieParam;
+    this.force = forcePar;
+    this.energie = energiePar;
     this.minDamage = -1;
     this.maxDamage = +2;
   }
