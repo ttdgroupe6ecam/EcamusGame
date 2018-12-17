@@ -1,4 +1,4 @@
-
+/*
 import org.assertj.swing.edt.GuiActionRunner;
 import org.assertj.swing.fixture.FrameFixture;
 import org.junit.After;
@@ -34,3 +34,4 @@ public class ArenaTest {
 
 
 }
+*/
