@@ -26,11 +26,40 @@ public class DecoratorTest {
     }
     
      @Test
-    public  void CleMoletteDecorator(){
+    public  void TestCleMoletteDecorator(){
         Automaticien automaticien = new Automaticien(100, 50, 120);
         Decorator d;
         d = new CleMoletteDecorator(automaticien);
         assertNotNull(d);
     }
+    
+       @Test
+    public  void TestgetPersonnage(){
+        Automaticien automaticien = new Automaticien(100, 50, 120);
+        Decorator d;
+        d = new CleMoletteDecorator(automaticien);
+        assertNotNull(d.getPersonnage());
+    }
+    
+       @Test
+    public  void TestgetPV(){
+        Automaticien automaticien = new Automaticien(100, 50, 120);
+        Decorator d;
+        d = new CleMoletteDecorator(automaticien);
+        assertEquals(100,d.getPV());
+    }
+    
+        @Test
+    public  void TestsetPV(){
+        Automaticien automaticien = new Automaticien(100, 50, 120);
+        Decorator d;
+        d = new CleMoletteDecorator(automaticien);
+        d.setPV(10);
+        assertEquals(10,d.getPV());
+    }
+    
+    
+    
+    
  
 }
