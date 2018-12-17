@@ -142,7 +142,7 @@ public abstract class Personnage {
     }
 
     /**
-     * reset la dÃ©fense.
+     * reset la défense.
      */
     public final void resetDefense() {
         this.defense = 0;
