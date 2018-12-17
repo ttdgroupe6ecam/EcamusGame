@@ -1,15 +1,19 @@
+/**
+ * upgrades a charatcer into a contructeur
+ * @author venon arthur
+ */
 class Constructeur extends Personnage {
 
   /**
    * Constructeur.
-   * @param pv
-   * @param force
-   * @param energie
+   * @param pvPar it's pv
+   * @param forceParam it's force
+   * @param energieParam it's energie
    */
-   Constructeur(final int pv,final int force,final int energie) {
-    this.pv = pv;
-    this.force = force;
-    this.energie = energie;
+   Constructeur(final int pvPar,final int forceParam,final int energieParam) {
+    this.pv = pvPar;
+    this.force = forceParam;
+    this.energie = energieParam;
     this.minDamage = -3;
     this.maxDamage = +4;
   }
