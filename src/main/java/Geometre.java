@@ -1,18 +1,19 @@
-/** Represente un geometre
+/** 
+ * Represente un geometre.
  * @author adrien
  */
-public class Geometre extends Personnage {
+class Geometre extends Personnage {
 
   /**
-   * Initialise geometre
-   * @param pv
-   * @param force
-   * @param energie
+   * Initialise geometre.
+   * @param pvPar the pv of the character
+   * @param forceParam it's force
+   * @param energieParam it's energie
    */
-  public Geometre(final int pv,final int force,final int energie) {
-    this.pv = pv;
-    this.force = force;
-    this.energie = energie;
+  public Geometre(final int pvPar,final int forceParam,final int energieParam) {
+    this.pv = pvPar;
+    this.force = forceParam;
+    this.energie = energieParam;
     this.minDamage = -1;
     this.maxDamage = +2;
   }
