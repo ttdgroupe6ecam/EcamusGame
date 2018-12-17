@@ -102,12 +102,9 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
       window.setSize(800, 700);
       window.setVisible(true);
       try {
-          
           clip1.open(ais);
-          
           clip1.setMicrosecondPosition(20000000);
           clip1.start();
-          
       } catch (Exception e) {
           System.out.println(e);
       }
