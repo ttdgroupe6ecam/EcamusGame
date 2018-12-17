@@ -9,7 +9,7 @@ public class Automaticien extends Personnage {
    * @param forceParam it's force
    * @param energieParam it's energie
    */
-  Automaticien(final int pvPar,final int forceParam,final int energieParam) {
+  Automaticien(final int pvPar, final int forceParam, final int energieParam) {
     this.pv = pvPar;
     this.force = forceParam;
     this.energie = energieParam;
