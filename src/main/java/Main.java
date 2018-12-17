@@ -2,7 +2,7 @@
  * main class.
  * @author MediaMonster
  */
-import javax.swing.*;
+
 /**
 *main function.
 */
