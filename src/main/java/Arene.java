@@ -12,12 +12,15 @@ public class Arene {
    */
   private static List<Decorator> listPersonnages = new ArrayList<Decorator>();
   /**
+   * non called contructor.
+   */
+  private Arene() {
+
+  }
+  /**
    * Declaration de l'interface en invite de commande,
    * Permet de choisir son personnage et son arme.
    */
-  private Arene() {
-      
-  }
   public static void buildFight() {
 
     System.out.println("Bienvenue sur Ecamus");
