@@ -1,28 +1,36 @@
+/**
+ * the decorator class used to upgrade a personnage.
+ * @author venon arthur
+ */
 public abstract class Decorator extends Personnage {
-
-  protected Personnage personnage;
+/**
+ * the personnage to be upgraded.
+ */
+  private Personnage personnage;
 
   /**
-   * Creer le decorateur
-   * @param personnage personnage
+   * Creer le decorateur.
+   * @param personnageParam personnage
    */
 
-  public Decorator(final Personnage personnage) {
-    this.personnage = personnage;
+  public Decorator(final Personnage personnageParam) {
+    this.personnage = personnageParam;
   }
-
+  /**
+   * TODO.
+   */
   public void draw() { }
 
   /**
-   * Permet de setter les points de vie du personnage
+   * Permet de setter les points de vie du personnage.
    * @param pv Nouveau PV du personnage
    */
-  public void setPV(final int pv) {
+  public final void setPV(final int pv) {
     this.personnage.setPV(pv);
   }
 
   /**
-   * Permet de recuperer le personnage choisi
+   * Permet de recuperer le personnage choisi.
    * @return personnage
    */
   public final Personnage getPersonnage() {
@@ -30,26 +38,28 @@ public abstract class Decorator extends Personnage {
   }
 
   /**
-   * Permet de récupérer les points de vie du personnage
+   * Permet de récupérer les points de vie du personnage.
    * @return pv int des points de vie
    */
-  public  int getPV() {
+  public final int getPV() {
     return personnage.getPV();
   }
 }
 
 /**
- * Permet de créer une arme concrete issu du décorateur
+ * Permet de créer une arme concrete issu du décorateur.
  */
-class sourisDecorator extends Decorator {
-  // Constuct
+class SourisDecorator extends Decorator {
   /**
-   * creation de l'objet
+   * the constructor os the SourisDecorator class.
+   * @param personnage  the personnage to be upgraded
    */
-  public sourisDecorator(final Personnage personnage) {
+  SourisDecorator(final Personnage personnage) {
     super(personnage);
   }
-
+  /**
+   * affichage dans la console.
+   */
   public void draw() {
 
     super.draw();
@@ -58,16 +68,19 @@ class sourisDecorator extends Decorator {
 
 }
 /**
- * Permet de créer une arme concrete issu du décorateur
+ * Permet de créer une arme concrete issu du décorateur.
  */
-class cleMoletteDecorator extends Decorator {
+class CleMoletteDecorator extends Decorator {
   /**
-   * creation de l'objet
+   * creation de l'objet.
+   * @personnage the personnage to be upgraded
    */
-  public cleMoletteDecorator(final Personnage personnage) {
+  CleMoletteDecorator(final Personnage personnage) {
     super(personnage);
   }
-
+  /**
+   *affichage dans la console. 
+   */
   public void draw() {
     super.draw();
     System.out.println(" Equipé d'une Clé à molette");
