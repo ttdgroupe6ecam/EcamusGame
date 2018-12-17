@@ -1,4 +1,4 @@
-/*
+
 import org.assertj.swing.edt.GuiActionRunner;
 import org.assertj.swing.fixture.FrameFixture;
 import org.junit.After;
@@ -23,7 +23,7 @@ public class ArenaTest {
     public void shouldCopyTextInLabelWhenClickingButton() {
         comm : window.textBox("textToCopy").enterText("Some random text");
         window.button("copyButton").click();
-        window.label("copiedText").requireText("Some random text"); comm
+        window.label("copiedText").requireText("Some random text"); 
         assertThat(window).hasNoNullFieldsOrProperties();
         window.comboBox().requireSelection("");
     }
@@ -33,4 +33,4 @@ public class ArenaTest {
     }
 
 
-}*/
+}
