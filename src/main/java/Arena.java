@@ -221,7 +221,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
   }
   /**
    * enterButon setter.
-   * @param enterButtonwParam the enterButton to set
+   * @param enterButtonParam the enterButton to set
    */
   public final void setEnterButton(JButton enterButtonParam) {
       this.enterButton = enterButtonParam;
