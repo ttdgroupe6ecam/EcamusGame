@@ -15,6 +15,9 @@ public class Arene {
    * Declaration de l'interface en invite de commande,
    * Permet de choisir son personnage et son arme.
    */
+  private Arene() {
+      
+  }
   public static void buildFight() {
 
     System.out.println("Bienvenue sur Ecamus");
@@ -78,7 +81,7 @@ public class Arene {
 
       x = x + 1;
     }
-    startFight(Arene.listPersonnages.get(0), Arene.listPersonnages.get(1)); 
+    startFight(Arene.listPersonnages.get(0), Arene.listPersonnages.get(1));
 // on lance le combat
   }
 
