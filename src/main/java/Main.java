@@ -6,7 +6,7 @@
 /**
 *main function.
 */
-public final class Main {
+public  class Main {
    
   /**
   *constructor.
