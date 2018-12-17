@@ -18,9 +18,9 @@ import java.nio.file.Paths;
  */
 
 /** @author UserAdmin */
-/** I creat a Menu that will pop - up after the Opening screen , and will, 
+/** I creat a Menu that will pop - up after the Opening screen and will, 
  * contain,
- *Button to start or exit the interface game , 
+ *Button to start or exit the interface game, 
  *for that I've created a new frame call,
  *window and set is size and make it visible on the screen , I alsoe created,
  *2 button , one exit/one play.
@@ -80,18 +80,18 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
       this.setForeground(Color.DARK_GRAY);
       window.add(this);
       playButton.setBackground(Color.DARK_GRAY);
-      playButton.setIcon(new ImageIcon(getPath() + "/resources/Vulcania.jpg")); 
+     playButton.setIcon(new ImageIcon(getPath() + "/resources/Vulcania.jpg")); 
       /* Bien entrer le bon chemin d'acces de l'image */
       playButton.addActionListener(this);
       playButton.addKeyListener(this);
       window.add(playButton, BorderLayout.PAGE_START);
       exitButton.setBackground(Color.DARK_GRAY);
-      exitButton.setIcon(new ImageIcon(getPath()+"/resources/Exit_Button.png")); 
+   exitButton.setIcon(new ImageIcon(getPath() + "/resources/Exit_Button.png")); 
       /* Bien entrer le bon chemin d'acces de l'image */
       exitButton.addActionListener(this);
       exitButton.addKeyListener(this);
       window.add(exitButton, BorderLayout.PAGE_END);
-      background.setIcon(new ImageIcon(getPath() + "/resources/Gladiador.jpg"));
+    background.setIcon(new ImageIcon(getPath() + "/resources/Gladiador.jpg"));
       /* Bien entrer le bon chemin d'acces de l'image */
       window.getContentPane().add(background);
       window.setUndecorated(true);
@@ -158,7 +158,7 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
    * path setter.
    * @param pathParam the path to set
    */
-  public final void setPath(String pathParam) {
+  public final void setPath(final String pathParam) {
       this.path = pathParam;
   }
   /**
@@ -172,7 +172,7 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
    * window setter.
    * @param windowParam the window to set
    */
-  public final void setWindow(JFrame windowParam) {
+  public final void setWindow(final JFrame windowParam) {
       this.window = windowParam;
   }
   /**
@@ -186,7 +186,7 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
    * playButton setter.
    * @param playButtonParam the playButton to set
    */
-  public final void setPlayButton(JButton playButtonParam) {
+  public final void setPlayButton(final JButton playButtonParam) {
       this.playButton = playButtonParam;
   }
   /**
@@ -200,14 +200,14 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
    * exitButton setter.
    * @param exitButtonParam the exitButton to set
    */
-  public final void setExitButton(JButton exitButtonParam) {
+  public final void setExitButton(final JButton exitButtonParam) {
       this.exitButton = exitButtonParam;
   }
   /**
    * backgroung setter.
    * @param backgroundParam the background to set
    */
-  public final void setBackground(JLabel backgroundParam) {
+  public final void setBackground(final JLabel backgroundParam) {
       this.background = backgroundParam;
   }
   /**
@@ -221,7 +221,7 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
    * sound setter.
    * @param soundParam the sound to set
    */
-  public final void setSound(File soundParam) {
+  public final void setSound(final File soundParam) {
       this.sound = soundParam;
   }
   /**
@@ -235,7 +235,7 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
    * ais setter.
    * @param aisParam the ais to set
    */
-  public final void setAis(AudioInputStream aisParam) {
+  public final void setAis(final AudioInputStream aisParam) {
       this.ais = aisParam;
   }
   /**
@@ -249,7 +249,7 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
    * clip setter.
    * @param clip1Param the clip1 to set
    */
-  public final void setClip1(Clip clip1Param) {
+  public final void setClip1(final Clip clip1Param) {
       this.clip1 = clip1Param;
   }
 }
