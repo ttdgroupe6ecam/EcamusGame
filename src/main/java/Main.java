@@ -4,10 +4,13 @@
  */
 import javax.swing.*;
 /**
-*main function
+*main function.
 */
-public class main {
-
+public class Main {
+  /**
+  *constructor.
+  *@param args the argument of the method
+  */
   public static void main(String[] args) {
 
     Screen s = new Screen();
