@@ -6,7 +6,7 @@ import java.util.Scanner;
  * the one to play the game.
  * @author venon arthur
  */
-public class Arene {
+public final class Arene {
   /**
    * A static list that contains all the characters played by the users.
    */
