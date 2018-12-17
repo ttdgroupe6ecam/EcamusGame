@@ -89,7 +89,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
       backButton.addKeyListener(this);
       backButton.addActionListener(this);
       window.add(backButton, BorderLayout.PAGE_END);
-      enterButton.setIcon(new ImageIcon(getPath() + "/resources/arena.jpg")); 
+      enterButton.setIcon(new ImageIcon(path + "/resources/arena.jpg"));
       /* Bien entrer le bon chemin d'acces de l'image */
       enterButton.addKeyListener(this);
       enterButton.addActionListener(this);
@@ -139,7 +139,6 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
   @Override
   public final void keyTyped(final KeyEvent e) {
     throw new UnsupportedOperationException("Not supported yet."); 
-    // To change body of 
     //generated methods, choose Tools | Templates.
   }
 
@@ -160,7 +159,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
 
   @Override
   public final void keyReleased(final KeyEvent e) {
-    throw new UnsupportedOperationException("Not supported yet."); 
+    throw new UnsupportedOperationException("Not supported yet.");
 // To change body of generated methods, choose Tools | Templates.
   }
   /**
