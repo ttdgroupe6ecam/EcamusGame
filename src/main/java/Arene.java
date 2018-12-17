@@ -25,7 +25,6 @@ public final class Arene {
 
     System.out.println("Bienvenue sur Ecamus");
     int x = 0;
-    int flag = 0;
 
     //x indique le nombre de joueurs, maximum 2
     while (x < 2) {
