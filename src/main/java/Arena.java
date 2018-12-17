@@ -59,7 +59,10 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
   /* Bien entrer le bon chemin d'acces du son */
   private AudioInputStream ais;
   private Clip clip;
-
+  /**
+   * This is the class that generates the window for the arena.
+   * @throws LineUnavailableException throws an exception for a line
+   */
   Arena() throws LineUnavailableException {
     try {
 
@@ -150,156 +153,161 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
 
   @Override
   public final void keyReleased(final KeyEvent e) {
-    throw new UnsupportedOperationException(
-        "Not supported yet."); 
+    throw new UnsupportedOperationException("Not supported yet."); 
 // To change body of generated methods, choose Tools | Templates.
   }
-  
-  public String getPath() {
+  /**
+   * Path getter.
+   * @return the path of the file to open
+   */
+  public final String getPath() {
       return this.path;
   }
-  
-  public void setPath(String path) {
-      this.path=path;
+  /**
+   * path setter.
+   * @param pathParam path to be set
+   */
+  public final void setPath(String pathParam) {
+      this.path = pathParam;
   }
-
-    /**
-     * @return the window
-     */
-    public JFrame getWindow() {
-        return window;
-    }
-
-    /**
-     * @param window the window to set
-     */
-    public void setWindow(JFrame window) {
-        this.window = window;
-    }
-
-    /**
-     * @return the s
-     */
-    public String[] getS() {
-        return s;
-    }
-
-    /**
-     * @param s the s to set
-     */
-    public void setS(String[] s) {
-        this.s = s;
-    }
-
-    /**
-     * @return the nomArena
-     */
-    public JComboBox getNomArena() {
-        return nomArena;
-    }
-
-    /**
-     * @param nomArena the nomArena to set
-     */
-    public void setNomArena(JComboBox nomArena) {
-        this.nomArena = nomArena;
-    }
-
-    /**
-     * @return the enterButton
-     */
-    public JButton getEnterButton() {
-        return enterButton;
-    }
-
-    /**
-     * @param enterButton the enterButton to set
-     */
-    public void setEnterButton(JButton enterButton) {
-        this.enterButton = enterButton;
-    }
-
-    /**
-     * @return the backButton
-     */
-    public JButton getBackButton() {
-        return backButton;
-    }
-
-    /**
-     * @param backButton the backButton to set
-     */
-    public void setBackButton(JButton backButton) {
-        this.backButton = backButton;
-    }
-
-    /**
-     * @return the customFont
-     */
-    public Font getCustomFont() {
-        return customFont;
-    }
-
-    /**
-     * @param customFont the customFont to set
-     */
-    public void setCustomFont(Font customFont) {
-        this.customFont = customFont;
-    }
-
-    /**
-     * @return the comboFont
-     */
-    public Font getComboFont() {
-        return comboFont;
-    }
-
-    /**
-     * @param comboFont the comboFont to set
-     */
-    public void setComboFont(Font comboFont) {
-        this.comboFont = comboFont;
-    }
-
-    /**
-     * @return the sound
-     */
-    public File getSound() {
-        return sound;
-    }
-
-    /**
-     * @param sound the sound to set
-     */
-    public void setSound(File sound) {
-        this.sound = sound;
-    }
-
-    /**
-     * @return the ais
-     */
-    public AudioInputStream getAis() {
-        return ais;
-    }
-
-    /**
-     * @param ais the ais to set
-     */
-    public void setAis(AudioInputStream ais) {
-        this.ais = ais;
-    }
-
-    /**
-     * @return the clip
-     */
-    public Clip getClip() {
-        return clip;
-    }
-
-    /**
-     * @param clip the clip to set
-     */
-    public void setClip(Clip clip) {
-        this.clip = clip;
-    }
+  /**
+   * window getter.
+   * @return the window
+   */
+  public final JFrame getWindow() {
+      return window;
+  }
+  /**
+   * window setter.
+   * @param windowParam the window to be set
+   */
+  public final void setWindow(JFrame windowParam) {
+      this.window = windowParam;
+  }
+  /**
+   * s getter.
+   * @return the s
+   */
+  public final String[] getS() {
+      return s;
+  }
+  /**
+   * s setter.
+   * @param s the s to set
+   */
+  public final void setS(String[] sParam) {
+      this.s = sParam;
+  }
+  /**
+   * nomArena getter.
+   * @return the nomArena
+   */
+  public final JComboBox getNomArena() {
+      return nomArena;
+  }
+  /**
+   * nomArena setter.
+   * @param nomArenaParam the nomArena to set
+   */
+  public final void setNomArena(JComboBox nomArenaParam) {
+      this.nomArena = nomArenaParam;
+  }
+  /**
+   * enterButton getter.
+   * @return the enterButton
+   */
+  public final JButton getEnterButton() {
+      return enterButton;
+  }
+  /**
+   * enterButon setter.
+   * @param enterButtonwParam the enterButton to set
+   */
+  public final void setEnterButton(JButton enterButtonParam) {
+      this.enterButton = enterButtonParam;
+  }
+  /**
+   * backButton getter.
+   * @return the backButton
+   */
+  public final JButton getBackButton() {
+      return backButton;
+  }
+  /**
+   * backButyon setter.
+   * @param backButtonParam the backButton to set
+   */
+  public final void setBackButton(JButton backButtonParam) {
+      this.backButton = backButtonParam;
+  }
+  /**
+   * customFont getter.
+   * @return the customFont
+   */
+  public final Font getCustomFont() {
+      return customFont;
+  }
+  /**
+   * customFOnt setter.
+   * @param customFontParam the customFont to set
+   */
+  public final void setCustomFont(Font customFontParam) {
+      this.customFont = customFontParam;
+  }
+  /**
+   * comboFont getter.
+   * @return the comboFont
+   */
+  public final Font getComboFont() {
+      return comboFont;
+  }
+  /**
+   * comboFont setter.
+   * @param comboFontParam the comboFont to set
+   */
+  public final void setComboFont(Font comboFontParam) {
+      this.comboFont = comboFontParam;
+  }
+  /**
+   * SOund getter.
+   * @return the sound
+   */
+  public final File getSound() {
+      return sound;
+  }
+  /**
+   * sound setter.
+   * @param soundParam the sound to set
+   */
+  public final void setSound(File soundParam) {
+      this.sound = soundParam;
+  }
+  /**
+   * ais getter.
+   * @return the ais
+   */
+  public final AudioInputStream getAis() {
+      return ais;
+  }
+  /**
+   * ais setter.
+   * @param aisParam the ais to set
+   */
+  public final void setAis(AudioInputStream aisParam) {
+      this.ais = aisParam;
+  }
+  /**
+   * clip getter.
+   * @return the clip
+   */
+  public final Clip getClip() {
+      return clip;
+  }
+  /**
+   * clip setter.
+   * @param clipParam the clip to set
+   */
+  public final void setClip(Clip clipParam) {
+      this.clip = clipParam;
+  }
 }
