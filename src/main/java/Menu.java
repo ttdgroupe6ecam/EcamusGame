@@ -18,9 +18,9 @@ import java.nio.file.Paths;
  */
 
 /** @author UserAdmin */
-/** I creat a Menu that will pop - up after the Opening screen and will, 
+/** I creat a Menu that will pop - up after the Opening screen and will,
  * contain,
- *Button to start or exit the interface game, 
+ *Button to start or exit the interface game,
  *for that I've created a new frame call,
  *window and set is size and make it visible on the screen , I alsoe created,
  *2 button , one exit/one play.
@@ -80,13 +80,13 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
       this.setForeground(Color.DARK_GRAY);
       window.add(this);
       playButton.setBackground(Color.DARK_GRAY);
-     playButton.setIcon(new ImageIcon(getPath() + "/resources/Vulcania.jpg")); 
+     playButton.setIcon(new ImageIcon(getPath() + "/resources/Vulcania.jpg"));
       /* Bien entrer le bon chemin d'acces de l'image */
       playButton.addActionListener(this);
       playButton.addKeyListener(this);
       window.add(playButton, BorderLayout.PAGE_START);
       exitButton.setBackground(Color.DARK_GRAY);
-   exitButton.setIcon(new ImageIcon(getPath() + "/resources/Exit_Button.png")); 
+   exitButton.setIcon(new ImageIcon(getPath() + "/resources/Exit_Button.png"));
       /* Bien entrer le bon chemin d'acces de l'image */
       exitButton.addActionListener(this);
       exitButton.addKeyListener(this);
@@ -144,7 +144,7 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
 
   @Override
   public final void keyReleased(final KeyEvent e) {
-    throw new UnsupportedOperationException("Not supported yet."); 
+    throw new UnsupportedOperationException("Not supported yet.");
 // To change body of generated methods, choose Tools | Templates.
   }
   /**
