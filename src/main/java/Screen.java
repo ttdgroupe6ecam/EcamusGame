@@ -13,11 +13,21 @@ import java.io.File;
 import java.nio.file.Paths;
 
 public class Screen extends JPanel {
+  /**
+   * the path of the current directory.
+   */
   private String path = Paths.get(".").toAbsolutePath().normalize().toString();
-
+  /**
+   * the Jframe of this class.
+   */
   private JFrame window = new JFrame();
+  /**
+   * a label used of this JFframe.
+   */
   private JLabel back = new JLabel();
-
+  /**
+   * the method that makes the window.
+   */
   Screen() {
     window.add(this);
 
@@ -32,8 +42,7 @@ public class Screen extends JPanel {
 
     try {
       File sound =
-          new File(
-             getPath() + "/resources/Title_Screen.wav"); 
+          new File(getPath() + "/resources/Title_Screen.wav"); 
       /* Bien entrer le bon chemin d'acces du son */
       AudioInputStream ais = AudioSystem.getAudioInputStream(sound);
       Clip clip1 = AudioSystem.getClip();
@@ -49,46 +58,46 @@ public class Screen extends JPanel {
       System.out.println(e);
     }
   }
-
-    /**
-     * @return the path
-     */
-    public String getPath() {
-        return path;
-    }
-
-    /**
-     * @param path the path to set
-     */
-    public void setPath(String path) {
-        this.path = path;
-    }
-
-    /**
-     * @return the window
-     */
-    public JFrame getWindow() {
-        return window;
-    }
-
-    /**
-     * @param window the window to set
-     */
-    public void setWindow(JFrame window) {
-        this.window = window;
-    }
-
-    /**
-     * @return the back
-     */
-    public JLabel getBack() {
-        return back;
-    }
-
-    /**
-     * @param back the back to set
-     */
-    public void setBack(JLabel back) {
-        this.back = back;
-    }
+  /**
+   * path getter.
+   * @return the path
+   */
+  public final String getPath() {
+      return path;
+  }
+  /**
+   * path setter.
+   * @param pathParam the path to set
+   */
+  public final void setPath(String pathParam) {
+      this.path = pathParam;
+  }
+  /**
+   * window getter.
+   * @return the window
+   */
+  public final JFrame getWindow() {
+      return window;
+  }
+  /**
+   * window setter.
+   * @param windowParam the window to set
+   */
+  public final void setWindow(JFrame windowParam) {
+      this.window = windowParam;
+  }
+  /**
+   * back getter.
+   * @return the back
+   */
+  public final JLabel getBack() {
+      return back;
+  }
+  /**
+   * back setter.
+   * @param backParam the back to set
+   */
+  public final void setBack(JLabel backParam) {
+      this.back = backParam;
+  }
 }
