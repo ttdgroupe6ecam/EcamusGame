@@ -17,7 +17,8 @@ import static org.junit.Assert.*;
  */
 public class AutomaticienTest {
     
-    public AutomaticienTest() {
+    @Test
+    public  void Testautomaticien(){
         Automaticien automaticien = new Automaticien(100, 50, 120);
         assertNotNull(automaticien);
     }
