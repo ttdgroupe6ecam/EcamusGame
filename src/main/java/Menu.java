@@ -20,7 +20,7 @@ import java.nio.file.Paths;
 /** @author UserAdmin */
 /** I creat a Menu that will pop - up after the Opening screen and will,
  * contain,
- *Button to start or exit the interface game,
+ *Button to start or exit the interface,
  *for that I've created a new frame call,
  *window and set is size and make it visible on the screen , I alsoe created,
  *2 button , one exit/one play.
