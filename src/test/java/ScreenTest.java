@@ -1,4 +1,4 @@
-/*
+
 
 import org.assertj.swing.edt.GuiActionRunner;
 import org.assertj.swing.fixture.FrameFixture;
@@ -17,7 +17,8 @@ public class ScreenTest {
         window = new FrameFixture(String.valueOf(frame));
         window.show(); // shows the frame to t
 
-    }
+    }}
+    /*
     @Test
     public void shouldCopyTextInLabelWhenClickingButton() {
         comm : window.textBox("textToCopy").enterText("Some random text");
