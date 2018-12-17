@@ -17,7 +17,8 @@ import static org.junit.Assert.*;
  */
 public class GeometreTest {
     
-    public GeometreTest() {
+    @Test
+    public void TestGeometre() {
         Geometre informaticien = new Geometre(100, 50,200);
         assertNotNull(informaticien);  
     }

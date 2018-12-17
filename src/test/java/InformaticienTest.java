@@ -5,6 +5,7 @@
  */
 
 import static org.junit.Assert.*;
+import org.junit.Test;
 
 /**
  *
@@ -12,7 +13,8 @@ import static org.junit.Assert.*;
  */
 public class InformaticienTest {
     
-    public InformaticienTest() {
+    @Test
+    public void TestInformaticien() {
         Informaticien informaticien = new Informaticien(100, 50);
         assertNotNull(informaticien);
          
