@@ -27,8 +27,7 @@ public class Arene {
 
         System.out.println("Choisissez un adversaire :");
       }
-      System.out.println("Tapez : 1 -> informaticien " 
-              +" 2 -> Electronicien, 9->quitter ");
+      System.out.println("1 -> informaticien 2 -> Electronicien, 9->quitter ");
 
       Scanner sc = new Scanner(System.in);
 
@@ -79,7 +78,7 @@ public class Arene {
 
       x = x + 1;
     }
-    Arene.startFight(Arene.listPersonnages.get(0),Arene.listPersonnages.get(1)); 
+    startFight(Arene.listPersonnages.get(0), Arene.listPersonnages.get(1)); 
 // on lance le combat
   }
 
