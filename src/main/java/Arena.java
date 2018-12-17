@@ -138,7 +138,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
 
   @Override
   public final void keyTyped(final KeyEvent e) {
-    throw new UnsupportedOperationException("Not supported yet."); 
+    throw new UnsupportedOperationException("Not supported yet.");
     //generated methods, choose Tools | Templates.
   }
 
