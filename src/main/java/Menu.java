@@ -1,4 +1,4 @@
-import javax.sound.sampled.*;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -10,6 +10,11 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.nio.file.Paths;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -71,46 +76,40 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
    * @throws UnsupportedAudioFileException audio problem
    * @throws IOException io problem
    */
-  Menu() throws UnsupportedAudioFileException, IOException {
-    try {
-
+  Menu() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
       this.ais = AudioSystem.getAudioInputStream(sound);
       this.clip1 = AudioSystem.getClip();
       this.setBackground(Color.DARK_GRAY);
       this.setForeground(Color.DARK_GRAY);
       window.add(this);
       playButton.setBackground(Color.DARK_GRAY);
-     playButton.setIcon(new ImageIcon(path + "/resources/Vulcania.jpg"));
+      playButton.setIcon(new ImageIcon(path + "/resources/Vulcania.jpg"));
       /* Bien entrer le bon chemin d'acces de l'image */
       playButton.addActionListener(this);
       playButton.addKeyListener(this);
       window.add(playButton, BorderLayout.PAGE_START);
       exitButton.setBackground(Color.DARK_GRAY);
-   exitButton.setIcon(new ImageIcon(path + "/resources/Exit_Button.png"));
+      exitButton.setIcon(new ImageIcon(path + "/resources/Exit_Button.png"));
       /* Bien entrer le bon chemin d'acces de l'image */
       exitButton.addActionListener(this);
       exitButton.addKeyListener(this);
       window.add(exitButton, BorderLayout.PAGE_END);
-    background.setIcon(new ImageIcon(path + "/resources/Gladiador.jpg"));
+      background.setIcon(new ImageIcon(path + "/resources/Gladiador.jpg"));
       /* Bien entrer le bon chemin d'acces de l'image */
       window.getContentPane().add(background);
       window.setUndecorated(true);
       window.setSize(800, 700);
       window.setVisible(true);
       try {
-
-        clip1.open(ais);
-
-        clip1.setMicrosecondPosition(20000000);
-        clip1.start();
-
+          
+          clip1.open(ais);
+          
+          clip1.setMicrosecondPosition(20000000);
+          clip1.start();
+          
       } catch (Exception e) {
-        System.out.println(e);
+          System.out.println(e);
       }
-
-    } catch (LineUnavailableException ex) {
-      Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
-    }
   }
 
   @Override
@@ -125,7 +124,7 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
             this.getClip1().close();
 
       try {
-        Arena a = new Arena();
+         new Arena();
       } catch (LineUnavailableException ex) {
         Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
       }

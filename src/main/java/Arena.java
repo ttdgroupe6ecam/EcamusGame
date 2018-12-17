@@ -124,11 +124,13 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
 
       try {
         new Menu();
-      } catch (UnsupportedAudioFileException e) {
-        e.printStackTrace();
       } catch (IOException e) {
         e.printStackTrace();
-      }
+      } catch (UnsupportedAudioFileException ex) {
+            Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (LineUnavailableException ex) {
+            Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null, ex);
+        }
 
     } else if (ae.getSource() == getEnterButton()) {
       // JOptionPane.showMessageDialog(null,"En construction");
@@ -148,12 +150,14 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
             getWindow().dispose();
 
       try {
-        Menu m = new Menu();
-      } catch (UnsupportedAudioFileException e) {
-        e.printStackTrace();
+         new Menu();
       } catch (IOException e) {
         e.printStackTrace();
-      }
+      } catch (UnsupportedAudioFileException ex) {
+            Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (LineUnavailableException ex) {
+            Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
   }
 

@@ -19,7 +19,7 @@ public final class Main {
   */
   public static void main(final String[] args) {
 
-    Screen s = new Screen();
+     new Screen();
     //JFrame window;
       //window = s.window;
   }
