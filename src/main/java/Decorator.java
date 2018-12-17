@@ -79,7 +79,7 @@ class CleMoletteDecorator extends Decorator {
     super(personnage);
   }
   /**
-   * affichage dans la console. 
+   * affichage dans la console.
    */
   @Override
   public void draw() {
