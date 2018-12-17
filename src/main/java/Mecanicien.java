@@ -1,9 +1,18 @@
+/**
+ * upgrades a character into a mecanicien.
+ * @author venon arthur
+ */
 public class Mecanicien extends Personnage {
-
-  public Mecanicien(final int pv,final int force,final int energie) {
-    this.pv = pv;
-    this.force = force;
-    this.energie = energie;
+  /**
+   * constructor of the class.
+   * @param pvPar it's pv
+   * @param forcePar it's force
+   * @param energieParam it's energie
+   */
+  public Mecanicien(final int pvPar,final int forcePar,final int energieParam) {
+    this.pv = pvPar;
+    this.force = forcePar;
+    this.energie = energieParam;
     this.minDamage = +2;
     this.maxDamage = +2;
   }
