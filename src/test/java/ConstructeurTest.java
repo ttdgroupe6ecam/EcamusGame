@@ -11,7 +11,7 @@ import org.junit.Test;
  *
  * @author MediaMonster
  */
-public class ConstructeurTest1 {
+public class ConstructeurTest {
     
     @Test
     public void TestConstructeur() {
