@@ -1,4 +1,4 @@
-/** 
+/**
  * Represente un geometre.
  * @author adrien
  */
