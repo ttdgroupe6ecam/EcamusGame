@@ -123,7 +123,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
             this.getClip().close();
 
       try {
-        Menu m = new Menu();
+        new Menu();
       } catch (UnsupportedAudioFileException e) {
         e.printStackTrace();
       } catch (IOException e) {
