@@ -72,7 +72,7 @@ public abstract class Personnage {
         }
 
         Random rand = new Random();
-        int degats = (rand.nextInt(maxDamage - minDamage + 1) + minDamage);
+        int degats = rand.nextInt(maxDamage - minDamage + 1) + minDamage;
         // * force/10;
         return degats;
     }
@@ -82,7 +82,7 @@ public abstract class Personnage {
      * @param degats Nombre de degats subis par le personnage
      */
     public final void subir(final int degats) {
-        int newPV = (this.getPV() - (degats * (100 - defense) / 100));
+        int newPV = this.getPV() - (degats * (100 - defense) / 100);
 
         this.setPV(newPV);
 
