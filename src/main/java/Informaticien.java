@@ -20,7 +20,7 @@ public class Informaticien extends Personnage {
    * Affiche Les infos de l'informaticien.
    */
   public final void draw() {
-    System.out.println("Informaticien: Point de vie :" 
+    System.out.println("Informaticien: Point de vie :"
                 + pv + " Force : " + force + " Energie :" + energie);
   }
 
