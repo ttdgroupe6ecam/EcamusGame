@@ -35,6 +35,7 @@ public class ScreenTest {
 
     @Test
     public void TestScreen(){
-        Assert.assertNotNull(new Screen());
+        Screen s=new Screen();
+        Assert.assertEquals(s,new Screen());
     }
 }
