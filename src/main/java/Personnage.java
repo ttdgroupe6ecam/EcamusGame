@@ -1,5 +1,8 @@
 import java.util.Random;
-
+/**
+ * the personnage class.
+ * @author venon arthur
+ */
 public abstract class Personnage {
     /**
      * Pv.
