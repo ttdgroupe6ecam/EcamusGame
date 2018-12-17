@@ -7,12 +7,7 @@
 *main function.
 */
 public final class Main {
-    /**
-     * non called constructor.
-     */
-    private Main() {
-
-    }
+   
   /**
   *constructor.
   *@param args the argument of the method

@@ -58,11 +58,13 @@ public class DecoratorTest {
         assertEquals(10,d.getPV());
     }
     
-       @Test
+       /*@Test
     public  void Testdraw(){
-        
-        assertNotNull(true);
-    }
+         Automaticien automaticien = new Automaticien(100, 50, 120);
+        Decorator d;
+        d = new CleMoletteDecorator(automaticien);
+           assertNull(draw());
+    }*/
     
     
     
