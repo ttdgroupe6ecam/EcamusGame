@@ -42,13 +42,13 @@ public class Arene {
         int str2 = Integer.parseInt(sc2.nextLine());
         if (str2 == 1) {
           Decorator personnage;
-            personnage = new sourisDecorator(new Informaticien(100, 24));
+            personnage = new SourisDecorator(new Informaticien(100, 24));
           listPersonnages.add(personnage);
           System.out.println(listPersonnages);
         }
         if (str2 == 2) {
           Decorator personnage;
-            personnage = new cleMoletteDecorator(new Informaticien(100, 24));
+            personnage = new CleMoletteDecorator(new Informaticien(100, 24));
           listPersonnages.add(personnage);
           System.out.println(listPersonnages);
         }
@@ -60,13 +60,13 @@ public class Arene {
         int str2 = Integer.parseInt(sc2.nextLine());
         if (str2 == 1) {
           Decorator personnage;
-            personnage = new sourisDecorator(new Electronicien(100, 24));
+            personnage = new SourisDecorator(new Electronicien(100, 24));
           listPersonnages.add(personnage);
           System.out.println(listPersonnages);
         }
         if (str2 == 2) {
           Decorator personnage;
-            personnage = new cleMoletteDecorator(new Electronicien(100, 24));
+            personnage = new CleMoletteDecorator(new Electronicien(100, 24));
           listPersonnages.add(personnage);
           System.out.println(listPersonnages);
         }
