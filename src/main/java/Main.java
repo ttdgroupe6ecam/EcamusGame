@@ -7,6 +7,12 @@ import javax.swing.*;
 *main function.
 */
 public class Main {
+    /**
+     * non called constructor.
+     */
+    private Main() {
+
+    }
   /**
   *constructor.
   *@param args the argument of the method
