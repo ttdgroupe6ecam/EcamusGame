@@ -73,14 +73,15 @@ class SourisDecorator extends Decorator {
 class CleMoletteDecorator extends Decorator {
   /**
    * creation de l'objet.
-   * @personnage the personnage to be upgraded
+   * @param personnage the personnage to be upgraded
    */
   CleMoletteDecorator(final Personnage personnage) {
     super(personnage);
   }
   /**
-   *affichage dans la console. 
+   * affichage dans la console. 
    */
+  @Override
   public void draw() {
     super.draw();
     System.out.println(" Equipé d'une Clé à molette");
