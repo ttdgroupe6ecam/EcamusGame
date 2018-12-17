@@ -1,8 +1,14 @@
 import javax.swing.*;
-
+/**
+ * th main class.
+ * @author venon arthur
+ */
 public class main {
-
-  public static void main(String[] args) {
+  /**
+   * instanctication of main.
+   * @param args the parmaeter for the mainmethod
+   */
+  public static void main(final String[] args) {
 
     Screen s = new Screen();
     JFrame window;
