@@ -54,7 +54,7 @@ public class Screen extends JPanel {
       Thread.sleep(2000);
       clip1.stop();
       window.dispose();
-      Menu m = new Menu();
+      new Menu();
 
     } catch (Exception e) {
       System.out.println(e);
