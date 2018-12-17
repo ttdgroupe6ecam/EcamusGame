@@ -113,7 +113,7 @@ public abstract class Personnage {
      * Permet de récuperer les points de vie du personnage.
      * @return pv int des points de vie
      */
-    public int getPV() {
+    public final int getPV() {
         return this.pv;
     }
 
@@ -122,7 +122,7 @@ public abstract class Personnage {
      * Permet de setter les points de vie du personnage.
      * @param pvParam Nouveau PV du personnage
      */
-    public void setPV(final int pvParam) {
+    public final void setPV(final int pvParam) {
         this.pv = pvParam;
     }
 
