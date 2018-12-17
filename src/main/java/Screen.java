@@ -11,7 +11,10 @@ import javax.sound.sampled.Clip;
 import javax.swing.*;
 import java.io.File;
 import java.nio.file.Paths;
-
+/**
+ * this class is the window for introductiion.
+ * @author venon arthur
+ */
 public class Screen extends JPanel {
   /**
    * the path of the current directory.
@@ -41,8 +44,7 @@ public class Screen extends JPanel {
     window.setVisible(true);
 
     try {
-      File sound =
-          new File(getPath() + "/resources/Title_Screen.wav"); 
+      File sound = new File(getPath() + "/resources/Title_Screen.wav"); 
       /* Bien entrer le bon chemin d'acces du son */
       AudioInputStream ais = AudioSystem.getAudioInputStream(sound);
       Clip clip1 = AudioSystem.getClip();
@@ -69,7 +71,7 @@ public class Screen extends JPanel {
    * path setter.
    * @param pathParam the path to set
    */
-  public final void setPath(String pathParam) {
+  public final void setPath(final String pathParam) {
       this.path = pathParam;
   }
   /**
@@ -83,7 +85,7 @@ public class Screen extends JPanel {
    * window setter.
    * @param windowParam the window to set
    */
-  public final void setWindow(JFrame windowParam) {
+  public final void setWindow(final JFrame windowParam) {
       this.window = windowParam;
   }
   /**
@@ -97,7 +99,7 @@ public class Screen extends JPanel {
    * back setter.
    * @param backParam the back to set
    */
-  public final void setBack(JLabel backParam) {
+  public final void setBack(final JLabel backParam) {
       this.back = backParam;
   }
 }
