@@ -5,12 +5,12 @@
 class Electronicien extends Personnage {
   /**
    * constructor of the class.
-   * @param pv the pv of the perso
-   * @param force the force of the character
+   * @param pvParam the pv of the perso
+   * @param forceParam the force of the character
    */
-  Electronicien(final int pv,final int force) {
-    this.pv = pv;
-    this.force = force;
+  Electronicien(final int pvParam,final int forceParam) {
+    this.pv = pvParam;
+    this.force = forceParam;
     // this.minDamage = 0;
   }
 }
