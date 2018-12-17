@@ -1,9 +1,18 @@
+/**
+ * upgrades a character into an automaticien.
+ * @author venon arthur
+ */
 public class Automaticien extends Personnage {
-
-  public Automaticien(final int pv,final int force,final int energie) {
-    this.pv = pv;
-    this.force = force;
-    this.energie = energie;
+  /**
+   * constructor of the class.
+   * @param pvPar it's pv
+   * @param forceParam it's force
+   * @param energieParam it's energie
+   */
+  Automaticien(final int pvPar,final int forceParam,final int energieParam) {
+    this.pv = pvPar;
+    this.force = forceParam;
+    this.energie = energieParam;
     this.minDamage = +3;
     this.maxDamage = +1;
   }
