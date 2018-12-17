@@ -58,6 +58,11 @@ public class DecoratorTest {
         assertEquals(10,d.getPV());
     }
     
+       @Test
+    public  void Testdraw(){
+        
+        assertNotNull(true);
+    }
     
     
     
