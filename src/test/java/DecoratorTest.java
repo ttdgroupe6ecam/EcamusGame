@@ -25,5 +25,12 @@ public class DecoratorTest {
         assertNotNull(d);
     }
     
+     @Test
+    public  void CleMoletteDecorator(){
+        Automaticien automaticien = new Automaticien(100, 50, 120);
+        Decorator d;
+        d = new CleMoletteDecorator(automaticien);
+        assertNotNull(d);
+    }
  
 }
