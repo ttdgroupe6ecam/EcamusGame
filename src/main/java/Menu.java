@@ -76,7 +76,8 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
    * @throws UnsupportedAudioFileException audio problem
    * @throws IOException io problem
    */
-  Menu() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
+  Menu() throws UnsupportedAudioFileException, IOException,
+          LineUnavailableException {
       this.ais = AudioSystem.getAudioInputStream(sound);
       this.clip1 = AudioSystem.getClip();
       this.setBackground(Color.DARK_GRAY);
