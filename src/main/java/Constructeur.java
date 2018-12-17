@@ -6,7 +6,7 @@ class Constructeur extends Personnage {
    * @param force
    * @param energie
    */
-   public Constructeur(final int pv,final int force,final int energie) {
+   Constructeur(final int pv,final int force,final int energie) {
     this.pv = pv;
     this.force = force;
     this.energie = energie;
