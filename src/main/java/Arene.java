@@ -169,6 +169,6 @@ public class Arene {
       personnage1.gainEnergy();
       personnage2.gainEnergy();
     }
-    BuildFight();
+    buildFight();
   }
 }
