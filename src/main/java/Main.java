@@ -6,8 +6,13 @@
 /**
 *main function.
 */
-public  class Main {
-   
+public class Main {
+    /**
+     * non called constructor.
+     */
+    private Main() {
+
+    }
   /**
   *constructor.
   *@param args the argument of the method
