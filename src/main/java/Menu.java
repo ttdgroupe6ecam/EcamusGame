@@ -60,7 +60,7 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
    */
   private File sound =
       new File(
-          path + "/resources/Title_Screen.wav");
+          path + "/src/main/resources/Title_Screen.wav");
   /* Bien entrer le bon chemin d'acces du son */
   /**
    * a class used for the audio iunput.
@@ -84,18 +84,18 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
       this.setForeground(Color.DARK_GRAY);
       window.add(this);
       playButton.setBackground(Color.DARK_GRAY);
-      playButton.setIcon(new ImageIcon(path + "/resources/Vulcania.jpg"));
+      playButton.setIcon(new ImageIcon(path + "/src/main/resources/Vulcania.jpg"));
       /* Bien entrer le bon chemin d'acces de l'image */
       playButton.addActionListener(this);
       playButton.addKeyListener(this);
       window.add(playButton, BorderLayout.PAGE_START);
       exitButton.setBackground(Color.DARK_GRAY);
-      exitButton.setIcon(new ImageIcon(path + "/resources/Exit_Button.png"));
+      exitButton.setIcon(new ImageIcon(path + "/src/main/resources/Exit_Button.png"));
       /* Bien entrer le bon chemin d'acces de l'image */
       exitButton.addActionListener(this);
       exitButton.addKeyListener(this);
       window.add(exitButton, BorderLayout.PAGE_END);
-      background.setIcon(new ImageIcon(path + "/resources/Gladiador.jpg"));
+      background.setIcon(new ImageIcon(path + "/src/main/resources/Gladiador.jpg"));
       /* Bien entrer le bon chemin d'acces de l'image */
       window.getContentPane().add(background);
       window.setUndecorated(true);

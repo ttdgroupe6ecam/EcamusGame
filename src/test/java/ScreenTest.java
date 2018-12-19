@@ -15,6 +15,6 @@ public class ScreenTest {
         Screen s=new Screen();
         String path = "./";
         s.setPath(path);
-        assertEquals(path,s.getPath());
+        assertEquals(path, s.getPath());
     }
 }

@@ -57,7 +57,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
    */
   private File sound =
       new File(
-          path + "/resources/Arena_Select.wav");
+          path + "/src/main/resources/Arena_Select.wav");
   /* Bien entrer le bon chemin d'acces du son */
   /**
    * the class to handle the audio input.
@@ -89,7 +89,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
       backButton.addKeyListener(this);
       backButton.addActionListener(this);
       window.add(backButton, BorderLayout.PAGE_END);
-      enterButton.setIcon(new ImageIcon(path + "/resources/arena.jpg"));
+      enterButton.setIcon(new ImageIcon(path + "/src/main/resources/arena.jpg"));
       /* Bien entrer le bon chemin d'acces de l'image */
       enterButton.addKeyListener(this);
       enterButton.addActionListener(this);
