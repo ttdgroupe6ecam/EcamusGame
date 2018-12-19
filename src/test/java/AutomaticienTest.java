@@ -23,5 +23,21 @@ public class AutomaticienTest {
         assertNotNull(automaticien);
     }
     
+    
+      @Test
+    public  void TestSetPV(){
+        Automaticien automaticien = new Automaticien(100, 50, 120);
+         automaticien.setPV(12);
+        assertEquals(12,automaticien.getPV());
+    }
+    
+       @Test
+    public  void TestGetPV(){
+        Automaticien automaticien = new Automaticien(100, 50, 120);
+         int pv = automaticien.getPV();
+        assertEquals(pv,automaticien.getPV());
+    }
+    
+    
  
 }
