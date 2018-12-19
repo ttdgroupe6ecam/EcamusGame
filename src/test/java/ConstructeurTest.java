@@ -39,10 +39,4 @@ public class ConstructeurTest {
          int pv = automaticien.getPV();
         assertEquals(pv,automaticien.getPV());
     }
-    
-    public void out() {
-        System.out.print("hello");
-        assertEquals("hello", outContent.toString());
-    }
- 
 }
