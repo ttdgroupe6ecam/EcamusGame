@@ -13,12 +13,12 @@ import java.nio.file.Paths;
 
 public class ScreenTest {
   
-/*
+
     @Test
     public void TestGetPAth(){
         Screen s=new Screen();
-        String path = Paths.get(".").toAbsolutePath().normalize().toString();
+        String path = "./";
         s.setPath(path);
         Assert.assertEquals(path,s.getPath());
-    }*/
+    }
 }
