@@ -1,15 +1,12 @@
-/*
-import org.assertj.swing.edt.GuiActionRunner;
-import org.assertj.swing.fixture.FrameFixture;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 
-import static org.assertj.core.api.Java6Assertions.assertThat;
+import javax.sound.sampled.LineUnavailableException;
+import static org.junit.Assert.*;
+
+import org.junit.Test;
 
 public class ArenaTest {
 
-
+/*
     FrameFixture window;
 
     @Before
@@ -30,8 +27,23 @@ public class ArenaTest {
     @After
     public void tearDown() {
         window.cleanUp();
+    }*/
+    
+    @Test
+    public void TestArena() throws LineUnavailableException {
+        Arena arena = new Arena();
+        assertNotNull(arena);
     }
-
+    
+    
+    
+    @Test
+    public void TestsetS() throws LineUnavailableException {
+        Arena arena = new Arena();
+        String params []= {"ghp"};
+        arena.setS(params);
+        assertArrayEquals(params,arena.getS());
+    }
+    
 
 }
-*/
