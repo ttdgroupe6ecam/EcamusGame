@@ -124,13 +124,9 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
 
       try {
         new Menu();
-      } catch (IOException e) {
+      } catch (Exception e) {
         e.printStackTrace();
-      } catch (UnsupportedAudioFileException ex) {
-            Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (LineUnavailableException ex) {
-            Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null, ex);
-        }
+      }
 
     } else if (ae.getSource() == getEnterButton()) {
       // JOptionPane.showMessageDialog(null,"En construction");

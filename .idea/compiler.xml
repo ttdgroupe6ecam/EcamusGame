@@ -9,8 +9,5 @@
         <module name="Ecamus" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Ecamus" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
