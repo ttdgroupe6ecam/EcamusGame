@@ -19,5 +19,30 @@ public class ConstructeurTest {
         assertNotNull(constructeur);
     }
     
+      @Test
+    public  void Testautomaticien(){
+        Automaticien automaticien = new Automaticien(100, 50, 120);
+        assertNotNull(automaticien);
+    }
+    
+    
+      @Test
+    public  void TestSetPV(){
+        Automaticien automaticien = new Automaticien(100, 50, 120);
+         automaticien.setPV(12);
+        assertEquals(12,automaticien.getPV());
+    }
+    
+       @Test
+    public  void TestGetPV(){
+        Automaticien automaticien = new Automaticien(100, 50, 120);
+         int pv = automaticien.getPV();
+        assertEquals(pv,automaticien.getPV());
+    }
+    
+    public void out() {
+        System.out.print("hello");
+        assertEquals("hello", outContent.toString());
+    }
  
 }
