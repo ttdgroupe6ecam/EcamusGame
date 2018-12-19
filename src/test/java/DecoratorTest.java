@@ -40,7 +40,7 @@ public class DecoratorTest {
         d = new CleMoletteDecorator(automaticien);
         assertNotNull(d.getPersonnage());
     }
-    
+   
        @Test
     public  void TestgetPV(){
         Automaticien automaticien = new Automaticien(100, 50, 120);
@@ -58,13 +58,13 @@ public class DecoratorTest {
         assertEquals(10,d.getPV());
     }
     
-       /*@Test
-    public  void Testdraw(){
+       @Test
+    public  void TestSourisDecorator(){
          Automaticien automaticien = new Automaticien(100, 50, 120);
         Decorator d;
-        d = new CleMoletteDecorator(automaticien);
-           assertNull(draw());
-    }*/
+        d = new SourisDecorator(automaticien);
+           assertNotNull(d);
+    }
     
     
     
