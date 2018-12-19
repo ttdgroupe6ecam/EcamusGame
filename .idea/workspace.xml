@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e0a4725-96c4-486f-807c-f761d15bd990" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/ScreenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ScreenTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="0e0a4725-96c4-486f-807c-f761d15bd990" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -77,17 +75,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Screen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-680">
-              <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+            <state relative-caret-position="595">
+              <caret line="46" column="47" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ScreenTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-34">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -151,13 +149,6 @@
               <item name="Ecamus" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Ecamus" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Ecamus" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -182,7 +173,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545207850636" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545208010080" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -196,10 +187,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ScreenTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+  <component name="RunManager" selected="JUnit.All in Ecamus">
+    <configuration name="All in Ecamus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Ecamus" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -240,11 +232,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in Ecamus" />
         <item itemvalue="JUnit.ScreenTest" />
         <item itemvalue="JUnit.PersonnageTest" />
         <item itemvalue="JUnit.ScreenTest.TestGetPAth" />
         <item itemvalue="JUnit.AutomaticienTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -258,23 +250,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545199531741</updated>
-      <workItem from="1545199543733" duration="2856000" />
+      <workItem from="1545199543733" duration="3262000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AutomaticienTest - 2018.12.19 at 07h 15m 52s.xml">
-      <configuration name="AutomaticienTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ScreenTest - 2018.12.19 at 09h 02m 03s.xml">
-      <configuration name="ScreenTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ScreenTest - 2018.12.19 at 09h 07m 04s.xml">
-      <configuration name="ScreenTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ScreenTest - 2018.12.19 at 09h 07m 12s.xml">
-      <configuration name="ScreenTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ScreenTest - 2018.12.19 at 09h 11m 03s.xml">
       <configuration name="ScreenTest" configurationId="JUnit" />
     </history-entry>
@@ -293,20 +273,31 @@
     <history-entry file="ScreenTest - 2018.12.19 at 09h 19m 38s.xml">
       <configuration name="ScreenTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ScreenTest - 2018.12.19 at 09h 23m 09s.xml">
+      <configuration name="ScreenTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ScreenTest - 2018.12.19 at 09h 24m 11s.xml">
+      <configuration name="ScreenTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ScreenTest - 2018.12.19 at 09h 26m 24s.xml">
+      <configuration name="ScreenTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Ecamus - 2018.12.19 at 09h 26m 50s.xml">
+      <configuration name="All in Ecamus" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2856000" />
+    <option name="totallyTimeSpent" value="3262000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="20" width="1346" height="688" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
       <window_info id="Capture Tool" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21306376" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29315707" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" weight="0.054054055" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -316,7 +307,7 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4774775" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4774775" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -367,26 +358,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ArenaTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-237">
           <folding>
             <element signature="e#0#951#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Screen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-680">
-          <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -400,7 +377,21 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/ScreenTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-34">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Screen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="46" column="47" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
         </state>
       </provider>
     </entry>
