@@ -10,12 +10,12 @@ import static org.junit.Assert.*;
 
 public class MenuTest {
   
-
+/*
    @Test
     public void TestGetPAth() throws UnsupportedAudioFileException, IOException, LineUnavailableException{
         Menu s = new Menu();
         String path = "./";
         s.setPath(path);
         assertEquals(path, s.getPath());
-    }
+    }*/
 }
