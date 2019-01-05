@@ -66,5 +66,13 @@ public class AskString {
     out.println(message);
     return scanner.nextInt();
   }
+   /**
+   * return the print
+   * @param message to be returned
+   * @return the print
+   */
+  public final int askPrint(final String message) {
+    return out.println(message);
+  }
 
 }
