@@ -7,7 +7,7 @@ import java.io.*;
 public class AreneTest {
 
 public Arene arene=new Arene();
-
+@Ignore
 @Test
     public void generateCharacter() throws Exception {
 
