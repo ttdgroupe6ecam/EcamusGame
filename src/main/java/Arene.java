@@ -123,11 +123,9 @@ public final class Arene {
       if (str4 == 1) {
         int degats2 = personnage2.attaquer();
         personnage1.subir(degats2);
- 
       } else if (str4 == 2) {
         personnage2.parer();
         System.out.println("Parade : Dégats subis réduits ce tour");
- 
       }
 
       System.out.println("PV restant Joueur 1 : " + personnage1.getPV());
@@ -144,7 +142,7 @@ public final class Arene {
     int choix = asker.askInt("1: rejouer , sinon arreter le programme");
     if (choix == 0) {
       buildFight(new AskString(System.in, System.out));
-      }
+    }
     else {
       System.exit(1);
     }
