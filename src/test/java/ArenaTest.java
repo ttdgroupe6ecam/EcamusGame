@@ -6,26 +6,29 @@ import org.junit.Test;
 
 public class ArenaTest {
 
-if (!GraphicsEnvironment.isHeadless()) {
+
     FrameFixture window;
 
     @Before
     public void setUp() {
+        if (GraphicsEnvironment.isHeadless()) {
         Arena frame = GuiActionRunner.execute(() -> new Arena());
         window = new FrameFixture(String.valueOf(frame));
         window.show(); // shows the frame to t
 
-    }
+    }}
     @Test
     public void shouldCopyTextInLabelWhenClickingButton() {
+        if (GraphicsEnvironment.isHeadless()) [
         comm : window.textBox("textToCopy").enterText("Some random text");
         window.button("copyButton").click();
         window.label("copiedText").requireText("Some random text");
         assertThat(window).hasNoNullFieldsOrProperties();
         window.comboBox().requireSelection("");
-    }
+    }}
     @After
     public void tearDown() {
+        if (GraphicsEnvironment.isHeadless()) {
         window.cleanUp();
     }}
 
