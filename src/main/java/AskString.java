@@ -2,6 +2,7 @@
 
 import java.io.InputStream;
 import java.io.PrintStream;
+import java.lang.StringBuilder;
 import java.util.Scanner;
 
 /**
@@ -72,7 +73,14 @@ public class AskString {
    * @return the print
    */
   public final String askPrint(final String message) {
-    return out.println(message).toString();
+  
+  StringBuilder sb = new StringBuilder();
+  StackTraceElement[] st = out.println(message);
+  for(StackTraceElement s : st) {
+      sb.append(s);
+      sb.append('\n');
+   }
+    return sb.toString();
   }
 
 }
