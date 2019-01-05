@@ -3,7 +3,7 @@ import javax.sound.sampled.LineUnavailableException;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.*;
-
+import java.awt.GraphicsEnvironment;
 public class ArenaTest {
 
 
