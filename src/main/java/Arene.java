@@ -21,7 +21,7 @@ public final class Arene {
    * Declaration de l'interface en invite de commande,
    * Permet de choisir son personnage et son arme.
    */
-  public static void buildFight() {
+  public static void buildFight(final AskString asker) {
 
     System.out.println("Bienvenue sur Ecamus");
     int x = 0;
@@ -32,18 +32,11 @@ public final class Arene {
 
         System.out.println("Choisissez un adversaire :");
       }
-      System.out.println("1 -> informaticien 2 -> Electronicien, 9->quitter ");
+      int str=Integer.parseInt(asker.ask("1 -> informaticien 2 -> Electronicien, 9->quitter "));
 
-      Scanner sc = new Scanner(System.in);
-
-      //str représente le choix du personnage
-      int str = Integer.parseInt(sc.nextLine());
       if (str == 1) {
-        System.out.println("Tapez: 1 -> souris " + " 2 -> clé à molette");
-        Scanner sc2 = new Scanner(System.in);
-
-        //str2 représente le choix de l'arme
-        int str2 = Integer.parseInt(sc2.nextLine());
+        int str2=Integer.parseInt(asker.ask("Tapez: 1 -> souris " + " 2 -> clé à molette"));
+        
         if (str2 == 1) {
           Decorator personnage;
             personnage = new SourisDecorator(new Informaticien(100, 24));
@@ -59,9 +52,7 @@ public final class Arene {
       }
 
       if (str == 2) {
-        System.out.println("Tapez: 1 -> souris " + " 2 -> clé à molette");
-        Scanner sc2 = new Scanner(System.in);
-        int str2 = Integer.parseInt(sc2.nextLine());
+        int str2=Integer.parseInt(asker.ask("Tapez: 1 -> souris " + " 2 -> clé à molette"));
         if (str2 == 1) {
           Decorator personnage;
             personnage = new SourisDecorator(new Electronicien(100, 24));
@@ -83,7 +74,7 @@ public final class Arene {
 
       x = x + 1;
     }
-    startFight(Arene.listPersonnages.get(0), Arene.listPersonnages.get(1));
+    startFight(Arene.listPersonnages.get(0), Arene.listPersonnages.get(1),new AskString(System.in, System.out));
 // on lance le combat
   }
 
@@ -94,18 +85,16 @@ public final class Arene {
      * @param personnage2 the second personnage to be played
      */
   public static void startFight(final Decorator personnage1,
-          final Decorator personnage2) {
+          final Decorator personnage2, final AskString asker) {
 
     while (true) {
 
-      System.out.println("Joueur 1 : 1 -> attaquer , 2-> parer ");
+      int str3=Integer.parseInt(asker.ask("Joueur 1 : 1 -> attaquer , 2-> parer "));
       System.out.println(
           "Joueur 1 : Energie = " + personnage1.showEnergy() + " / PV = "
                   + personnage1.getPV());
       personnage1.resetDefense();
 
-      Scanner sc3 = new Scanner(System.in);
-      int str3 = Integer.parseInt(sc3.nextLine());
       if (str3 == 1) {
         int degats = personnage1.attaquer();
         personnage2.subir(degats);
@@ -134,12 +123,10 @@ public final class Arene {
         break;
       }
 
-      System.out.println("Joueur 2 : 1 -> attaquer , 2-> parer ");
+      int str4=Integer.parseInt(asker.ask("Joueur 2 : 1 -> attaquer , 2-> parer "));
       System.out.println("Joueur 2 : Energie =" + personnage2.showEnergy()
               + "/ PV ="
               + personnage2.getPV());
-      Scanner sc4 = new Scanner(System.in);
-      int str4 = Integer.parseInt(sc4.nextLine());
       personnage2.resetDefense();
 
       if (str4 == 1) {
@@ -173,6 +160,6 @@ public final class Arene {
       personnage1.gainEnergy();
       personnage2.gainEnergy();
     }
-    buildFight();
+    buildFight(new AskString(System.in, System.out));
   }
 }
