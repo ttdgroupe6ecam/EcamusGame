@@ -8,6 +8,7 @@ public class AreneTest {
 
 public Arene arene=new Arene();
 @Test
+@Ignore
     public void generateCharacter() throws Exception {
         
         AskString asker = mock(AskString.class);
