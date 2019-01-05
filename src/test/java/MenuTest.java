@@ -15,7 +15,7 @@ public class MenuTest {
   
    @Test
     public void TestGetPAth() throws UnsupportedAudioFileException, IOException, LineUnavailableException{
-      if (GraphicsEnvironment.isHeadless()) {
+      if (!GraphicsEnvironment.isHeadless()) {
         Menu s = new Menu();
         String path = "./";
         s.setPath(path);
