@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 /**
  * this is thc class that contains the setup method for the game and,
  * the one to play the game.
@@ -20,6 +19,7 @@ public final class Arene {
   /**
    * Declaration de l'interface en invite de commande,
    * Permet de choisir son personnage et son arme.
+   * @param asker the class to handle user inputs
    */
   public static void buildFight(final AskString asker) {
 
@@ -32,11 +32,10 @@ public final class Arene {
 
         System.out.println("Choisissez un adversaire :");
       }
-      int str=Integer.parseInt(asker.ask("1 -> informaticien 2 -> Electronicien, 9->quitter "));
+      int str = asker.askInt("1 -> informaticien 2 -> Electronicien, 9->quitter ");
 
       if (str == 1) {
-        int str2=Integer.parseInt(asker.ask("Tapez: 1 -> souris " + " 2 -> clé à molette"));
-        
+        int str2 = asker.askInt("Tapez: 1 -> souris " + " 2 -> clé à molette");
         if (str2 == 1) {
           Decorator personnage;
             personnage = new SourisDecorator(new Informaticien(100, 24));
@@ -52,7 +51,7 @@ public final class Arene {
       }
 
       if (str == 2) {
-        int str2=Integer.parseInt(asker.ask("Tapez: 1 -> souris " + " 2 -> clé à molette"));
+        int str2 = asker.askInt("Tapez: 1 -> souris " + " 2 -> clé à molette");
         if (str2 == 1) {
           Decorator personnage;
             personnage = new SourisDecorator(new Electronicien(100, 24));
@@ -83,13 +82,14 @@ public final class Arene {
      * Interface en invite de commande, permet de choisir les actions.
      * @param personnage1 the fisrt personnage to be played
      * @param personnage2 the second personnage to be played
+     * @param asker the clss to handle user inputs
      */
   public static void startFight(final Decorator personnage1,
           final Decorator personnage2, final AskString asker) {
 
     while (true) {
 
-      int str3=Integer.parseInt(asker.ask("Joueur 1 : 1 -> attaquer , 2-> parer "));
+      int str3 = asker.askInt("Joueur 1 : 1 -> attaquer , 2-> parer ");
       System.out.println(
           "Joueur 1 : Energie = " + personnage1.showEnergy() + " / PV = "
                   + personnage1.getPV());
@@ -123,7 +123,7 @@ public final class Arene {
         break;
       }
 
-      int str4=Integer.parseInt(asker.ask("Joueur 2 : 1 -> attaquer , 2-> parer "));
+      int str4 = asker.askInt("Joueur 2 : 1 -> attaquer , 2-> parer ");
       System.out.println("Joueur 2 : Energie =" + personnage2.showEnergy()
               + "/ PV ="
               + personnage2.getPV());
