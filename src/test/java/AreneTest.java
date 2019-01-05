@@ -18,7 +18,7 @@ public Arene arene=new Arene();
         when(asker.askInt("Joueur 2 : 1 -> attaquer , 2-> parer ")).thenReturn(1);
         when(asker.askInt("1: rejouer , sinon arreter le programme")).thenReturn(3);
         arene.buildFight(asker);
-        assertTrue(asker.askPrint().toString().contains("Le Vainqueur est : Joueur"));
+        assertTrue(asker.askPrint().contains("Le Vainqueur est : Joueur"));
     }
 
 
