@@ -17,6 +17,7 @@ public Arene arene=new Arene();
         when(asker.askInt("Joueur 1 : 1 -> attaquer , 2-> parer ")).thenReturn(1);
         when(asker.askInt("Joueur 2 : 1 -> attaquer , 2-> parer ")).thenReturn(1);
         when(asker.askInt("1: rejouer , sinon arreter le programme")).thenReturn(3);
+        System.out.println("dfsfsdfdsfdsfsdfdsfsdfsd");
         arene.buildFight(asker);
         assertTrue(asker.askPrint().contains("Le Vainqueur est : Joueur"));
     }
