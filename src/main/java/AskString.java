@@ -68,7 +68,6 @@ public class AskString {
   }
    /**
    * return the print
-   * @param message to be returned
    * @return the print
    */
   public final String askPrint() {
