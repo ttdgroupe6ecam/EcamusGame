@@ -67,7 +67,7 @@ public class AskString {
     return scanner.nextInt();
   }
    /**
-   * return the print
+   * return the print.
    * @return the print
    */
   public final String askPrint() {
