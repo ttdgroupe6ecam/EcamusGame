@@ -9,9 +9,9 @@ import static org.junit.Assert.*;
 
 public class ScreenTest {
   
-if (!GraphicsEnvironment.isHeadless()) {
    @Test
     public void TestGetPAth(){
+      if (GraphicsEnvironment.isHeadless()) {
         Screen s=new Screen();
         String path = "./";
         s.setPath(path);
