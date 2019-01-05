@@ -22,7 +22,7 @@ public void setUpStreams() {
         when(asker.askInt("Joueur 2 : 1 -> attaquer , 2-> parer ")).thenReturn(1);
         when(asker.askInt("1: rejouer , sinon arreter le programme")).thenReturn(3);
         arene.buildFight(asker);
-        assertTrue(outContent.toString().contains("Le Vainqueur est : Joueur");
+        assertTrue(outContent.toString().contains("Le Vainqueur est : Joueur"));
     }
 @After
 public void restoreStreams() {
