@@ -71,8 +71,8 @@ public class AskString {
    * @param message to be returned
    * @return the print
    */
-  public final void askPrint(final String message) {
-    return out.println(message);
+  public final String askPrint(final String message) {
+    return out.println(message).toString();
   }
 
 }
