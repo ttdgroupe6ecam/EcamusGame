@@ -9,12 +9,12 @@ import static org.junit.Assert.*;
 
 public class ScreenTest {
   
-
- /*   @Test
+if (!GraphicsEnvironment.isHeadless()) {
+   @Test
     public void TestGetPAth(){
         Screen s=new Screen();
         String path = "./";
         s.setPath(path);
         assertEquals(path, s.getPath());
-    }*/
+    }}
 }
