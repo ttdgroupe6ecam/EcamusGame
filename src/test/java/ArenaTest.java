@@ -1,8 +1,8 @@
 
 import javax.sound.sampled.LineUnavailableException;
-import static org.junit.Assert.*;
-
 import org.junit.Test;
+import static org.junit.Assert.*;
+import org.junit.*;
 
 public class ArenaTest {
 
