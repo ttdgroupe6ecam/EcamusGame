@@ -9,11 +9,11 @@ public final class Arene {
   /**
    * A static list that contains all the characters played by the users.
    */
-  private static List<Decorator> listPersonnages = new ArrayList<Decorator>();
+  private List<Decorator> listPersonnages = new ArrayList<Decorator>();
   /**
    * non called contructor.
    */
-  private Arene() {
+  public Arene() {
 
   }
   /**
@@ -21,7 +21,7 @@ public final class Arene {
    * Permet de choisir son personnage et son arme.
    * @param asker the class to handle user inputs
    */
-  public static void buildFight(final AskString asker) {
+  public void buildFight(final AskString asker) {
 
     System.out.println("Bienvenue sur Ecamus");
     int x = 0;
@@ -85,7 +85,7 @@ public final class Arene {
      * @param personnage2 the second personnage to be played
      * @param asker the clss to handle user inputs
      */
-  public static void startFight(final Decorator personnage1,
+  public void startFight(final Decorator personnage1,
           final Decorator personnage2, final AskString asker) {
 
     while (true) {
