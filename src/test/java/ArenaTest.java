@@ -4,6 +4,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.*;
 import java.awt.GraphicsEnvironment;
+import org.assertj.swing.edt.GuiActionRunner;
+import org.assertj.swing.fixture.FrameFixture;
 public class ArenaTest {
 
 
