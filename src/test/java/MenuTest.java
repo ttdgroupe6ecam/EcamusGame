@@ -10,9 +10,9 @@ import static org.junit.Assert.*;
 
 public class MenuTest {
   
-if (!GraphicsEnvironment.isHeadless()) {
    @Test
     public void TestGetPAth() throws UnsupportedAudioFileException, IOException, LineUnavailableException{
+      if (GraphicsEnvironment.isHeadless()) {
         Menu s = new Menu();
         String path = "./";
         s.setPath(path);
