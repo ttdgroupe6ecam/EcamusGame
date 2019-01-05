@@ -32,7 +32,7 @@ public final class Arene {
 
         System.out.println("Choisissez un adversaire :");
       }
-      int str = asker.askInt("1 -> informaticien 2 -> Electronicien, 9->quitter ");
+      int str = asker.askInt("1 -> informaticien 2 -> Electronicien, 9->quit");
 
       if (str == 1) {
         int str2 = asker.askInt("Tapez: 1 -> souris " + " 2 -> clé à molette");
@@ -73,7 +73,8 @@ public final class Arene {
 
       x = x + 1;
     }
-    startFight(Arene.listPersonnages.get(0), Arene.listPersonnages.get(1),new AskString(System.in, System.out));
+    startFight(Arene.listPersonnages.get(0), Arene.listPersonnages.get(1),
+               new AskString(System.in, System.out));
 // on lance le combat
   }
 
