@@ -90,7 +90,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
       backButton.addActionListener(this);
       window.add(backButton, BorderLayout.PAGE_END);
       enterButton.setIcon(new ImageIcon(path
-              +"/src/main/resources/arena.jpg"));
+              + "/src/main/resources/arena.jpg"));
       /* Bien entrer le bon chemin d'acces de l'image */
       enterButton.addKeyListener(this);
       enterButton.addActionListener(this);
