@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class ArenaTest {
 
-/*
+if (!GraphicsEnvironment.isHeadless()) {
     FrameFixture window;
 
     @Before
@@ -27,7 +27,7 @@ public class ArenaTest {
     @After
     public void tearDown() {
         window.cleanUp();
-    }*/
+    }}
 
     
 
