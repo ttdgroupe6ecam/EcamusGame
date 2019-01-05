@@ -73,7 +73,7 @@ public final class Arene {
 
       x = x + 1;
     }
-    this.startFight(Arene.listPersonnages.get(0), Arene.listPersonnages.get(1),
+    startFight(this.listPersonnages.get(0), this.listPersonnages.get(1),
                asker);
 // on lance le combat
   }
