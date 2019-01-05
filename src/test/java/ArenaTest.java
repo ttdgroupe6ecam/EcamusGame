@@ -13,7 +13,7 @@ public class ArenaTest {
 
     @Before
     public void setUp() {
-        if (GraphicsEnvironment.isHeadless()) {
+        if (!GraphicsEnvironment.isHeadless()) {
         Arena frame = GuiActionRunner.execute(() -> new Arena());
         window = new FrameFixture(String.valueOf(frame));
         window.show(); // shows the frame to t
@@ -21,7 +21,7 @@ public class ArenaTest {
     }}
     @Test
     public void shouldCopyTextInLabelWhenClickingButton() {
-        if (GraphicsEnvironment.isHeadless()) {
+        if (!GraphicsEnvironment.isHeadless()) {
         comm : window.textBox("textToCopy").enterText("Some random text");
         window.button("copyButton").click();
         window.label("copiedText").requireText("Some random text");
@@ -30,7 +30,7 @@ public class ArenaTest {
     }}
     @After
     public void tearDown() {
-        if (GraphicsEnvironment.isHeadless()) {
+        if (!GraphicsEnvironment.isHeadless()) {
         window.cleanUp();
     }}
 
