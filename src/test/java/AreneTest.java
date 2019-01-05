@@ -6,7 +6,7 @@ import java.io.*;
 
 public class AreneTest {
 
-private Arene arene=new Arene();
+public Arene arene=new Arene();
 private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 private final PrintStream originalOut = System.out;
 @Before
