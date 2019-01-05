@@ -32,10 +32,10 @@ public final class Arene {
 
         System.out.println("Choisissez un adversaire :");
       }
-      String str = asker.askInt("i -> informaticien e -> Electronicien, q->quit");
+      String str = asker.ask("i -> informaticien e -> Electronicien, q->quit");
 
       if (str == "i") {
-        String str2 = asker.askInt("Tapez: s -> souris " + " c -> clé à molette");
+        String str2 = asker.ask("Tapez: s -> souris " + " c -> clé à molette");
         if (str2 == "s") {
           Decorator personnage;
             personnage = new SourisDecorator(new Informaticien(100, 24));
@@ -51,7 +51,7 @@ public final class Arene {
       }
 
       if (str == "e") {
-        int str2 = asker.askInt("Tapez: s -> souris " + " c -> clé à molette");
+        String str2 = asker.ask("Tapez: s -> souris " + " c -> clé à molette");
         if (str2 == "s") {
           Decorator personnage;
             personnage = new SourisDecorator(new Electronicien(100, 24));
