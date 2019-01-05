@@ -74,7 +74,7 @@ public final class Arene {
       x = x + 1;
     }
     startFight(Arene.listPersonnages.get(0), Arene.listPersonnages.get(1),
-               new AskString(System.in, System.out));
+               asker);
 // on lance le combat
   }
 
