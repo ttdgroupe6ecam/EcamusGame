@@ -44,7 +44,7 @@ public class Screen extends JPanel {
     window.setVisible(true);
 
     try {
-      File sound = new File( getPath()
+      File sound = new File(getPath()
                             + "/src/main/resources/Title_Screen.wav");
       /* Bien entrer le bon chemin d'acces du son */
       AudioInputStream ais = AudioSystem.getAudioInputStream(sound);
