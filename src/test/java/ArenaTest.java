@@ -20,7 +20,7 @@ public class ArenaTest {
     public void shouldCopyTextInLabelWhenClickingButton() {
         comm : window.textBox("textToCopy").enterText("Some random text");
         window.button("copyButton").click();
-        window.label("copiedText").requireText("Some random text"); 
+        window.label("copiedText").requireText("Some random text");
         assertThat(window).hasNoNullFieldsOrProperties();
         window.comboBox().requireSelection("");
     }
@@ -28,15 +28,11 @@ public class ArenaTest {
     public void tearDown() {
         window.cleanUp();
     }*/
+
     
-    @Test
-    public void TestArena() throws LineUnavailableException {
-        Arena arena = new Arena();
-        assertNotNull(arena);
-    }
-    
+
     /*
-    
+
     @Test
     public void TestsetS() throws LineUnavailableException {
         Arena arena = new Arena();
@@ -44,6 +40,6 @@ public class ArenaTest {
         arena.setS(params);
         assertArrayEquals(params,arena.getS());
     }*/
-    
+
 
 }
