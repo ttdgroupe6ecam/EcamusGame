@@ -7,12 +7,7 @@ import java.io.*;
 public class AreneTest {
 
 public Arene arene=new Arene();
-private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-private final PrintStream originalOut = System.out;
-@Before
-public void setUpStreams() {
-    System.setOut(new PrintStream(outContent));
-}
+
 @Test(timeout=200)
     public void generateCharacter() throws Exception {
 
@@ -23,11 +18,8 @@ public void setUpStreams() {
         when(asker.askInt("Joueur 2 : 1 -> attaquer , 2-> parer ")).thenReturn(1);
         when(asker.askInt("1: rejouer , sinon arreter le programme")).thenReturn(3);
         arene.buildFight(asker);
-        assertTrue(outContent.toString().contains("Le Vainqueur est : Joueur"));
+        assertTrue(asker.askPrint().toString().contains("Le Vainqueur est : Joueur"));
     }
-@After
-public void restoreStreams() {
-    System.setOut(originalOut);
-}
+
 
 }
