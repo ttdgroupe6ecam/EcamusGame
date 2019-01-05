@@ -25,7 +25,7 @@ public class ArenaTest {
         comm : window.textBox("textToCopy").enterText("Some random text");
         window.button("copyButton").click();
         window.label("copiedText").requireText("Some random text");
-        assertThat(window).hasNoNullFieldsOrProperties();
+        assertNotNull(window);
         window.comboBox().requireSelection("");
     }}
     @After
