@@ -72,15 +72,15 @@ public class AskString {
    * @param message to be returned
    * @return the print
    */
-  public final String askPrint(final String message) {
+  public final String askPrint() {
   
   StringBuilder sb = new StringBuilder();
-  StackTraceElement[] st = out.println(message);
+  StackTraceElement[] st = out.toString();
   for(StackTraceElement s : st) {
       sb.append(s);
       sb.append('\n');
    }
-    return sb.toString();
+    return sb;
   }
 
 }
