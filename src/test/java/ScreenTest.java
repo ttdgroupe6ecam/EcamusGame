@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.*;
-
+import java.awt.GraphicsEnvironment:
 import java.nio.file.Paths;
 
 import static org.junit.Assert.*;
