@@ -19,6 +19,7 @@ public class ArenaTest {
         window.show(); // shows the frame to t
 
     }}
+    @Ignore
     @Test
     public void shouldCopyTextInLabelWhenClickingButton() {
         if (!GraphicsEnvironment.isHeadless()) {
@@ -34,17 +35,17 @@ public class ArenaTest {
         window.cleanUp();
     }}
 
-    
 
-    /*
 
+
+    @Ignore
     @Test
     public void TestsetS() throws LineUnavailableException {
         Arena arena = new Arena();
         String params []= {"ghp"};
         arena.setS(params);
         assertArrayEquals(params,arena.getS());
-    }*/
+    }
 
 
 }
