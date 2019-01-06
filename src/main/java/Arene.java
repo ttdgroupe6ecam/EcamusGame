@@ -98,12 +98,22 @@ public final class Arene {
 
       if (str3 == 1) {
         int degats = personnage1.attaquer();
-        personnage2.subir(degats);
+        personnage2.subir(degats); 
+      try {
+        Thread.sleep(500);
+      } catch (InterruptedException ex) {
+        Thread.currentThread().interrupt();
+      }
 
       } else if (str3 == 2) {
         personnage1.parer();
         System.out.println("Parade : Dégats subis réduits ce tour");
 
+      }
+       try {
+        Thread.sleep(500);
+      } catch (InterruptedException ex) {
+        Thread.currentThread().interrupt();
       }
       System.out.println("PV restant Joueur 2 : " + personnage2.getPV());
 
@@ -123,9 +133,20 @@ public final class Arene {
       if (str4 == 1) {
         int degats2 = personnage2.attaquer();
         personnage1.subir(degats2);
-      } else if (str4 == 2) {
+      } 
+       try {
+        Thread.sleep(500);
+      } catch (InterruptedException ex) {
+        Thread.currentThread().interrupt();
+      }
+      else if (str4 == 2) {
         personnage2.parer();
         System.out.println("Parade : Dégats subis réduits ce tour");
+      }
+       try {
+        Thread.sleep(500);
+      } catch (InterruptedException ex) {
+        Thread.currentThread().interrupt();
       }
 
       System.out.println("PV restant Joueur 1 : " + personnage1.getPV());
