@@ -119,12 +119,11 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
     if (ae.getSource() == getExitButton()) {
       // clip1.close();
             getWindow().dispose();
-      System.exit(1);
+      System.exit(0);
 
     } else if (ae.getSource() == getPlayButton()) {
             getWindow().dispose();
             this.getClip1().close();
-
       try {
          new Arena();
       } catch (LineUnavailableException ex) {
@@ -145,6 +144,7 @@ public class Menu extends JPanel implements ActionListener, KeyListener {
 
   @Override
   public final void keyReleased(final KeyEvent e) {
+    System.exit(0);
     throw new UnsupportedOperationException("Not supported yet.");
 // To change body of generated methods, choose Tools | Templates.
   }
