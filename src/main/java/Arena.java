@@ -132,6 +132,8 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
     } else if (ae.getSource() == getEnterButton()) {
       // JOptionPane.showMessageDialog(null,"En construction");
       Arene arene = new Arene();
+      window.dispose();
+      this.getClip().close();
       arene.buildFight(new AskString(System.in, System.out));
     }
   }
