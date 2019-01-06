@@ -144,19 +144,19 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
 
   @Override
   public final void keyPressed(final KeyEvent kp) {
-    if (kp.getKeyCode() == KeyEvent.VK_ESCAPE) {
-            getWindow().dispose();
+   // if (kp.getKeyCode() == KeyEvent.VK_ESCAPE) {
+   //         getWindow().dispose();
 
-      try {
-         new Menu();
-      } catch (IOException e) {
-        e.printStackTrace();
-      } catch (UnsupportedAudioFileException ex) {
-            Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (LineUnavailableException ex) {
-            Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
+   //   try {
+   //      new Menu();
+   //   } catch (IOException e) {
+   //     e.printStackTrace();
+   //   } catch (UnsupportedAudioFileException ex) {
+   //         Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null, ex);
+   //     } catch (LineUnavailableException ex) {
+   //         Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null, ex);
+   //     }
+   // }
   }
 
   @Override
