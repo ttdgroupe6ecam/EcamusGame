@@ -152,9 +152,9 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
    //   } catch (IOException e) {
    //     e.printStackTrace();
    //   } catch (UnsupportedAudioFileException ex) {
-   //         Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null, ex);
+   //   Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null, ex);
    //     } catch (LineUnavailableException ex) {
-   //         Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null, ex);
+   //  Logger.getLogger(Arena.class.getName()).log(Level.SEVERE, null, ex);
    //     }
    // }
   }
