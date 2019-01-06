@@ -128,11 +128,12 @@ public final class Arene {
 
       if (str4 == 1) {
         personnage1.subir(personnage2.attaquer());
-      } 
+      
        try {
         Thread.sleep(500);
       } catch (InterruptedException ex) {
         Thread.currentThread().interrupt();
+      }
       }
       else if (str4 == 2) {
         personnage2.parer();
