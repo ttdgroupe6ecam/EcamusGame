@@ -26,7 +26,7 @@ public final class Arene {
     System.out.println("Bienvenue sur Ecamus");
 
     //x indique le nombre de joueurs, maximum 2
-    for (int x=0;x<2;x++) {
+    for (int x = 0; x < 2; x++) {
       if (x == 1) {
 
         System.out.println("Choisissez un adversaire :");
@@ -104,7 +104,6 @@ public final class Arene {
       } else if (str3 == 2) {
         personnage1.parer();
         System.out.println("Parade : Dégats subis réduits ce tour");
-
       }
        try {
         Thread.sleep(500);
@@ -128,7 +127,6 @@ public final class Arene {
 
       if (str4 == 1) {
         personnage1.subir(personnage2.attaquer());
-      
        try {
         Thread.sleep(500);
       } catch (InterruptedException ex) {
@@ -162,6 +160,6 @@ public final class Arene {
     }
     else {
       System.exit(1);
-    }
+   }
   }
 }
