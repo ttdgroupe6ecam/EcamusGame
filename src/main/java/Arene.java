@@ -94,7 +94,7 @@ public final class Arene {
       personnage1.resetDefense();
 
       if (str3 == 1) {
-        personnage2.subir(personnage1.attaquer()); 
+        personnage2.subir(personnage1.attaquer());
       try {
         Thread.sleep(500);
       } catch (InterruptedException ex) {
@@ -132,7 +132,7 @@ public final class Arene {
       } catch (InterruptedException ex) {
         Thread.currentThread().interrupt();
       }
-      }
+        }
       else if (str4 == 2) {
         personnage2.parer();
         System.out.println("Parade : Dégats subis réduits ce tour");
@@ -157,7 +157,7 @@ public final class Arene {
     int choix = asker.askInt("1: rejouer , sinon arreter le programme");
     if (choix == 0) {
       buildFight(new AskString(System.in, System.out));
-    }
+      }
     else {
       System.exit(1);
    }
