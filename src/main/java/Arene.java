@@ -132,8 +132,7 @@ public final class Arene {
       } catch (InterruptedException ex) {
         Thread.currentThread().interrupt();
       }
-    }
-      else if (str4 == 2) {
+    }      else if (str4 == 2) {
         personnage2.parer();
         System.out.println("Parade : Dégats subis réduits ce tour");
       }
@@ -157,8 +156,7 @@ public final class Arene {
     int choix = asker.askInt("1: rejouer , sinon arreter le programme");
     if (choix == 0) {
       buildFight(new AskString(System.in, System.out));
-  }
-    else {
+    }    else {
       System.exit(1);
    }
   }
