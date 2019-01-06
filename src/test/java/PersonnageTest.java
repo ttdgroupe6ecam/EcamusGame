@@ -4,21 +4,21 @@ import static org.junit.Assert.assertEquals;
 
 public class PersonnageTest {
 
-  @Test
+  @Test(timeout=5)
   public void setMortTest() {
     Informaticien perso1 = new Informaticien(100, 50);
     perso1.setMort();
     assertEquals(true, perso1.getMort());
   }
 
-  @Test
+  @Test(timeout=5)
   public void attaquerTest() {
     Informaticien perso1 = new Informaticien(100, 50);
     int dmg = perso1.attaquer();
     assert dmg > 0;
   }
 
-  @Test
+  @Test(timeout=5)
   public void attaquerEnergyTest() {
     Informaticien perso1 = new Informaticien(100, 50);
     int oldenergy = perso1.showEnergy();
@@ -26,20 +26,20 @@ public class PersonnageTest {
     assert perso1.showEnergy() < oldenergy;
   }
 
-  @Test
+  @Test(timeout=5)
   public void subirTest() {
     Informaticien perso1 = new Informaticien(100, 50);
     perso1.subir(15);
     assertEquals(85, perso1.getPV());
   }
 
-  @Test
+  @Test(timeout=5)
   public void showEnergyTest() {
     Informaticien perso1 = new Informaticien(100, 50);
     assert perso1.showEnergy() == 100;
   }
 
-  @Test
+  @Test(timeout=5)
   public void setPVTest() {
     Informaticien perso1 = new Informaticien(100, 50);
     int oldpv = perso1.getPV();
@@ -47,21 +47,21 @@ public class PersonnageTest {
     assert perso1.getPV() != oldpv;
   }
 
-  @Test
+  @Test(timeout=5)
   public void getPVTest() {
     Informaticien perso1 = new Informaticien(100, 50);
     perso1.setPV(35);
     assert perso1.getPV() == 35;
   }
 
-  @Test
+  @Test(timeout=5)
   public void subirMortTest() {
     Informaticien perso1 = new Informaticien(100, 50);
     perso1.subir(10000);
     assert perso1.getMort() == true;
   }
 
-  @Test
+  @Test(timeout=5)
   public void parerTest() {
     Informaticien perso1 = new Informaticien(100, 50);
     perso1.parer();
@@ -69,7 +69,7 @@ public class PersonnageTest {
     assert perso1.getPV() == 70;
   }
 
-  @Test
+  @Test(timeout=5)
   public void resetDefenseTest() {
     Informaticien perso1 = new Informaticien(100, 50);
     perso1.parer();
