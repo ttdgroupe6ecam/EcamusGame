@@ -57,7 +57,7 @@ public class Arena extends JPanel implements ActionListener, KeyListener {
    */
   private File sound =
       new File(
-          path + "/src/main/resources/Arena_Select.wav");
+          path + "/src/main/resources/ArenaSelect.wav");
   /* Bien entrer le bon chemin d'acces du son */
   /**
    * the class to handle the audio input.
