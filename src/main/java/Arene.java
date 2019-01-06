@@ -31,17 +31,17 @@ public final class Arene {
 
         System.out.println("Choisissez un adversaire :");
       }
-      String str = asker.ask("i -> informaticien e -> Electronicien, q->quit");
+      int str = asker.askInt("1 -> informaticien 2 -> Electronicien, 3->quit");
 
-      if (str == "i") {
-        String str2 = asker.ask("Tapez: s -> souris " + " c -> clé à molette");
-        if (str2 == "s") {
+      if (str == 1) {
+        int str2 = asker.askInt("Tapez: 1 -> souris " + " 2 -> clé à molette");
+        if (str2 == 1) {
           Decorator personnage;
             personnage = new SourisDecorator(new Informaticien(100, 24));
           listPersonnages.add(personnage);
           System.out.println(listPersonnages);
         }
-        if (str2 == "c") {
+        if (str2 == 2) {
           Decorator personnage;
             personnage = new CleMoletteDecorator(new Informaticien(100, 24));
           listPersonnages.add(personnage);
@@ -49,15 +49,15 @@ public final class Arene {
         }
       }
 
-      if (str == "e") {
-        String str2 = asker.ask("Tapez: s -> souris " + " c -> clé à molette");
-        if (str2 == "s") {
+      if (str == 2) {
+        int str2 = asker.askInt("Tapez: 1 -> souris " + " 2 -> clé à molette");
+        if (str2 == 1) {
           Decorator personnage;
             personnage = new SourisDecorator(new Electronicien(100, 24));
           listPersonnages.add(personnage);
           System.out.println(listPersonnages);
         }
-        if (str2 == "c") {
+        if (str2 == 2) {
           Decorator personnage;
             personnage = new CleMoletteDecorator(new Electronicien(100, 24));
           listPersonnages.add(personnage);
@@ -66,7 +66,7 @@ public final class Arene {
       }
 
       // 9 Pour quitter l'application
-      if (str == "q") {
+      if (str == 3) {
         System.exit(1);
       }
     }
