@@ -153,7 +153,7 @@ public final class Arene {
       personnage1.gainEnergy();
       personnage2.gainEnergy();
     }
-    int choix = asker.askInt("1: rejouer , sinon arreter le programme");
+    int choix = asker.askInt("0: rejouer , sinon arreter le programme");
     if (choix == 0) {
       buildFight(new AskString(System.in, System.out));
     }    else {
