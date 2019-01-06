@@ -24,10 +24,9 @@ public final class Arene {
   public void buildFight(final AskString asker) {
 
     System.out.println("Bienvenue sur Ecamus");
-    int x = 0;
 
     //x indique le nombre de joueurs, maximum 2
-    while (x < 2) {
+    for (int x=0;x<2;x++) {
       if (x == 1) {
 
         System.out.println("Choisissez un adversaire :");
@@ -70,8 +69,6 @@ public final class Arene {
       if (str == "q") {
         System.exit(1);
       }
-
-      x = x + 1;
     }
     startFight(this.listPersonnages.get(0), this.listPersonnages.get(1),
                asker);
@@ -97,8 +94,7 @@ public final class Arene {
       personnage1.resetDefense();
 
       if (str3 == 1) {
-        int degats = personnage1.attaquer();
-        personnage2.subir(degats); 
+        personnage2.subir(personnage1.attaquer()); 
       try {
         Thread.sleep(500);
       } catch (InterruptedException ex) {
@@ -131,8 +127,7 @@ public final class Arene {
       personnage2.resetDefense();
 
       if (str4 == 1) {
-        int degats2 = personnage2.attaquer();
-        personnage1.subir(degats2);
+        personnage1.subir(personnage2.attaquer());
       } 
        try {
         Thread.sleep(500);
