@@ -23,11 +23,9 @@ public class ArenaTest {
     @Test
     public void shouldCopyTextInLabelWhenClickingButton() {
         if (!GraphicsEnvironment.isHeadless()) {
-        comm : window.textBox("textToCopy").enterText("Some random text");
-        window.button("copyButton").click();
-        window.label("copiedText").requireText("Some random text");
+        window.button("enterButton").click();
         assertNotNull(window);
-        window.comboBox().requireSelection("");
+        
     }}
     @After
     public void tearDown() {
